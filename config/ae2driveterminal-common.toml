@@ -1,0 +1,19 @@
+[terminal]
+	#Ticks between Drive Terminal grid snapshots. Lower values update sooner but cost more server work.
+	# Default: 10
+	# Range: 1 ~ 120
+	refresh_interval_ticks = 10
+	#Maximum same-dimension distance at which a drive can be located and highlighted.
+	# Default: 40
+	# Range: 1 ~ 256
+	max_highlight_distance = 40
+	#Allow inserting and extracting storage cells through the Drive Terminal.
+	allow_cell_access = true
+	#Allow changing ME Drive priorities through the Drive Terminal.
+	allow_priority_editing = true
+	#Priority increment used by the +/- buttons in the Drive Terminal.
+	# Default: 1
+	# Range: 1 ~ 1000000
+	priority_step = 1
+	#Allow the double-click drive locator feature.
+	allow_location_highlight = true

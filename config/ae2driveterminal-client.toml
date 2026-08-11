@@ -1,0 +1,17 @@
+[display]
+	#Show byte and type usage bars below each drive-cell slot.
+	show_capacity_bars = true
+	#Show the type-capacity bar as the second capacity bar.
+	show_type_capacity_bar = true
+	#How long an approved nearby-drive outline remains visible.
+	# Default: 10
+	# Range: 1 ~ 60
+	highlight_duration_seconds = 10
+	#Blink interval of the nearby-drive outline, in milliseconds.
+	# Default: 250
+	# Range: 50 ~ 1000
+	highlight_blink_millis = 250
+	#RGB colour of nearby-drive outlines, as a decimal value (default 0xFF2020).
+	# Default: 16719904
+	# Range: 0 ~ 16777215
+	highlight_rgb = 16719904

@@ -1,0 +1,17 @@
+{
+  "screen_mode": "BORDERLESS",
+  "f11_mode": "BORDERLESS",
+  "fps_overlay_mode": "OFF",
+  "fps_overlay_position": "TOP_LEFT",
+  "fog_terrain": true,
+  "fog_water": true,
+  "fog_lava": true,
+  "fog_powder_snow": true,
+  "cloud_height": -1,
+  "overlay_water": true,
+  "overlay_fire": true,
+  "overlay_fire_smart": false,
+  "bob_camera": "FULL",
+  "bob_hand": true,
+  "enchantment_level_style": "MIXED"
+}

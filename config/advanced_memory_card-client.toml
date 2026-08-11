@@ -1,0 +1,217 @@
+#Advanced Memory Card - 客户端配置
+[client]
+
+	#高亮行为设置
+	[client.highlight]
+		#高亮 P2P 设备时是否自动转头面向该设备
+		rotateHeadOnHighlight = true
+		#P2P 设备高亮渲染的持续时间（秒），默认 5
+		# Default: 5
+		# Range: 1 ~ 60
+		p2pHighlightDurationSec = 5
+
+	#P2P 树控件颜色设置 (ARGB)
+	[client.treeColors]
+		#树控件背景色
+		# Default: -5394236
+		# Range: > -2147483648
+		bg = -5394236
+		#选中行背景色
+		# Default: -11899223
+		# Range: > -2147483648
+		selected = -11899223
+		#悬停行背景色
+		# Default: -12952950
+		# Range: > -2147483648
+		hover = -12952950
+
+	#P2P 树控件布局设置
+	[client.treeLayout]
+		#每级缩进像素
+		# Default: 2
+		# Range: 0 ~ 100
+		indentWidth = 2
+		#每行高度（像素）
+		# Default: 12
+		# Range: 4 ~ 64
+		rowHeight = 12
+		#图标与文字间距（像素）
+		# Default: 4
+		# Range: 0 ~ 32
+		iconTextSpacing = 4
+		#展开/收起图标宽度（像素）
+		# Default: 2
+		# Range: 0 ~ 16
+		expandIconWidth = 2
+		#频道剩余数低于此值显示黄色警告
+		# Default: 8
+		# Range: 0 ~ 128
+		channelWarningThreshold = 8
+		#P2P 设备名称最大显示长度（超出截断）
+		# Default: 20
+		# Range: 5 ~ 100
+		p2pNameMaxLength = 20
+
+	#详情面板颜色设置 (ARGB)
+	[client.panelColors]
+		#面板背景色
+		# Default: -6643788
+		# Range: > -2147483648
+		bg = -6643788
+		#标题文字颜色
+		# Default: -1
+		# Range: > -2147483648
+		title = -1
+		#标签文字颜色
+		# Default: -16777216
+		# Range: > -2147483648
+		label = -16777216
+		#值文字颜色
+		# Default: -1
+		# Range: > -2147483648
+		value = -1
+		#占位符文字颜色
+		# Default: -7829368
+		# Range: > -2147483648
+		placeholder = -7829368
+		#分隔线颜色
+		# Default: -7829368
+		# Range: > -2147483648
+		separator = -7829368
+		#按钮区域背景色
+		# Default: -6643788
+		# Range: > -2147483648
+		buttonAreaBg = -6643788
+
+		#详情面板状态颜色
+		[client.panelColors.status]
+			#未激活状态颜色
+			# Default: -16777216
+			# Range: > -2147483648
+			notActive = -16777216
+			#未连接状态颜色
+			# Default: -240556
+			# Range: > -2147483648
+			notConnected = -240556
+			#已连接状态颜色
+			# Default: -11207596
+			# Range: > -2147483648
+			connected = -11207596
+
+	#详情面板布局设置
+	[client.panelLayout]
+		#按钮宽度
+		# Default: 46
+		# Range: 10 ~ 200
+		buttonWidth = 46
+		#按钮高度
+		# Default: 14
+		# Range: 6 ~ 64
+		buttonHeight = 14
+		#按钮间距
+		# Default: 4
+		# Range: 0 ~ 32
+		buttonSpacing = 4
+		#信息区高度比例分子（3/4）
+		# Default: 3
+		# Range: 1 ~ 10
+		infoAreaHeightRatio = 3
+		#总高度比例分母（3/4）
+		# Default: 4
+		# Range: 1 ~ 10
+		totalHeightRatio = 4
+		#行高
+		# Default: 12
+		# Range: 6 ~ 64
+		lineHeight = 12
+		#左侧内边距
+		# Default: 4
+		# Range: 0 ~ 64
+		paddingLeft = 4
+		#顶部内边距
+		# Default: 4
+		# Range: 0 ~ 64
+		paddingTop = 4
+		#最大按钮数量
+		# Default: 6
+		# Range: 1 ~ 12
+		buttonCountMax = 6
+
+	#通用按钮颜色设置 (ARGB)
+	[client.buttonColors]
+		#按钮默认背景色
+		# Default: -8486247
+		# Range: > -2147483648
+		bg = -8486247
+		#按钮悬停背景色
+		# Default: -12952950
+		# Range: > -2147483648
+		hover = -12952950
+		#按钮点击按下背景色
+		# Default: -14005638
+		# Range: > -2147483648
+		click = -14005638
+		#按钮文字颜色
+		# Default: -1
+		# Range: > -2147483648
+		text = -1
+
+	#复制模式选择框颜色 (RGB)
+	[client.copyColors]
+		#起始位置方块渲染颜色
+		# Default: 16711680
+		# Range: 0 ~ 16777215
+		startPos = 16711680
+		#结束位置方块渲染颜色
+		# Default: 16776960
+		# Range: 0 ~ 16777215
+		endPos = 16776960
+		#目标位置方块渲染颜色
+		# Default: 65280
+		# Range: 0 ~ 16777215
+		targetedPos = 65280
+		#超过体积限制时渲染颜色
+		# Default: 16711680
+		# Range: 0 ~ 16777215
+		overLimit = 16711680
+
+		#选择框状态颜色
+		[client.copyColors.selection]
+			#准备粘贴状态颜色
+			# Default: 65280
+			# Range: 0 ~ 16777215
+			ready = 65280
+			#选择第一个点状态颜色
+			# Default: 16711680
+			# Range: 0 ~ 16777215
+			first = 16711680
+			#选择第二个点状态颜色
+			# Default: 16777215
+			# Range: 0 ~ 16777215
+			second = 16777215
+
+	#P2P 高亮渲染颜色 (RGB)
+	[client.highlightColors]
+		#自身 P2P 渲染颜色
+		# Default: 16711680
+		# Range: 0 ~ 16777215
+		self = 16711680
+		#输入端 P2P 渲染颜色
+		# Default: 65280
+		# Range: 0 ~ 16777215
+		input = 65280
+		#输出端 P2P 渲染颜色
+		# Default: 255
+		# Range: 0 ~ 16777215
+		output = 255
+
+	#物品颜色设置 (RGB)
+	[client.itemColors]
+		#物品主颜色
+		# Default: 16711680
+		# Range: 0 ~ 16777215
+		color = 16711680
+		#物品着色颜色
+		# Default: 16777215
+		# Range: 0 ~ 16777215
+		tintColor = 16777215
