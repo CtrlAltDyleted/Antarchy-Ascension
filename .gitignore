@@ -236,3 +236,5 @@ config/fancymenu/ui_themes/spooky_season.json
 config/fancymenu/ui_themes/cherry_blossom.json
 config/fancymenu/ui_themes/dark_high_contrast.json
 config/fancymenu/ui_themes/light_high_contrast.json
+/config/jei/world/
+/config/spark/activity.json
