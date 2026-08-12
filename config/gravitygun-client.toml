@@ -1,0 +1,13 @@
+#Client-only rendering and audio.
+[clientOnly]
+	#Render the left hand on the grip of the fancy render Gravity Gun?
+	renderLeftHand = true
+	#Force the fancy Gravity Gun render, even on fast graphics settings.
+	forceFancyGravityGun = false
+	#What's the intensity of the supercharged Gravity Gun vibration intensity?
+	#Set this to 0 to disable the vibration if you find it makes you nauseous.
+	# Default: 10
+	# Range: 0 ~ 1800
+	superchargedVibrationIntensity = 10
+	#Play a sound when the Gravity Gun is equipped?
+	equipItemSound = true

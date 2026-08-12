@@ -10,73 +10,73 @@
 		buttons: {
 			"ftbchunks:chunks": {
 				enabled: true
-				x: 3
+				x: 0
 				y: 1
 			}
 			"ftblibrary:toggle/night": {
-				enabled: true
-				x: 2
-				y: 0
+				enabled: false
+				x: -1
+				y: -1
 			}
 			"ftbessentials:trash_can": {
 				enabled: true
-				x: 0
-				y: 3
+				x: 3
+				y: 0
 			}
 			"ftbteams:team_lives": {
 				enabled: true
 				x: 1
-				y: 1
+				y: 0
 			}
 			"ftbultimine:config": {
-				enabled: true
-				x: 2
-				y: 2
+				enabled: false
+				x: -1
+				y: -1
 			}
 			"ftblibrary:toggle/gamemode": {
-				enabled: true
-				x: 0
-				y: 0
+				enabled: false
+				x: -1
+				y: -1
 			}
 			"ftbchunks:claim_chunks": {
 				enabled: true
-				x: 0
-				y: 2
+				x: 1
+				y: 1
 			}
 			"ftblibrary:config": {
-				enabled: true
-				x: 1
-				y: 3
+				enabled: false
+				x: -1
+				y: -1
 			}
 			"ftbbackups3:config": {
 				enabled: true
-				x: 1
-				y: 2
+				x: 2
+				y: 1
 			}
 			"ftblibrary:toggle/rain": {
-				enabled: true
-				x: 3
-				y: 0
+				enabled: false
+				x: -1
+				y: -1
 			}
 			"ftbteams:my_team": {
 				enabled: true
 				x: 0
-				y: 1
+				y: 0
 			}
 			"ftbquests:quests": {
 				enabled: true
 				x: 2
-				y: 1
-			}
-			"ftblibrary:toggle/day": {
-				enabled: true
-				x: 1
 				y: 0
 			}
+			"ftblibrary:toggle/day": {
+				enabled: false
+				x: -1
+				y: -1
+			}
 			"createultimine:config": {
-				enabled: true
-				x: 3
-				y: 2
+				enabled: false
+				x: -1
+				y: -1
 			}
 		}
 		

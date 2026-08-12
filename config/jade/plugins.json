@@ -110,6 +110,11 @@
     "energy": true,
     "tooltip_renderer": true
   },
+  "easy_villagers": {
+    "villager": true,
+    "converter": true,
+    "breeder": true
+  },
   "pipez": {
     "pipe": true
   },
@@ -133,6 +138,13 @@
     "preservation_chamber": true,
     "milk_jar": true,
     "toaster": true
+  },
+  "securitycraft": {
+    "showowner": true,
+    "showmodules": true,
+    "entity_info": true,
+    "block_info": true,
+    "showcustomname": true
   },
   "replication": {
     "matter_tank": true
