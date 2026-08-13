@@ -1,255 +1,89 @@
-# Antarchy - Ascension Repository
-
 /*
 
-# Repository files
-
+# Repository
 !/.gitignore
 !/.gitattributes
 !/README.md
 !/LICENSE
 !/CHANGELOG.md
+!/MOD_MANIFEST.csv
+!/MOD_CHANGELOG.md
+!/Update-ModManifest.bat
+!/Write-ModChangelog.bat
 
-# Optional GitHub files
 !/.github/
 !/.github/**
 
-# Pack configuration
+!/tools/
+!/tools/**
 
+# Pack configuration
 !/config/
 !/config/**
 
 !/defaultconfigs/
 !/defaultconfigs/**
 
-# KubeJS
-
 !/kubejs/
 !/kubejs/**
 
-# Ignore KubeJS runtime/generated junk if created
+# Local mod-change report
+/MOD_CHANGES.md
+
+# Generated and runtime config state
+/config/.infinity-temp.json
+/config/infinity/modular/
+/config/antarchy/.config_generation
+/config/ars_nouveau/search_index/
+/config/ars_nouveau/doc_data.json
+/config/collapsiblegroups/expand_state.json
+/config/crash_assistant/modlist.json
+/config/essential-mod-partner/data.cache.json
+/config/euphoria_patcher/.data.json
+/config/fancymenu/layout_editor/
+/config/fancymenu/normalized_scroll_screens.json
+/config/fancymenu/user_variables.db
+/config/jei/world/
+/config/sodium-fingerprint.json
+/config/spark/activity.json
+/config/spark/tmp/
+/config/spark/tmp-client/
+/config/test-config.json
+
+# Morph extracted compatibility database
+/config/morph/
+
+# User-specific config
+/config/NoChatReports/NCR-Encryption.json
+/config/NoChatReports/NCR-ServerPreferences.json
+/config/fzzy_config/
+/config/yacl.json5
+
+# Generated defaults/examples
+/config/asynclogger/default.toml
+/config/ichunutil/themes/default.json
+/config/NoChatReports/README.md
+/config/bettercaves/**/README.txt
+/config/betterdeserttemples/**/README.txt
+/config/betterfortresses/**/README.txt
+/config/crash_assistant/crash_assistant_localization_overrides/README.md
+/config/crash_assistant/scripts/*/example.jexl
+/config/chancecubes/custom_rewards/CustomSounds-Resourcepack.zip
+/config/chancecubes/custom_rewards/sounds/sounds.json
+/config/chancecubes/reward_settings.json
+/config/irons_spellbooks_spell_config/irons_spellbooks/example.txt
+/config/xaeropatreon.txt
+/config/zfastnoise.mixin.properties
+/config/*.bak
+/config/**/*.bak
+/kubejs/*_scripts/main.js
+
+# KubeJS generated/runtime state
 /kubejs/.cache/
 /kubejs/cache/
 /kubejs/logs/
 /kubejs/probe/
 /kubejs/exported/
-/kubejs/startup_scripts/.cache/
-/kubejs/server_scripts/.cache/
-/kubejs/client_scripts/.cache/
-
-# FTB Quests / pack data
-
-!/ftbquests/
-!/ftbquests/**
-!/local/
-!/local/ftbquests/
-!/local/ftbquests/**
-/local/*
-!/local/ftbquests/
-!/local/ftbquests/**
-
-# Scripts / custom pack files
-
-!/scripts/
-!/scripts/**
-
-!/global_packs/
-!/global_packs/**
-
-!/openloader/
-!/openloader/**
-
-!/datapacks/
-!/datapacks/**
-
-# Custom resources
-
-/resourcepacks/
-/shaderpacks/
-
-# FancyMenu / UI assets if used for pack customization
-
-!/fancymenu_data/
-!/fancymenu_data/**
-
-!/customization/
-!/customization/**
-
-# Minecraft / CurseForge metadata
-
-# !/options.txt
-# !/optionsof.txt
-
-# Explicit safety exclusions
-
-/mods/
-/mods/**
-/saves/
-/saves/**
-/world/
-/worlds/
-/server/
-/servers/
-/logs/
-/crash-reports/
-/screenshots/
-/downloads/
-/libraries/
-/versions/
-/assets/
-/runtime/
-/cache/
-/caches/
-/backups/
-/backups-*/
-/simplebackups/
-/ftbbackups/
-/schematics/
-/journeymap/
-/xaero/
-/XaeroWaypoints/
-/XaeroWorldMap/
-/local/
-/replay_recordings/
-/recordings/
-/debug/
-/dumps/
-/spark/
-/observable/
-/profiling/
-
-# Runtime files
-
-/latest.log
-/debug.log
-/*.log
-/*.log.gz
-/*.tmp
-/*.temp
-/*.lock
-/*.lck
-/*.bak
-/*.old
-
-# Java crash/runtime dumps
-
-/hs_err_pid*
-/replay_pid*
-/java_pid*
-/*.hprof
-/*.heapdump
-
-# World/server runtime files
-
-/server.properties
-/usercache.json
-/whitelist.json
-/ops.json
-/banned-ips.json
-/banned-players.json
-/eula.txt
-
-# IDE/editor files
-
-/.vscode/
-/.idea/
-/*.iml
-
-# Operating system junk
-
-/.DS_Store
-/Thumbs.db
-/desktop.ini
-
-# Generated / transient config data
-# Infinite Dimensions temporary/generated invocation data
-/config/.infinity-temp.json
-/config/infinity/modular/
-
-# Ars Nouveau generated search index
-/config/ars_nouveau/search_index/
-
-# Temporary/backup config files
-/config/*_backup*
-/config/**/*.bak
-/config/**/*.tmp
-/config/**/*.lock
-
-# FancyMenu runtime variable state
-/config/fancymenu/user_variables.db
-
-# Sodium installation fingerprint
-/config/sodium-fingerprint.json
-
-# Spark temporary files
-/config/spark/tmp/
-/config/spark/tmp-client/
-
-# Crash Assistant generated mod snapshot
-/config/crash_assistant/modlist.json
-
-# Euphoria Patcher generated state
-/config/euphoria_patcher/.data.json
-
-# Test/generated config
-/config/test-config.json
-
-# No Chat Reports user-specific state
-/config/NoChatReports/NCR-Encryption.json
-/config/NoChatReports/NCR-ServerPreferences.json
-
-# Additional generated config state
-/config/antarchy/.config_generation
-/config/ars_nouveau/doc_data.json
-
-# FancyMenu runtime state
-/fancymenu_data/
-
-# KubeJS local web server credentials/state
+/kubejs/*_scripts/.cache/
 /kubejs/config/web_server.json
-
-# CurseForge local instance metadata
-/minecraftinstance.json
-
-# Config files that are not needed for the repository
-config/NoChatReports/README.md
-config/bettercaves/README.txt
-config/bettercaves/neoforge-1_21_1/README.txt
-config/betterfortresses/README.txt
-config/betterdeserttemples/README.txt
-config/betterfortresses/neoforge-1_21/README.txt
-config/betterdeserttemples/neoforge-1_21/README.txt
-config/crash_assistant/crash_assistant_localization_overrides/README.md
-config/crash_assistant/scripts/startup/example.jexl
-config/crash_assistant/scripts/log_analysis/example.jexl
-config/xaeropatreon.txt
-kubejs/README.txt
-kubejs/client_scripts/main.js
-kubejs/server_scripts/main.js
-kubejs/startup_scripts/main.js
-config/fancymenu/ui_themes/dark.json
-config/fancymenu/ui_themes/light.json
-config/fancymenu/ui_themes/purple_void.json
-config/fancymenu/ui_themes/pumpkin_soup.json
-config/fancymenu/ui_themes/cozy_campfire.json
-config/fancymenu/ui_themes/spooky_season.json
-config/fancymenu/ui_themes/cherry_blossom.json
-config/fancymenu/ui_themes/dark_high_contrast.json
-config/fancymenu/ui_themes/light_high_contrast.json
-/config/jei/world/
-/config/spark/activity.json
-/config/morph/
-/config/asynclogger/default.toml
-/config/chancecubes/custom_rewards/CustomSounds-Resourcepack.zip
-/config/chancecubes/custom_rewards/sounds/sounds.json
-/config/chancecubes/reward_settings.json
-/config/fzzy_config/
-/config/ichunutil/themes/default.json
-/config/morphvariantfix-mobs.txt
-/config/notenoughanimations.json
-/config/yacl.json5
-/config/inventory_pets_illuminati_blacklist.json
-config/zfastnoise.mixin.properties
-!/MOD_MANIFEST.csv
-!/tools/
-!/tools/Update-ModManifest.ps1
+/kubejs/README.txt

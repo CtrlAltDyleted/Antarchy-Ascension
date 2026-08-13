@@ -1,5 +1,5 @@
 {
-	"enableFasterUpward": true,
-	"enableFasterDownward": true,
-	"speedMultiplier": 2.0
+  "enableFasterUpward": true,
+  "enableFasterDownward": true,
+  "speedMultiplier": 1.5
 }

@@ -1,0 +1,20 @@
+# Morph Variant Fix
+# -----------------
+# Modded mobs whose colour/variant lives in synced entity data are detected AUTOMATICALLY,
+# so most mobs need nothing here. Use this file only to override that behaviour.
+#
+# Force specific synced fields for a mob (overrides auto-detection):
+#     <entityId>;<FIELD_NAME>[;<FIELD_NAME2>;...]
+#   Find field names with:  javap -p -cp themod.jar some.pkg.SomeEntity | grep EntityDataAccessor
+#
+# Directives:
+#     !autodetect off            turn automatic detection off globally
+#     !deny <entityId>           never handle this mob
+#     !deny-field <FIELD_NAME>   ignore this accessor field name everywhere
+#
+# Examples:
+#     somemod:some_mob;VARIANT           # force the VARIANT field
+#     !deny somemod:noisy_mob            # stop handling this mob
+#     !deny-field STATE                  # never treat a field named STATE as a variant
+#
+# Add your overrides below this line:

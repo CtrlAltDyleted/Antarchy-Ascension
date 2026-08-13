@@ -4,11 +4,39 @@ Antarchy - Ascension is a progression-focused Minecraft modpack for NeoForge 1.2
 
 The pack is centered around Antarchy and combines major progression systems such as Create, Applied Energistics 2, Mekanism, Powah, Industrial Foregoing, PneumaticCraft, Ars Nouveau, Mystical Agriculture, Replication, Extended Crafting, and more.
 
+> **Alpha Notice:** Antarchy - Ascension is currently an early test build. Major changes are expected, progression may be incomplete, and worlds created during Alpha are not guaranteed to remain compatible with future versions.
+
 ## Status
 
-Antarchy - Ascension is currently in active development.
+Antarchy - Ascension is currently in **Alpha**.
 
 Balance, progression, quests, recipes, configuration, mod selection, and compatibility are still being developed and tested.
+
+Alpha builds are early test releases where the pack is far enough along to benefit from user testing, but major parts of the experience may still change. Alpha builds are not considered finished releases.
+
+During Alpha, users should expect:
+
+- Mods may be added, removed, updated, or replaced
+- Recipes, progression, quests, configs, balance, and world generation may change significantly
+- Features may be incomplete, experimental, or removed entirely
+- Full progression may not be available yet
+- Bugs and compatibility issues are expected
+- Support for individual Alpha features is not guaranteed
+- Worlds created on an Alpha build are not guaranteed to remain compatible with future updates
+- Major changes may be made at any time based on testing and feedback
+
+The primary purpose of Alpha releases is to collect high-level feedback and identify major changes that should be made before the pack reaches Beta.
+
+### Beta Expectations
+
+Beta releases are broader test builds where the pack is expected to be mostly complete. Testing during Beta focuses more heavily on bugs, tuning, balancing, progression issues, and real-world playtesting.
+
+Beta users can generally expect the final release to resemble the Beta experience and can typically expect full progression to be available. However:
+
+- Bugs may still exist
+- Balance and progression may still change
+- Features may still be changed or removed
+- World compatibility between Beta updates is still not guaranteed
 
 ## Progression
 
@@ -38,7 +66,6 @@ The pack includes extensive exploration and world-generation content across the 
 Major exploration paths include:
 
 - The Aether
-- The Otherside
 - Antarchy dimensions
 - Stellaris
 - Infinite Dimensions

@@ -1,0 +1,52 @@
+[biomass]
+	#Enable the Biomass ability without requiring the advancement to unlock it?
+	biomassBypassAdvancement = false
+	#How much of the entity volume is considered their mass.
+	biomassValue = 0.3
+
+[morphMode]
+	#Allows the selector to be used in COMMAND_ONLY mode. This lets the player morph freely from morphs that have been given to them.
+	commandAllowSelector = false
+	#Upgrades traits to the highest upgrade available for the morph. This, for example, will convert the bat's flapping flight ability to creative-mode flight ability.
+	classicUpgradeTraits = false
+
+[playerFilter]
+	#Name of players in the filter list.
+	selectorFilterNames = []
+	#Toggle between an allow-list or deny-list for biomass.
+	biomassFilterType = "DENY"
+	#Toggle between an allow-list or deny-list for morphing.
+	morphFilterType = "DENY"
+	#Toggle between an allow-list or deny-list for the morph selector.
+	selectorFilterType = "DENY"
+	#Name of players in the filter list.
+	biomassFilterNames = []
+	#Name of players in the filter list.
+	morphFilterNames = []
+
+[morph]
+	#Set the morph entity instance to silent, this disables ambient noise and any sound the morph makes.
+	silentMorphs = false
+	#Time (in ticks) for a morph to complete.
+	morphTime = 100
+	#Morph normally only recalculates size when it has to. This makes Morph recalculate the player size every tick whilst morphed.
+	aggressiveSizeRecalculation = false
+	#ID of traits you want to disable.
+	disabledTraits = []
+	#Should the player's max health scale with the morph?
+	healthScale = true
+	#Which attributes are supported by more, and how are values better. Format: <Resource Name of Attribute>;<more/less>;[cap]. EG: "minecraft:generic.attack_damage;more" or "minecraft:generic.max_health;more;20".
+	supportedAttributes = ["minecraft:generic.max_health;more", "minecraft:generic.knockback_resistance;more", "minecraft:generic.movement_speed;more;0.1", "minecraft:generic.attack_damage;more", "minecraft:generic.attack_knockback;more", "minecraft:generic.attack_speed;more", "minecraft:generic.armor;more", "minecraft:generic.luck;more", "minecraft:horse.jump_strength;more", "neoforge:swim_speed;more", "neoforge:reach_distance;more"]
+
+[gameplay]
+	#The Biomass Skin is meant to show during invisibility. Turning this off disables that.
+	biomassSkinWhilstInvisible = true
+	#The mode the mod runs in. Accepts CLASSIC, COMMAND_ONLY, DISGUISE.
+	#
+	#CLASSIC: Old Morph as we know and love: Kill a mob, acquire it.
+	#COMMAND_ONLY: Players can only acquire morphs or morph when the /morph command is used by ops.
+	#DISGUISE: Killing a mob morphs you into the mob you just killed.
+	#DEFAULT: Disabled until it has been finished.
+	morphMode = "CLASSIC"
+	#Resource Location name for Mob types you cannot acquire biomass or morphs from. Uses Regex matching.
+	disabledMobs = ["minecraft:armor_stand"]
