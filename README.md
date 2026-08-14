@@ -4,6 +4,9 @@ Antarchy - Ascension is a progression-focused Minecraft modpack for NeoForge 1.2
 
 The pack is centered around Antarchy and combines major progression systems such as Create, Applied Energistics 2, Mekanism, Powah, Industrial Foregoing, PneumaticCraft, Ars Nouveau, Mystical Agriculture, Replication, Extended Crafting, and more.
 
+<img width="2560" height="1440" alt="AntarchyAscensionTitleHorizontal" src="https://github.com/user-attachments/assets/eef5b571-43bc-4de8-9a50-30e47add0d16" />
+
+
 > **Alpha Notice:** Antarchy - Ascension is currently an early test build. Major changes are expected, progression may be incomplete, and worlds created during Alpha are not guaranteed to remain compatible with future versions.
 
 ## Status
