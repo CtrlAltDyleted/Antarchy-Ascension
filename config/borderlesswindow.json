@@ -10,7 +10,7 @@
   "cloud_height": -1,
   "overlay_water": true,
   "overlay_fire": true,
-  "overlay_fire_smart": false,
+  "overlay_fire_smart": true,
   "bob_camera": "FULL",
   "bob_hand": true,
   "enchantment_level_style": "MIXED"
