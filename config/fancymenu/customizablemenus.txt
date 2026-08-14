@@ -1,2 +1,104 @@
 type = customizablemenus
 
+net.minecraft.client.gui.screens.TitleScreen {
+}
+
+net.minecraft.client.gui.screens.PauseScreen {
+}
+
+net.minecraft.client.gui.screens.GenericMessageScreen {
+}
+
+net.minecraft.client.gui.screens.worldselection.SelectWorldScreen {
+}
+
+net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen {
+}
+
+net.minecraft.client.gui.screens.LevelLoadingScreen {
+}
+
+net.minecraft.client.gui.screens.options.OptionsScreen {
+}
+
+net.minecraft.client.gui.screens.ReceivingLevelScreen {
+}
+
+com.terraformersmc.mod_menu.gui.ModsScreen {
+}
+
+net.minecraft.client.gui.screens.options.SkinCustomizationScreen {
+}
+
+net.minecraft.client.gui.screens.options.OnlineOptionsScreen {
+}
+
+net.minecraft.client.gui.screens.options.SoundOptionsScreen {
+}
+
+me.flashyreese.mods.reeses_sodium_options.client.gui.SodiumVideoOptionsScreen {
+}
+
+net.minecraft.client.gui.screens.options.controls.ControlsScreen {
+}
+
+net.minecraft.client.gui.screens.options.MouseSettingsScreen {
+}
+
+com.blamejared.controlling.client.NewKeyBindsScreen {
+}
+
+net.minecraft.client.gui.screens.ConfirmLinkScreen {
+}
+
+net.minecraft.client.gui.screens.packs.PackSelectionScreen {
+}
+
+net.minecraft.client.gui.screens.options.ChatOptionsScreen {
+}
+
+net.minecraft.client.gui.screens.options.LanguageSelectScreen {
+}
+
+net.minecraft.client.gui.screens.options.AccessibilityOptionsScreen {
+}
+
+com.mrcrayfish.configured.client.screen.ModConfigSelectionScreen {
+}
+
+net.neoforged.neoforge.client.gui.ConfigurationScreen {
+}
+
+net.neoforged.neoforge.client.gui.ConfigurationScreen$ConfigurationSectionScreen {
+}
+
+com.mrcrayfish.configured.client.screen.WorldSelectionScreen {
+}
+
+com.mrcrayfish.configured.client.screen.ConfigScreen {
+}
+
+com.illusivesoulworks.spectrelib.config.client.screen.ModConfigSelectScreen {
+}
+
+com.natamus.collective_common_neoforge.config.DuskConfig$DuskConfigScreen {
+}
+
+dev.ftb.mods.ftbbackups.client.RestoreBackupScreen {
+}
+
+net.minecraft.client.gui.screens.worldselection.CreateWorldScreen {
+}
+
+net.minecraft.client.gui.screens.worldselection.EditGameRulesScreen {
+}
+
+net.neoforged.neoforge.client.gui.ScrollableExperimentsScreen {
+}
+
+net.minecraft.client.gui.screens.DirectJoinServerScreen {
+}
+
+net.minecraft.client.gui.screens.EditServerScreen {
+}
+

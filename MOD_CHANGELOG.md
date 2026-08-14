@@ -1,6 +1,22 @@
-# Mod Changelog
+﻿# Mod Changelog
 
 Permanent history of direct mod-set changes for Antarchy - Ascension.
+
+## Alpha 1.1 - 2026-08-14
+
+Active mod JARs: **428**
+
+### Added (1)
+
+- `forgified-fabric-api-0.116.15+2.3.2+1.21.1.jar` | Version: 0.116.15+2.3.2 [fabric_api]
+
+### Removed (1)
+
+- `mcwbetters-neoforge-1.21.1-1.6.jar` | Version: 1.6 [mcwbetters]
+
+### Updated (1)
+
+- `sophisticatedcore-1.21.1-1.4.86.2259.jar` | Version: 1.4.85.2251 -> 1.4.86.2259 [sophisticatedcore]
 
 ## Alpha 1.0 - 2026-08-13
 
@@ -83,3 +99,4 @@ Active mod JARs: **428**
 - `sophisticatedbackpacks-1.21.1-3.25.77.2074.jar` | Version: 3.25.76.2067 -> 3.25.77.2074 [sophisticatedbackpacks]
 - `sophisticatedstorage-1.21.1-1.5.85.2077.jar` | Version: 1.5.85.2071 -> 1.5.85.2077 [sophisticatedstorage]
 - `supplementaries-1.21.1-3.8.10-neoforge.jar` | Version: 3.8.9 -> 3.8.10 [supplementaries]
+
