@@ -2,6 +2,29 @@
 
 Permanent history of direct mod-set changes for Antarchy - Ascension.
 
+## Alpha 1.0.1 - 2026-08-14
+
+Active mod JARs: **428**
+
+### Added (0)
+
+- None
+
+### Removed (0)
+
+- None
+
+### Updated (8)
+
+- `alltheleaks-1.1.12+1.21.1-neoforge.jar` | Version: 1.1.11 -> 1.1.12 [alltheleaks]
+- `antarchy_ascension_companion-0.1.0.jar` | Version: 0.1.0 (File contents changed at same version) [antarchy_ascension_companion]
+- `balm-neoforge-1.21.1-21.0.65.jar` | Version: 21.0.64 -> 21.0.65 [balm]
+- `createtransmission-1.2.2+neoforge-create6-1.21.1.jar` | Version: 1.2.1+create6 -> 1.2.2+create6 [createtransmission]
+- `CreativeCore_NEOFORGE_v2.13.43_mc1.21.1.jar` | Version: v2.13.42 -> v2.13.43 [creativecore]
+- `ftb-quests-neoforge-2101.1.31.jar` | Version: 2101.1.30 -> 2101.1.31 [ftbquests]
+- `sophisticated_jei_index-1.2.1+1.21.1.jar` | Version: 1.2.0 -> 1.2.1 [sophisticated_jei_index]
+- `waystones-neoforge-1.21.1-21.1.41.jar` | Version: 21.1.40 -> 21.1.41 [waystones]
+
 ## Alpha 1.1 - 2026-08-14
 
 Active mod JARs: **428**
