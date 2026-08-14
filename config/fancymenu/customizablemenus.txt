@@ -102,3 +102,9 @@ net.minecraft.client.gui.screens.DirectJoinServerScreen {
 net.minecraft.client.gui.screens.EditServerScreen {
 }
 
+net.minecraft.client.gui.screens.AccessibilityOnboardingScreen {
+}
+
+net.minecraft.client.gui.screens.multiplayer.SafetyScreen {
+}
+
