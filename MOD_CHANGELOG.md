@@ -1,51 +1,12 @@
-﻿# Mod Changelog
+# Mod Changelog
 
 Permanent history of direct mod-set changes for Antarchy - Ascension.
 
-## Alpha 1.0.1 - 2026-08-14
+## Alpha 1.0 - 2026-08-14
 
 Active mod JARs: **428**
 
-### Added (0)
-
-- None
-
-### Removed (0)
-
-- None
-
-### Updated (8)
-
-- `alltheleaks-1.1.12+1.21.1-neoforge.jar` | Version: 1.1.11 -> 1.1.12 [alltheleaks]
-- `antarchy_ascension_companion-0.1.0.jar` | Version: 0.1.0 (File contents changed at same version) [antarchy_ascension_companion]
-- `balm-neoforge-1.21.1-21.0.65.jar` | Version: 21.0.64 -> 21.0.65 [balm]
-- `createtransmission-1.2.2+neoforge-create6-1.21.1.jar` | Version: 1.2.1+create6 -> 1.2.2+create6 [createtransmission]
-- `CreativeCore_NEOFORGE_v2.13.43_mc1.21.1.jar` | Version: v2.13.42 -> v2.13.43 [creativecore]
-- `ftb-quests-neoforge-2101.1.31.jar` | Version: 2101.1.30 -> 2101.1.31 [ftbquests]
-- `sophisticated_jei_index-1.2.1+1.21.1.jar` | Version: 1.2.0 -> 1.2.1 [sophisticated_jei_index]
-- `waystones-neoforge-1.21.1-21.1.41.jar` | Version: 21.1.40 -> 21.1.41 [waystones]
-
-## Alpha 1.1 - 2026-08-14
-
-Active mod JARs: **428**
-
-### Added (1)
-
-- `forgified-fabric-api-0.116.15+2.3.2+1.21.1.jar` | Version: 0.116.15+2.3.2 [fabric_api]
-
-### Removed (1)
-
-- `mcwbetters-neoforge-1.21.1-1.6.jar` | Version: 1.6 [mcwbetters]
-
-### Updated (1)
-
-- `sophisticatedcore-1.21.1-1.4.86.2259.jar` | Version: 1.4.85.2251 -> 1.4.86.2259 [sophisticatedcore]
-
-## Alpha 1.0 - 2026-08-13
-
-Active mod JARs: **428**
-
-### Added (52)
+### Added (53)
 
 - `AmbientSounds_NEOFORGE_v6.3.8_mc1.21.1.jar` | Version: v6.3.8 [ambientsounds]
 - `apothiccombat-1.2.1.jar` | Version: 1.2.1 [apothiccombat]
@@ -57,9 +18,9 @@ Active mod JARs: **428**
 - `cfm_wap-1.21.1-neoforge-1.2.0.jar` | Version: 1.2.0 [cfm_wap]
 - `chefsdelight-1.0.5-neoforge-1.21.1.jar` | Version: 1.0.5 [chefsdelight]
 - `collective-1.21.1-8.39.jar` | Version: 8.39 [collective]
-- `CreativeCore_NEOFORGE_v2.13.42_mc1.21.1.jar` | Version: v2.13.42 [creativecore]
-- `decocraft_nature-1.0.7-1.21.1-neoforge.jar` | Version: 1.0.7 [decocraft_nature]
+- `CreativeCore_NEOFORGE_v2.13.43_mc1.21.1.jar` | Version: v2.13.43 [creativecore]
 - `decocraft-3.0.11-1.21.1-neoforge.jar` | Version: 3.0.11 [decocraft]
+- `decocraft_nature-1.0.7-1.21.1-neoforge.jar` | Version: 1.0.7 [decocraft_nature]
 - `deimos-1.21.1-neoforge-2.7.jar` | Version: 2.7 [deimos]
 - `DnT-ancient-city-overhaul-v2 [NeoForge].jar` | Version: v2 [dnt_ancient_city_overhaul]
 - `easyelytratakeoff-1.21.1-4.5.jar` | Version: 4.5 [easyelytratakeoff]
@@ -71,10 +32,11 @@ Active mod JARs: **428**
 - `expanded_combat-1.21.1-3.3.12.jar` | Version: 3.3.12 [expanded_combat]
 - `farmers-cutting-twilight-forest-1.21.1-1.0.jar` | Version: 1.0 [farmers_cutting_twilight_forest]
 - `followersteleporttoo-1.21.1-2.7.jar` | Version: 2.7 [followersteleporttoo]
+- `forgified-fabric-api-0.116.15+2.3.2+1.21.1.jar` | Version: 0.116.15+2.3.2 [fabric_api]
 - `framework-neoforge-1.21.1-0.13.11.jar` | Version: 0.13.11 [framework]
 - `furniture_mod_tools_refurbished-1.0.0-neoforge-1.21.1.jar` | Version: 1.0.0 [furniture_mod_tools_refurbished]
-- `gobberdelight-2.2.0-neoforge-1.21.1.jar` | Version: 2.2.0 [gobberdelight]
 - `Gobber-NeoForge-1.21.1-2.10.15.jar` | Version: 2.10.15 [gobber2]
+- `gobberdelight-2.2.0-neoforge-1.21.1.jar` | Version: 2.2.0 [gobberdelight]
 - `Incendium_1.21.x_v5.4.4.jar` | Version: v5.4.4 [incendium]
 - `irons_lib-1.21.1-2.1.0.jar` | Version: 2.1.0 [irons_lib]
 - `irons_spellbooks-1.21.1-3.16.2.jar` | Version: 3.16.2 [irons_spellbooks]
@@ -100,26 +62,34 @@ Active mod JARs: **428**
 - `twilightforest-1.21.1-4.8.3345-universal.jar` | Version: 4.8.3345 [twilightforest]
 - `TwilightTreehouses-1.0.2-1.21.1-neoforge.jar` | Version: 1.0.2 [twilight_treehouses]
 
-### Removed (6)
+### Removed (7)
 
 - `c2me-neoforge-mc1.21.1-0.4.0-alpha.0.116.jar` | Version: 0.4.0-alpha.0.116 [c2me]
 - `deeperdarker-neoforge-1.21.1-1.4.1.jar` | Version: 1.4.1 [deeperdarker]
 - `Dungeons And Villages DeeperAndDarker 1.21.1.jar` | Version: 1.2 [pv_dav_darker_structures]
 - `jeiworldgen-neoforge-1.21.1-1.4.1.jar` | Version: 1.4.1 [jeiworldgen]
+- `mcwbetters-neoforge-1.21.1-1.6.jar` | Version: 1.6 [mcwbetters]
 - `morph_extended-1.0.0.jar` | Version: 1.0.0 [morph_extended]
 - `resonant_synthesis-0.3.0.jar` | Version: 0.3.0 [resonant_synthesis]
 
-### Updated (11)
+### Updated (19)
 
+- `alltheleaks-1.1.12+1.21.1-neoforge.jar` | Version: 1.1.11 -> 1.1.12 [alltheleaks]
+- `antarchy_ascension_companion-0.1.0.jar` | Version: 0.1.0 (File contents changed at same version) [antarchy_ascension_companion]
 - `asynclogger-2.2.2+1.21.1-neoforge.jar` | Version: 2.2.1 -> 2.2.2 [asynclogger]
+- `balm-neoforge-1.21.1-21.0.65.jar` | Version: 21.0.64 -> 21.0.65 [balm]
 - `CrashAssistant-neoforge-1.20.6-1.21.4-1.11.12.jar` | Version: 1.11.11 -> 1.11.12 [crash_assistant]
-- `CreateDragonsPlus-1.11.7b.jar` | Version: 1.11.7 -> 1.11.7b [create_dragons_plus]
 - `create-stuff-additions1.21.1_v2.1.4a.jar` | Version: 2.0.9 -> v2.1.4a [create_sa]
+- `CreateDragonsPlus-1.11.7b.jar` | Version: 1.11.7 -> 1.11.7b [create_dragons_plus]
+- `createtransmission-1.2.2+neoforge-create6-1.21.1.jar` | Version: 1.2.1+create6 -> 1.2.2+create6 [createtransmission]
+- `ftb-quests-neoforge-2101.1.31.jar` | Version: 2101.1.30 -> 2101.1.31 [ftbquests]
 - `integrated_api-neoforge-1.21.1-1.8.0.jar` | Version: 1.7.4 -> 1.8.0 [integrated_api]
 - `morph-neoforge-1.21.1-1.0.0.jar` | Version: 0.1.4 -> 1.0.0 [morph]
 - `relics-1.21.1-0.12.8.jar` | Version: 0.10.7.8 -> 0.12.8 [relics]
 - `reliquified_ars_nouveau-1.21.1-0.8.1.jar` | Version: 0.6.1 -> 0.8.1 [reliquified_ars_nouveau]
+- `sophisticated_jei_index-1.2.1+1.21.1.jar` | Version: 1.2.0 -> 1.2.1 [sophisticated_jei_index]
 - `sophisticatedbackpacks-1.21.1-3.25.77.2074.jar` | Version: 3.25.76.2067 -> 3.25.77.2074 [sophisticatedbackpacks]
+- `sophisticatedcore-1.21.1-1.4.86.2259.jar` | Version: 1.4.85.2251 -> 1.4.86.2259 [sophisticatedcore]
 - `sophisticatedstorage-1.21.1-1.5.85.2077.jar` | Version: 1.5.85.2071 -> 1.5.85.2077 [sophisticatedstorage]
 - `supplementaries-1.21.1-3.8.10-neoforge.jar` | Version: 3.8.9 -> 3.8.10 [supplementaries]
-
+- `waystones-neoforge-1.21.1-21.1.41.jar` | Version: 21.1.40 -> 21.1.41 [waystones]
