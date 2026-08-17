@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = chat_options_screen
   render_custom_elements_behind_vanilla = true
-  last_edited_time = 1786683426595
+  last_edited_time = 1786919795094
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:6a9df22a-7c4c-408f-9391-8ab37275458c-1786683403443] = [groups:][instances:]
+  [loading_requirement_container_meta:43dc55d9-8ff2-42e2-b06a-b0846e198972-1786919785852] = [groups:][instances:]
 }
 
 menu_background {
@@ -362,7 +362,8 @@ element {
   height = 100
   stay_on_screen = true
   element_loading_requirement_container_identifier = 6e4d6463-29c1-4600-a943-a8bdc8096cbe-1786683413832
-  [loading_requirement_container_meta:6e4d6463-29c1-4600-a943-a8bdc8096cbe-1786683413832] = [groups:][instances:]
+  [loading_requirement_container_meta:6e4d6463-29c1-4600-a943-a8bdc8096cbe-1786683413832] = [groups:][instances:81864177-f13f-484d-8433-7e8bb0259611-1786919788510;]
+  [loading_requirement:fancymenu_loading_requirement_is_world_loaded][requirement_mode:if_not][req_id:81864177-f13f-484d-8433-7e8bb0259611-1786919788510] = 
   enable_parallax = false
   invert_parallax = false
   animated_offset_x = 0

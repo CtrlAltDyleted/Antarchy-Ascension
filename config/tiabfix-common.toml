@@ -1,0 +1,8 @@
+#Enable crop/block acceleration feature
+enableCropAcceleration = true
+#Enable entity acceleration feature (speeds up growth, breeding cooldown)
+enableEntityAcceleration = true
+#Enable left-click duration cycling for unlimited TIAB
+enableDurationCycling = true
+#Show acceleration rate overlay above accelerated entities
+showEntityOverlay = true

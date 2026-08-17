@@ -1,0 +1,16 @@
+#Overlay rendering offset. Try changing in case of rendering bugs/artifacts
+# Default: 151
+# Range: > -2147483648
+zRenderOffset = 151
+#Color of the shadow when overlay is rendered (use hex values for easier configuration: 0xAARRGGBB, A - alpha [<128], RGB - red/green/blue [<256])
+# Default: 2142022828
+# Range: > 0
+shadowColor = 2142022828
+#Horizontal bee offset from the left side of the slot
+# Default: 1
+# Range: > -2147483648
+xBeeOffset = 1
+#Vertical bee offset from the top of the slot
+# Default: 1
+# Range: > -2147483648
+yBeeOffset = 1

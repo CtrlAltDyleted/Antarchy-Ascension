@@ -8,8 +8,6 @@
 !/CHANGELOG.md
 !/MOD_MANIFEST.csv
 !/MOD_CHANGELOG.md
-!/Update-ModManifest.bat
-!/Write-ModChangelog.bat
 
 !/.github/
 !/.github/**
@@ -87,3 +85,14 @@
 /kubejs/*_scripts/.cache/
 /kubejs/config/web_server.json
 /kubejs/README.txt
+
+# Antarchy local/generated state
+/config/brandon3055/contributors.json
+/config/brandon3055/contributors.json.etag
+/config/brandon3055/hud_settings.json
+/config/drippyloadingscreen/early_window_reference.properties
+/config/resourceful-config-web.json
+/config/brandon3055/DraconicEvolution.cfg
+
+# Third-party OpenLoader packs are installed through their distribution projects
+/config/openloader/packs/*.zip

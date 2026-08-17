@@ -52,14 +52,35 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "tempad": {
+    "chronon": true,
+    "rudimentary": true,
+    "anchor": true,
+    "metronome": true,
+    "workstation": true,
+    "timedoor": true
+  },
+  "modularbees": {
+    "grid_node_state": true,
+    "power_storage": true
+  },
   "apothic_spawners": {
     "spawner": true
   },
   "hostilenetworks": {
     "io_port_mode": true
   },
+  "entangled": {
+    "entangled_block_component": true
+  },
+  "mekanismcovers": {
+    "cover_component": true
+  },
   "ftbquests": {
     "barrier": true
+  },
+  "immersiveengineering": {
+    "multiblock_icon": true
   },
   "jade": {
     "coordinates.rel": false,
@@ -149,9 +170,23 @@
   "replication": {
     "matter_tank": true
   },
+  "evilcraft": {
+    "box_of_eternal_closure": true,
+    "broom": true
+  },
   "framedblocks": {
     "framed_item_frame": true,
     "framed_block_generic": true
+  },
+  "compactmachines": {
+    "show_owner": false,
+    "bound_machine": true
+  },
+  "railcraft": {
+    "signals": true,
+    "track_component": true,
+    "locomotive": true,
+    "switch_track": true
   },
   "jade_access": {
     "held_item": true,
@@ -174,6 +209,16 @@
   "apotheosis": {
     "adventure": true
   },
+  "occultism": {
+    "foliot": true,
+    "sacrificial": true
+  },
+  "iceandfire": {
+    "dragon_egg_entity": true,
+    "multipart": true,
+    "dragon": true,
+    "dragon_egg_block": true
+  },
   "apothic_enchanting": {
     "ench": true
   },
@@ -191,6 +236,12 @@
     "drying_basin": true,
     "part": true,
     "squeezer": true
+  },
+  "productivebees": {
+    "bee": true,
+    "solitary_nest": true,
+    "canvas_beehive": true,
+    "bee_attributes": true
   },
   "modularrouters": {
     "router": true
@@ -213,6 +264,9 @@
   },
   "supplementaries": {
     "hat_stand": true
+  },
+  "tiabfix": {
+    "entity_accel": true
   },
   "corpse": {
     "corpse": true

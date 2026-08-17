@@ -1,0 +1,30 @@
+#Enable/disable individual storage cells
+[general]
+	enable_item_storage_cell_1m = true
+	enable_item_storage_cell_4m = true
+	enable_item_storage_cell_16m = true
+	enable_item_storage_cell_64m = true
+	enable_item_storage_cell_256m = true
+
+#MEGA Ender Drives type limits.
+[ender_disk]
+	#Max item types for Item Storage Cell 1m
+	# Default: 63
+	# Range: 1 ~ 1024
+	type_limit_1m = 63
+	#Max item types for Item Storage Cell 4k
+	# Default: 127
+	# Range: 1 ~ 1024
+	type_limit_4m = 127
+	#Max item types for Item Storage Cell 16k
+	# Default: 255
+	# Range: 1 ~ 1024
+	type_limit_16m = 255
+	#Max item types for Item Storage Cell 64k
+	# Default: 511
+	# Range: 1 ~ 1024
+	type_limit_64m = 511
+	#Max item types for Item Storage Cell 256k
+	# Default: 1023
+	# Range: 1 ~ 1024
+	type_limit_256m = 1023

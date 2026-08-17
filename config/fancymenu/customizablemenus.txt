@@ -114,3 +114,9 @@ net.minecraft.client.gui.screens.ProgressScreen {
 net.minecraft.client.gui.screens.ConnectScreen {
 }
 
+de.keksuccino.drippyloadingscreen.customization.DrippyOverlayScreen {
+}
+
+com.soleapixel.betterpanorama.gui.PanoramaBrowserScreen {
+}
+

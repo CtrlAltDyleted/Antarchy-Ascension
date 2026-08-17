@@ -243,7 +243,7 @@
     "description": "Enable mod compatibility layer."
   },
   "loadingTips": {
-    "value": true,
+    "value": false,
     "category": "Misc",
     "description": "Show random fun tips on the loading screen."
   }

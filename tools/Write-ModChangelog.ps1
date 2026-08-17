@@ -241,7 +241,12 @@ $FinalText = Set-ChangelogSection `
     -Label $Label `
     -NewSection $NewSection
 
-$FinalText | Set-Content -LiteralPath $ChangelogPath -Encoding UTF8
+$Utf8NoBom = [System.Text.UTF8Encoding]::new($false)
+[System.IO.File]::WriteAllText(
+    [System.IO.Path]::GetFullPath($ChangelogPath),
+    $FinalText,
+    $Utf8NoBom
+)
 
 Write-Host "`n=== MOD CHANGELOG WRITTEN ===" -ForegroundColor Green
 Write-Host "Label:       $Label" -ForegroundColor Cyan

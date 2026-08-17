@@ -70,7 +70,7 @@ Major exploration paths include:
 
 - The Aether
 - Antarchy dimensions
-- Stellaris
+- Ad Astra
 - Infinite Dimensions
 - The Nether
 - The End
