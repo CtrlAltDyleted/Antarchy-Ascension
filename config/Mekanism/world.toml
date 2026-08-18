@@ -238,12 +238,12 @@ userWorldGenVersion = 0
 #Generation Settings for Uranium ore.
 [uranium]
 	#Determines if Uranium ore should be added to world generation.
-	shouldGenerate = true
+	shouldGenerate = false
 
 	#Small Uranium Vein Generation Settings.
 	[uranium.small]
 		#Determines if Small Uranium Veins should be added to world generation. Note: Requires generating uranium ore to be enabled.
-		shouldGenerate = true
+		shouldGenerate = false
 		#Chance that Small Uranium Veins generates in a chunk.
 		# Default: 4
 		# Range: 1 ~ 256
@@ -287,7 +287,7 @@ userWorldGenVersion = 0
 	#Buried Uranium Vein Generation Settings.
 	[uranium.buried]
 		#Determines if Buried Uranium Veins should be added to world generation. Note: Requires generating uranium ore to be enabled.
-		shouldGenerate = true
+		shouldGenerate = false
 		#Chance that Buried Uranium Veins generates in a chunk.
 		# Default: 7
 		# Range: 1 ~ 256

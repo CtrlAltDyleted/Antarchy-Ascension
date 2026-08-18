@@ -14,6 +14,7 @@
   "c:ingots/lead": "alltheores:lead_ingot",
   "c:ingots/graphite": "bigreactors:graphite_ingot",
   "c:ingots/uranium": "alltheores:uranium_ingot",
+  "c:ingots/titanium": "antarchy:titanium_ingot",
   "c:ingots/aluminum": "alltheores:aluminum_ingot",
   "c:ingots/iridium": "alltheores:iridium_ingot",
   "c:ingots/zinc": "alltheores:zinc_ingot",

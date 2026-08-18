@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    "alltheores:uranium_ore",
+    "alltheores:deepslate_uranium_ore",
+    "alltheores:other_uranium_ore",
+    "antarchy:broodstone_uranium_ore"
+  ]
+}

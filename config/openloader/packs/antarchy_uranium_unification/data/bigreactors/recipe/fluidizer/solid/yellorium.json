@@ -1,0 +1,13 @@
+{
+  "type": "bigreactors:fluidizersolid",
+  "ingredient": {
+    "count": 1,
+    "ingredient": {
+      "item": "alltheores:uranium_ingot"
+    }
+  },
+  "result": {
+    "amount": 1000,
+    "id": "bigreactors:yellorium"
+  }
+}

@@ -7,7 +7,14 @@
     "immersiveengineering",
     "mekanism"
   ],
-  "priority_overrides": {},
+  "priority_overrides": {
+    "c:ingots/titanium": "antarchy",
+    "c:nuggets/titanium": "antarchy",
+    "c:ores/titanium": "antarchy",
+    "c:raw_materials/titanium": "antarchy",
+    "c:storage_blocks/raw_titanium": "antarchy",
+    "c:storage_blocks/titanium": "antarchy"
+  },
   "stone_variants": [
     "stone",
     "andesite",
@@ -36,7 +43,11 @@
     "c:shards/{material}"
   ],
   "ignored_tags": [],
-  "ignored_items": [],
+  "ignored_items": [
+    "alltheores:other_uranium_ore",
+    "antarchy:broodstone_uranium_ore",
+    "antarchy:broodstone_titanium_ore"
+  ],
   "ignored_recipe_types": [
     "cucumber:shaped_tag"
   ],
