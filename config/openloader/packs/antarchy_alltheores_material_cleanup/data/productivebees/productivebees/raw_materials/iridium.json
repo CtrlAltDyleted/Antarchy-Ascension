@@ -1,0 +1,13 @@
+{
+  "primaryColor": "#ffccff",
+  "secondaryColor": "#d4e4fc",
+  "particleColor": "#8c9fac",
+  "flowerTag": "c:storage_blocks/iridium",
+  "size": 0.8,
+  "conditions": [
+    {
+      "modid": "antarchy_intentionally_missing",
+      "type": "neoforge:mod_loaded"
+    }
+  ]
+}

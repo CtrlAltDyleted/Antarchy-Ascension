@@ -1,0 +1,13 @@
+{
+  "primaryColor": "#f4ffc3",
+  "secondaryColor": "#804f40",
+  "particleColor": "#dde8ae",
+  "flowerTag": "c:storage_blocks/lumium",
+  "blinding": true,
+  "conditions": [
+    {
+      "modid": "antarchy_intentionally_missing",
+      "type": "neoforge:mod_loaded"
+    }
+  ]
+}

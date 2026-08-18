@@ -1,0 +1,8 @@
+{
+    "type":  "neoforge:add_features",
+    "biomes":  "#antarchy_ascension:never",
+    "features":  [
+                     "alltheores:ore_platinum_placed"
+                 ],
+    "step":  "underground_ores"
+}

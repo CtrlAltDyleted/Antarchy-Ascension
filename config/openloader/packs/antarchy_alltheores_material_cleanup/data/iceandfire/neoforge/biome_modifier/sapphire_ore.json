@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#antarchy_ascension:never",
+  "features": "iceandfire:sapphire_ore",
+  "step": "underground_ores"
+}

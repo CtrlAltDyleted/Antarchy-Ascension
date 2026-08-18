@@ -1,0 +1,13 @@
+{
+    "type":  "immersiveengineering:crusher",
+    "energy":  6000,
+    "input":  {
+                  "tag":  "c:ores/nickel"
+              },
+    "result":  {
+                   "basePredicate":  {
+                                         "tag":  "c:dusts/nickel"
+                                     },
+                   "count":  2
+               }
+}
