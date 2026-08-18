@@ -1,0 +1,6 @@
+#Blight forest biome (TerraBlender). Set to 0 to disable.
+[blight_forest]
+	#Region weight for blight forest. Default 1 gives roughly 1 blight forest per 5 archwood forests.
+	# Default: 1
+	# Range: > 0
+	weight = 1

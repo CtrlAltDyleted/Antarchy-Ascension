@@ -2,6 +2,51 @@
 
 Permanent history of direct mod-set changes for Antarchy - Ascension.
 
+## Still Pre-Alpha 1.0, mod updates - 2026-08-18
+
+Active mod JARs: **575**
+
+### Added (0)
+
+- None
+
+### Removed (0)
+
+- None
+
+### Updated (30)
+
+- `AdvancedPeripherals-1.21.1-0.8.0a.jar` | Version: 0.7.62b -> 0.8.0a [advancedperipherals]
+- `antarchy_ascension_companion-0.1.1.jar` | Version: 0.1.1 (File contents changed at same version) [antarchy_ascension_companion]
+- `appliedschematicannon-1.0.4.jar` | Version: 1.0.3 -> 1.0.4 [appliedschematicannon]
+- `ars_zero-1.21.1-2.0.0-beta4.jar` | Version: 1.11.1 -> 2.0.0-beta4 [ars_zero]
+- `commoncapabilities-1.21.1-neoforge-2.11.5-363.jar` | Version: 2.11.5 -> 2.11.5-363 [commoncapabilities]
+- `corpsecurioscompat-1.21.1-NeoForge-4.0.1.jar` | Version: 3.1.3 -> 4.0.1 [corpsecurioscompat]
+- `cosmeticcorpsecompat-1.21.1-NeoForge-4.0.1.jar` | Version: 1.0.0 -> 4.0.1 [cosmeticcorpsecompat]
+- `createaddition-1.7.0.jar` | Version: 1.6.0 -> 1.7.0 [createaddition]
+- `create-enchantment-industry-2.5.2.jar` | Version: 2.4.2 -> 2.5.2 [create_enchantment_industry]
+- `darkmodeeverywhere-neoforge-1.21.1-1.4.0.jar` | Version: 1.3.5 -> 1.4.0 [darkmodeeverywhere]
+- `easy-piglins-neoforge-1.21.1-1.1.0.jar` | Version: 1.0.14 -> 1.1.0 [easy_piglins]
+- `forgified-fabric-api-0.116.15+2.3.4+1.21.1.jar` | Version: 0.116.15+2.3.3 -> 0.116.15+2.3.4 [fabric_api]
+- `industrial-foregoing-souls-1.21.1-1.10.7.jar` | Version: 1.10.4 -> 1.10.7 [industrialforegoingsouls]
+- `integratedcrafting-1.21.1-neoforge-1.4.7-615.jar` | Version: 1.4.7 -> 1.4.7-615 [integratedcrafting]
+- `integrateddynamics-1.21.1-neoforge-1.34.1.jar` | Version: 1.34.0 -> 1.34.1 [integrateddynamics]
+- `integratedmekanism-1.21.1-neoforge-1.0.4-110.jar` | Version: 1.0.4 -> 1.0.4-110 [integratedmekanism]
+- `integratedterminals-1.21.1-neoforge-1.7.0-800.jar` | Version: 1.7.0 -> 1.7.0-800 [integratedterminals]
+- `integratedtunnels-1.21.1-neoforge-1.9.4-671.jar` | Version: 1.9.4 -> 1.9.4-671 [integratedtunnels]
+- `irons_spellbooks-1.21.1-3.16.3.jar` | Version: 3.16.2 -> 3.16.3 [irons_spellbooks]
+- `jei-1.21.1-neoforge-19.44.0.403.jar` | Version: 19.44.0.402 -> 19.44.0.403 [jei]
+- `lucky_block-neoforge-0.2.0+1.21.1.jar` | Version: 0.1.4 -> 0.2.0 [lucky]
+- `MoogsStructureLib-neoforge-1.21.1-3.1.0.jar` | Version: 3.0.3 -> 3.1.0 [moogs_structures]
+- `NeoAuth-1.21.1-1.0.1.jar` | Version: 1.0.0 -> 1.0.1 [neo_auth]
+- `railways-0.3.0-beta.2+neoforge-mc1.21.1.jar` | Version: 0.2.1 -> 0.3.0-beta.2 [railways]
+- `repeatable_trial_vaults-neoforge-1.21-1.0.3.jar` | Version: 1.0.2 -> 1.0.3 [repeatable_trial_vaults]
+- `rhino-2101.2.8-build.91.jar` | Version: 2101.2.7-build.85 -> 2101.2.8-build.91 [rhino]
+- `sodium-neoforge-0.8.13-beta.2+mc1.21.1.jar` | Version: 0.8.12 -> 0.8.13-beta.2 [sodium]
+- `sophisticatedstorage-1.21.1-1.5.88.2097.jar` | Version: 1.5.87.2089 -> 1.5.88.2097 [sophisticatedstorage]
+- `titanium-1.21-4.0.45.jar` | Version: 4.0.43 -> 4.0.45 [titanium]
+- `transfer_labels-0.1.9.jar` | Version: 0.1.8 -> 0.1.9 [transfer_labels]
+
 ## Still Pre-Alpha 1.0 - 2026-08-18
 
 Active mod JARs: **575**

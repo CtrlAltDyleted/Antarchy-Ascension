@@ -73,9 +73,6 @@
   "entangled": {
     "entangled_block_component": true
   },
-  "mekanismcovers": {
-    "cover_component": true
-  },
   "ftbquests": {
     "barrier": true
   },
@@ -208,6 +205,9 @@
   },
   "apotheosis": {
     "adventure": true
+  },
+  "ars_zero": {
+    "entity_mana": true
   },
   "occultism": {
     "foliot": true,
