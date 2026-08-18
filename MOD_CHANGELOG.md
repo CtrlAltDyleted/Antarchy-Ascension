@@ -2,6 +2,26 @@
 
 Permanent history of direct mod-set changes for Antarchy - Ascension.
 
+## Still Pre-Alpha 1.0 - 2026-08-18
+
+Active mod JARs: **575**
+
+### Added (0)
+
+- None
+
+### Removed (0)
+
+- None
+
+### Updated (5)
+
+- `Ad-Astra-Giselle-Addon-neoforge-1.21.1-8.1.jar` | Version: 8.0 -> 8.1 [ad_astra_giselle_addon]
+- `antarchy_ascension_companion-0.1.1.jar` | Version: 0.1.1 (File contents changed at same version) [antarchy_ascension_companion]
+- `ftb-quests-neoforge-2101.1.32.jar` | Version: 2101.1.31 -> 2101.1.32 [ftbquests]
+- `iceandfire-2.1.jar` | Version: 2.0 -> 2.1 [iceandfire]
+- `jei-1.21.1-neoforge-19.44.0.402.jar` | Version: 19.44.0.401 -> 19.44.0.402 [jei]
+
 ## Alpha 1.0 Pre-Release Expansion - 2026-08-17
 
 Active mod JARs: **575**
