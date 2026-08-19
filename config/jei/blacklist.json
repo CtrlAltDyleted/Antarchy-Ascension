@@ -44,7 +44,17 @@
   {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"productivebees:expansion_box_quark_blossom"},"type":"item_stack"}},
   {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"productivebees:advanced_quark_azalea_beehive"},"type":"item_stack"}},
   {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"productivebees:expansion_box_quark_azalea"},"type":"item_stack"}},
-  {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"occultengineering:flowing_spirit_solution"},"type":"fluid_stack"}},
   {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"alltheores:dirty_platinum_dust"},"type":"item_stack"}},
-  {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"alltheores:dirty_iridium_dust"},"type":"item_stack"}}
+  {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"alltheores:dirty_iridium_dust"},"type":"item_stack"}},
+  {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"mekanism:silver_ore"},"type":"item_stack"}},
+  {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"mekanism:deepslate_silver_ore"},"type":"item_stack"}},
+  {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"xycraft_machines:redstone_slurry"},"type":"fluid_stack"}},
+  {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"occultengineering:flowing_spirit_solution"},"type":"fluid_stack"}},
+  {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"zerocore:debugtool"},"type":"item_stack"}},
+  {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"yungscavebiomes:ice_sheet"},"type":"item_stack"}},
+  {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"yungscavebiomes:rare_ice"},"type":"item_stack"}},
+  {"hide_mode":"SINGLE","ingredient":{"ingredient":"mekmm:dirty_silver","type":"mekanism.api.chemical.ChemicalStack"}},
+  {"hide_mode":"SINGLE","ingredient":{"ingredient":"mekmm:clean_silver","type":"mekanism.api.chemical.ChemicalStack"}},
+  {"hide_mode":"SINGLE","ingredient":{"ingredient":"xycraft_world:dirty_aluminum_slurry","type":"mekanism.api.chemical.ChemicalStack"}},
+  {"hide_mode":"SINGLE","ingredient":{"ingredient":"xycraft_world:clean_aluminum_slurry","type":"mekanism.api.chemical.ChemicalStack"}}
 ]
