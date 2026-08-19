@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "///",
+    "$%$",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:smooth_stone_slab"
+    },
+    "/": {
+      "item": "minecraft:birch_planks"
+    },
+    "$": {
+      "item": "minecraft:glass"
+    },
+    "%": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "tf_dnv:alchemy_table"
+  }
+}

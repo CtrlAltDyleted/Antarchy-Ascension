@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:brown_dye"
+    },
+    [
+      {
+        "item": "interiors:white_chair"
+      },
+      {
+        "item": "interiors:orange_chair"
+      },
+      {
+        "item": "interiors:magenta_chair"
+      },
+      {
+        "item": "interiors:light_blue_chair"
+      },
+      {
+        "item": "interiors:yellow_chair"
+      },
+      {
+        "item": "interiors:lime_chair"
+      },
+      {
+        "item": "interiors:pink_chair"
+      },
+      {
+        "item": "interiors:gray_chair"
+      },
+      {
+        "item": "interiors:light_gray_chair"
+      },
+      {
+        "item": "interiors:cyan_chair"
+      },
+      {
+        "item": "interiors:purple_chair"
+      },
+      {
+        "item": "interiors:blue_chair"
+      },
+      {
+        "item": "interiors:green_chair"
+      },
+      {
+        "item": "interiors:red_chair"
+      },
+      {
+        "item": "interiors:black_chair"
+      }
+    ]
+  ],
+  "result": {
+    "id": "interiors:brown_chair",
+    "count": 1
+  }
+}

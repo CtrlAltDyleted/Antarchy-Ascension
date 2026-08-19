@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:cyan_dye"
+    },
+    [
+      {
+        "item": "interiors:white_floor_chair"
+      },
+      {
+        "item": "interiors:orange_floor_chair"
+      },
+      {
+        "item": "interiors:magenta_floor_chair"
+      },
+      {
+        "item": "interiors:light_blue_floor_chair"
+      },
+      {
+        "item": "interiors:yellow_floor_chair"
+      },
+      {
+        "item": "interiors:lime_floor_chair"
+      },
+      {
+        "item": "interiors:pink_floor_chair"
+      },
+      {
+        "item": "interiors:gray_floor_chair"
+      },
+      {
+        "item": "interiors:light_gray_floor_chair"
+      },
+      {
+        "item": "interiors:purple_floor_chair"
+      },
+      {
+        "item": "interiors:blue_floor_chair"
+      },
+      {
+        "item": "interiors:brown_floor_chair"
+      },
+      {
+        "item": "interiors:green_floor_chair"
+      },
+      {
+        "item": "interiors:red_floor_chair"
+      },
+      {
+        "item": "interiors:black_floor_chair"
+      }
+    ]
+  ],
+  "result": {
+    "id": "interiors:cyan_floor_chair",
+    "count": 1
+  }
+}
