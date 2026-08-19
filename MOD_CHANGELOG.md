@@ -2,6 +2,25 @@
 
 Permanent history of direct mod-set changes for Antarchy - Ascension.
 
+## More Mod Updates for Alpha Pre-Release 1.0 - 2026-08-19
+
+Active mod JARs: **578**
+
+### Added (4)
+
+- `cmpreviewfixer-21.1-1.1.0.jar` | Version: 21.1-1.1.0 [cmpreviewfixer]
+- `gpumemleakfix-1.21-1.8.jar` | Version: 1.8 [gpumemleakfix]
+- `memguard-1.0.4.jar` | Version: 1.0.4 [memguard]
+- `saturn-mc1.21.1-0.1.5.jar` | Version: 0.1.5 [saturn]
+
+### Removed (1)
+
+- `YungsBetterCaves-1.21.1-NeoForge-3.1.4.jar` | Version: 3.1.4 [bettercaves]
+
+### Updated (0)
+
+- None
+
 ## Still Pre-Alpha 1.0, mod updates - 2026-08-18
 
 Active mod JARs: **575**
