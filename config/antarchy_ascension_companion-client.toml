@@ -1,0 +1,9 @@
+[performance]
+	#Seconds to wait after the first playable world appears before trimming the working set.
+	# Default: 5
+	# Range: 5 ~ 300
+	firstWorldWorkingSetTrimDelaySeconds = 5
+	#Windows only. After the first world loads, trim Minecraft's own Windows working set once.
+	#This does not change the Java heap limit or free live Java objects.
+	#Pages Minecraft still needs are automatically faulted back in by Windows.
+	trimFirstWorldWorkingSet = true
