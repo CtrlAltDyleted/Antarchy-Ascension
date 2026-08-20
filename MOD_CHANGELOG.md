@@ -2,6 +2,24 @@
 
 Permanent history of direct mod-set changes for Antarchy - Ascension.
 
+## Pre Release alpha 1.0 - 2026-08-20
+
+Active mod JARs: **579**
+
+### Added (0)
+
+- None
+
+### Removed (0)
+
+- None
+
+### Updated (3)
+
+- `antarchy_ascension_companion-0.1.1.jar` | Version: 0.1.1 (File contents changed at same version) [antarchy_ascension_companion]
+- `ars_zero-1.21.1-2.0.1.jar` | Version: 2.0.0 -> 2.0.1 [ars_zero]
+- `repurposed_structures-7.5.22+1.21.1-neoforge.jar` | Version: 7.5.21 -> 7.5.22 [repurposed_structures]
+
 ## We are still Pre Alpha 1.0 - 2026-08-19
 
 Active mod JARs: **579**

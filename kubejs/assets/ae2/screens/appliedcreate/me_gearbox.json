@@ -1,0 +1,29 @@
+{
+  "includes": [
+    "../common/common.json"
+  ],
+  "generatedBackground": {
+    "width": 176,
+    "height": 130
+  },
+  "widgets": {
+    "modeToggle": {
+      "left": 8,
+      "top": 20,
+      "width": 160,
+      "height": 20
+    },
+    "speedInput": {
+      "left": 118,
+      "top": 45,
+      "width": 42,
+      "height": 16
+    },
+    "stressInput": {
+      "left": 118,
+      "top": 69,
+      "width": 42,
+      "height": 16
+    }
+  }
+}
