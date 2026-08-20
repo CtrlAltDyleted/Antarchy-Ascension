@@ -2,6 +2,36 @@
 
 Permanent history of direct mod-set changes for Antarchy - Ascension.
 
+## We are still Pre Alpha 1.0 - 2026-08-19
+
+Active mod JARs: **579**
+
+### Added (2)
+
+- `lootr_liason-1.2.2+1.21.1-neoforge.jar` | Version: 1.2.2 [lootr_liason]
+- `omnitools-1.2.2.jar` | Version: 1.2.2 [omnitools]
+
+### Removed (1)
+
+- `create_sa_curios_jetpacks-neoforge-1.21.1-1.2.4.jar` | Version: 1.2.4 [create_sa_curios_jetpacks]
+
+### Updated (14)
+
+- `antarchy_ascension_companion-0.1.1.jar` | Version: 0.1.1 (File contents changed at same version) [antarchy_ascension_companion]
+- `ApothicEnchanting-1.21.1-1.6.1.jar` | Version: 1.6.0 -> 1.6.1 [apothic_enchanting]
+- `ars_zero-1.21.1-2.0.0.jar` | Version: 2.0.0-beta4 -> 2.0.0 [ars_zero]
+- `byepregen-1.1.0.1.jar` | Version: 1.0.10.2 -> 1.1.0.1 [byepregen]
+- `ftb-quests-neoforge-2101.1.33.jar` | Version: 2101.1.32 -> 2101.1.33 [ftbquests]
+- `iceandfire-2.1.1.jar` | Version: 2.1 -> 2.1.1 [iceandfire]
+- `MoogsStructureLib-neoforge-1.21.1-3.1.1.jar` | Version: 3.1.0 -> 3.1.1 [moogs_structures]
+- `moonlight-1.21.1-3.4.1-neoforge.jar` | Version: 3.3.4 -> 3.4.1 [moonlight]
+- `sophisticatedbackpacks-1.21.1-3.25.78.2107.jar` | Version: 3.25.77.2086 -> 3.25.78.2107 [sophisticatedbackpacks]
+- `sophisticatedcore-1.21.1-1.4.89.2291.jar` | Version: 1.4.87.2270 -> 1.4.89.2291 [sophisticatedcore]
+- `sophisticatedstorage-1.21.1-1.5.91.2127.jar` | Version: 1.5.88.2097 -> 1.5.91.2127 [sophisticatedstorage]
+- `sophisticatedstorageinmotion-1.21.1-0.10.34.358.jar` | Version: 0.10.33.324 -> 0.10.34.358 [sophisticatedstorageinmotion]
+- `supplementaries-1.21.1-3.9.1-neoforge.jar` | Version: 3.8.10 -> 3.9.1 [supplementaries]
+- `uranus-3.0-beta.1.jar` | Version: 2.4.1-bugfix -> 3.0-beta.1 [uranus]
+
 ## More Mod Updates for Alpha Pre-Release 1.0 - 2026-08-19
 
 Active mod JARs: **578**
