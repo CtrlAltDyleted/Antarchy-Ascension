@@ -22,6 +22,8 @@
 !/defaultconfigs/
 !/defaultconfigs/**
 
+!/configureddefaults/
+
 !/kubejs/
 !/kubejs/**
 
@@ -96,3 +98,4 @@
 
 # Third-party OpenLoader packs are installed through their distribution projects
 /config/openloader/packs/*.zip
+/config/extraspecialhub/windows/_example_window.json
