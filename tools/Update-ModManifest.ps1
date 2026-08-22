@@ -1,4 +1,4 @@
-﻿param(
+param(
     [string]$ModsPath = ".\mods",
     [string]$ManifestPath = ".\MOD_MANIFEST.csv",
     [string]$ChangesPath = ".\MOD_CHANGES.md",
@@ -1161,26 +1161,92 @@ function Get-CommittedManifest {
 
     $GitPath = $Path -replace '^[.][\\/]', ''
     $GitPath = $GitPath -replace '\\', '/'
+    $GitSpec = "HEAD:$GitPath"
 
-    $SavedErrorActionPreference = $ErrorActionPreference
+    $StartInfo = [System.Diagnostics.ProcessStartInfo]::new()
+    $StartInfo.FileName = 'git'
+    $StartInfo.UseShellExecute = $false
+    $StartInfo.CreateNoWindow = $true
+    $StartInfo.RedirectStandardOutput = $true
+    $StartInfo.RedirectStandardError = $true
+
+    [void]$StartInfo.ArgumentList.Add('cat-file')
+    [void]$StartInfo.ArgumentList.Add('blob')
+    [void]$StartInfo.ArgumentList.Add($GitSpec)
+
+    $Process = $null
+    $OutputStream = $null
 
     try {
-        $ErrorActionPreference = 'Continue'
-        $OldText = @(& git show "HEAD:$GitPath" 2>$null)
-        $ExitCode = $LASTEXITCODE
+        $Process = [System.Diagnostics.Process]::Start($StartInfo)
+
+        if (-not $Process) {
+            return @()
+        }
+
+        $OutputStream = [System.IO.MemoryStream]::new()
+
+        $Process.StandardOutput.BaseStream.CopyTo(
+            $OutputStream
+        )
+
+        [void]$Process.StandardError.ReadToEnd()
+
+        $Process.WaitForExit()
+
+        if ($Process.ExitCode -ne 0) {
+            return @()
+        }
+
+        $BlobBytes = $OutputStream.ToArray()
+
+        if ($BlobBytes.Length -eq 0) {
+            return @()
+        }
+
+        $Offset = 0
+
+        if (
+            $BlobBytes.Length -ge 3 -and
+            $BlobBytes[0] -eq 0xEF -and
+            $BlobBytes[1] -eq 0xBB -and
+            $BlobBytes[2] -eq 0xBF
+        ) {
+            $Offset = 3
+        }
+
+        $Utf8 = [System.Text.UTF8Encoding]::new(
+            $false,
+            $true
+        )
+
+        $CsvText = $Utf8.GetString(
+            $BlobBytes,
+            $Offset,
+            $BlobBytes.Length - $Offset
+        )
+
+        if ([string]::IsNullOrWhiteSpace($CsvText)) {
+            return @()
+        }
+
+        return @(
+            $CsvText |
+                ConvertFrom-Csv
+        )
     }
     catch {
         return @()
     }
     finally {
-        $ErrorActionPreference = $SavedErrorActionPreference
-    }
+        if ($OutputStream) {
+            $OutputStream.Dispose()
+        }
 
-    if ($ExitCode -ne 0 -or $OldText.Count -eq 0) {
-        return @()
+        if ($Process) {
+            $Process.Dispose()
+        }
     }
-
-    return @($OldText | ConvertFrom-Csv)
 }
 
 function Get-ExistingManifest {
@@ -1590,8 +1656,14 @@ else {
     }
 
     Write-Host "`nUPDATED: $($Updated.Count)" -ForegroundColor Yellow
-    foreach ($Mod in ($Updated | Sort-Object Name)) {
-        Write-Host "  ~ $($Mod.Name): $($Mod.OldVersion) -> $($Mod.NewVersion)"
+
+    foreach ($Mod in ($Updated | Sort-Object NewJar)) {
+        if ($Mod.OldReportVersion -ne $Mod.NewReportVersion) {
+            Write-Host "  ~ $($Mod.NewJar) | Version: $($Mod.OldReportVersion) -> $($Mod.NewReportVersion)"
+        }
+        else {
+            Write-Host "  ~ $($Mod.NewJar) | Version: $($Mod.NewReportVersion) ($($Mod.Reason))"
+        }
     }
 }
 

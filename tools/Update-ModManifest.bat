@@ -26,7 +26,7 @@ echo.
 echo === ANTARCHY MOD MANIFEST ===
 echo.
 
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%SCRIPT%"
+pwsh.exe -NoProfile -ExecutionPolicy Bypass -File "%SCRIPT%"
 set "EXITCODE=%ERRORLEVEL%"
 
 if not "%EXITCODE%"=="0" (

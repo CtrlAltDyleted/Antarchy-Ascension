@@ -44,14 +44,14 @@ echo.
 echo Refreshing the current manifest and local change report first...
 echo.
 
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%MANIFEST_SCRIPT%"
+pwsh.exe -NoProfile -ExecutionPolicy Bypass -File "%MANIFEST_SCRIPT%"
 if errorlevel 1 goto :error
 
 echo.
 echo Writing Git-tracked mod changelog entry...
 echo.
 
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%CHANGELOG_SCRIPT%" -Label "%CHANGELOG_LABEL%"
+pwsh.exe -NoProfile -ExecutionPolicy Bypass -File "%CHANGELOG_SCRIPT%" -Label "%CHANGELOG_LABEL%"
 if errorlevel 1 goto :error
 
 echo.
