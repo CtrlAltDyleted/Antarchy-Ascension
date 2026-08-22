@@ -5,4 +5,4 @@ logUntranslatedItemTagWarnings = "SILENCED"
 #Allowed Values: SILENCED, DEV_SHORT, DEV_VERBOSE, PROD_SHORT, PROD_VERBOSE
 logLegacyTagWarnings = "DEV_SHORT"
 #Set this to true to enable showing debug information about attributes on an item when advanced tooltips is on.
-attributeAdvancedTooltipDebugInfo = true
+attributeAdvancedTooltipDebugInfo = false

@@ -13,7 +13,7 @@
 	"isTooltipAttackRangeEnabled": true,
 	"isTooltipAttackRangeReformat": true,
 	"weaponSwingSoundVolume": 100,
-	"isDebugOBBEnabled": true,
+	"isDebugOBBEnabled": false,
 	"swingThruGrassBlacklist": "farmersdelight",
 	"mineWithWeaponBlacklist": "",
 	"mineWithWeaponWhitelist": "",

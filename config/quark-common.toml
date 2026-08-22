@@ -275,7 +275,7 @@
 	"Easy Transferring" = true
 	"Expanded Item Interactions" = true
 	"Hotbar Changer" = true
-	"Inventory Sorting" = true
+	"Inventory Sorting" = false
 	"Item Sharing" = true
 	"Quick Armor Swapping" = true
 
@@ -311,11 +311,11 @@
 		"Animation Time" = 7.0
 
 	[management.inventory_sorting]
-		"Enable Player Inventory" = true
-		"Enable Player Inventory In Chests" = true
-		"Enable Chests" = true
+		"Enable Player Inventory" = false
+		"Enable Player Inventory In Chests" = false
+		"Enable Chests" = false
 		#Play a click when sorting inventories using keybindings
-		"Satisfying Click" = true
+		"Satisfying Click" = false
 
 	[management.item_sharing]
 		#In ticks.
@@ -1619,11 +1619,11 @@
 
 	[client.usage_ticker]
 		#Switch the armor display to the off hand side and the hand display to the main hand side
-		Invert = false
+		Invert = true
 		"Shift Left" = 0
 		"Shift Right" = 0
-		"Enable Main Hand" = true
-		"Enable Off Hand" = true
+		"Enable Main Hand" = false
+		"Enable Off Hand" = false
 		"Enable Armor" = true
 
 	[client.uses_for_curses]
