@@ -27,10 +27,10 @@
 	#X Position of the button on the multiplayer screen
 	# Default: 6
 	# Range: > 0
-	xPos = 6
+	xPos = 1
 	#Y Position of the button on the multiplayer screen
 	# Default: 6
 	# Range: > 0
-	yPos = 6
+	yPos = 10
 	#True if the button can be dragged to a new position
 	draggable = true

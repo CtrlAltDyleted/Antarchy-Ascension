@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "half=lower,requires_source=false,waterlogged=false": {
+      "model": "ars_additions:block/warp_nexus"
+    },
+    "half=lower,requires_source=false,waterlogged=true": {
+      "model": "ars_additions:block/warp_nexus"
+    },
+    "half=lower,requires_source=true,waterlogged=false": {
+      "model": "ars_additions:block/warp_nexus"
+    },
+    "half=lower,requires_source=true,waterlogged=true": {
+      "model": "ars_additions:block/warp_nexus"
+    },
+    "half=upper,requires_source=false,waterlogged=false": {
+      "model": "ars_additions:block/warp_nexus"
+    },
+    "half=upper,requires_source=false,waterlogged=true": {
+      "model": "ars_additions:block/warp_nexus"
+    },
+    "half=upper,requires_source=true,waterlogged=false": {
+      "model": "ars_additions:block/warp_nexus"
+    },
+    "half=upper,requires_source=true,waterlogged=true": {
+      "model": "ars_additions:block/warp_nexus"
+    }
+  }
+}

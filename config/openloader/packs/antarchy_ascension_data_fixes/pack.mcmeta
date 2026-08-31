@@ -2,5 +2,41 @@
   "pack": {
     "pack_format": 48,
     "description": "Antarchy - Ascension data and compatibility fixes"
+  },
+  "filter": {
+    "block": [
+      {
+        "namespace": "^apotheosis$",
+        "path": "^enchanting_stats/skull_candle\\.json$"
+      },
+      {
+        "namespace": "^blueprint$",
+        "path": "^data_maps/dimension/modded_biome_slice_sizes\\.json$"
+      },
+      {
+        "namespace": "^create_dragons_plus$",
+        "path": "^data_maps/block/air_current_block_interaction/blasting\\.json$"
+      },
+      {
+        "namespace": "^create_dragons_plus$",
+        "path": "^data_maps/block/air_current_block_interaction/freezing\\.json$"
+      },
+      {
+        "namespace": "^create_dragons_plus$",
+        "path": "^data_maps/block/air_current_block_interaction/smoking\\.json$"
+      },
+      {
+        "namespace": "^create_dragons_plus$",
+        "path": "^data_maps/block/air_current_block_interaction/splashing\\.json$"
+      },
+      {
+        "namespace": "^create_dragons_plus$",
+        "path": "^data_maps/block/fragile_fluid_tank/lava\\.json$"
+      },
+      {
+        "namespace": "^create_dragons_plus$",
+        "path": "^data_maps/block/fragile_fluid_tank/water\\.json$"
+      }
+    ]
   }
 }

@@ -1,0 +1,178 @@
+{
+  "ui.focus": {
+    "category": "ui",
+    "subtitle": "esc.subtitle.ui.focus",
+    "sounds": [
+      {
+        "name": "minecraft:ui.button.click",
+        "type": "event"
+      }
+    ],
+    "replace": true
+  },
+  "ui.focus_alt": {
+    "category": "ui",
+    "subtitle": "esc.subtitle.ui.focus_alt",
+    "sounds": [
+      {
+        "name": "minecraft:ui.button.click",
+        "type": "event"
+      }
+    ],
+    "replace": true
+  },
+  "ui.select": {
+    "category": "ui",
+    "subtitle": "esc.subtitle.ui.select",
+    "sounds": [
+      {
+        "name": "minecraft:ui.button.click",
+        "type": "event"
+      }
+    ],
+    "replace": true
+  },
+  "ui.confirm": {
+    "category": "ui",
+    "subtitle": "esc.subtitle.ui.confirm",
+    "sounds": [
+      {
+        "name": "minecraft:ui.button.click",
+        "type": "event"
+      }
+    ],
+    "replace": true
+  },
+  "ui.back": {
+    "category": "ui",
+    "subtitle": "esc.subtitle.ui.back",
+    "sounds": [
+      {
+        "name": "minecraft:ui.button.click",
+        "type": "event"
+      }
+    ],
+    "replace": true
+  },
+  "ui.close": {
+    "category": "ui",
+    "subtitle": "esc.subtitle.ui.close",
+    "sounds": [
+      {
+        "name": "minecraft:ui.button.click",
+        "type": "event"
+      }
+    ],
+    "replace": true
+  },
+  "ui.carousel_left": {
+    "category": "ui",
+    "subtitle": "esc.subtitle.ui.carousel_left",
+    "sounds": [
+      {
+        "name": "minecraft:ui.button.click",
+        "type": "event"
+      }
+    ],
+    "replace": true
+  },
+  "ui.carousel_right": {
+    "category": "ui",
+    "subtitle": "esc.subtitle.ui.carousel_right",
+    "sounds": [
+      {
+        "name": "minecraft:ui.button.click",
+        "type": "event"
+      }
+    ],
+    "replace": true
+  },
+  "ui.move": {
+    "category": "ui",
+    "subtitle": "esc.subtitle.ui.move",
+    "sounds": [
+      {
+        "name": "minecraft:ui.button.click",
+        "type": "event"
+      }
+    ],
+    "replace": true
+  },
+  "ui.expand": {
+    "category": "ui",
+    "subtitle": "esc.subtitle.ui.expand",
+    "sounds": [
+      {
+        "name": "minecraft:ui.button.click",
+        "type": "event"
+      }
+    ],
+    "replace": true
+  },
+  "ui.collapse": {
+    "category": "ui",
+    "subtitle": "esc.subtitle.ui.collapse",
+    "sounds": [
+      {
+        "name": "minecraft:ui.button.click",
+        "type": "event"
+      }
+    ],
+    "replace": true
+  },
+  "ui.layout_switch": {
+    "category": "ui",
+    "subtitle": "esc.subtitle.ui.layout_switch",
+    "sounds": [
+      {
+        "name": "minecraft:ui.button.click",
+        "type": "event"
+      }
+    ],
+    "replace": true
+  },
+  "ui.layout_confirm": {
+    "category": "ui",
+    "subtitle": "esc.subtitle.ui.layout_confirm",
+    "sounds": [
+      {
+        "name": "minecraft:ui.button.click",
+        "type": "event"
+      }
+    ],
+    "replace": true
+  },
+  "ui.error": {
+    "category": "ui",
+    "subtitle": "esc.subtitle.ui.error",
+    "sounds": [
+      {
+        "name": "minecraft:ui.button.click",
+        "type": "event"
+      }
+    ],
+    "replace": true
+  },
+  "ui.unavailable": {
+    "category": "ui",
+    "subtitle": "esc.subtitle.ui.unavailable",
+    "sounds": [
+      {
+        "name": "minecraft:ui.button.click",
+        "type": "event"
+      }
+    ],
+    "replace": true
+  },
+  "ui.notification": {
+    "category": "ui",
+    "subtitle": "esc.subtitle.ui.notification",
+    "sounds": [
+      {
+        "name": "minecraft:ui.button.click",
+        "type": "event"
+      }
+    ],
+    "replace": true
+  }
+}

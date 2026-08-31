@@ -1,0 +1,168 @@
+[waterWheelShaderLod]
+	#Use lower-detail rotating water-wheel models when a shader pack disables Flywheel.
+	enabled = true
+	#Full-detail render distance in blocks. Medium LOD is used beyond this distance.
+	# Default: 16
+	# Range: 0 ~ 128
+	fullDetailDistance = 16
+	#Low-detail render distance in blocks. Values below fullDetailDistance are clamped up at runtime.
+	# Default: 40
+	# Range: 0 ~ 128
+	lowDetailDistance = 40
+
+[fanParticles]
+	# Default: 96
+	# Range: 0 ~ 4096
+	maxPerTick = 96
+	# Default: 16
+	# Range: 1 ~ 512
+	nearDistance = 16
+	# Default: 32
+	# Range: 1 ~ 1024
+	midDistance = 32
+	# Default: 80
+	# Range: 0 ~ 100
+	nearPercent = 80
+	# Default: 50
+	# Range: 0 ~ 100
+	midPercent = 50
+	# Default: 25
+	# Range: 0 ~ 100
+	farPercent = 25
+
+[chuteParticles]
+	# Default: 16
+	# Range: 0 ~ 4096
+	maxPerTick = 16
+
+[linkedOutlines]
+	# Default: 4
+	# Range: 1 ~ 20
+	rebuildIntervalTicks = 4
+	# Default: 16
+	# Range: 1 ~ 128
+	prewarmBoxesPerFrame = 16
+	# Default: 2048
+	# Range: 64 ~ 16384
+	maxCachedBoxes = 2048
+
+[belt]
+	#Enable stable per-item distance LOD for transported belt items.
+	itemRenderLodEnabled = true
+	#Distance where stable medium-density item sampling starts.
+	# Default: 32
+	# Range: 1 ~ 512
+	itemRenderMidDistance = 32
+	#Maximum distance for transported belt item models.
+	# Default: 64
+	# Range: 1 ~ 1024
+	itemRenderFarDistance = 64
+	#Distance where stable sparse item sampling starts.
+	# Default: 48
+	# Range: 1 ~ 768
+	itemRenderFarLodDistance = 48
+	#Use a cached single-quad far LOD for stable flat item models.
+	#Foil, component-sensitive, 3D, custom, package, and Flerovium-rendered items use Create's original renderer.
+	itemFarStaticModelEnabled = true
+	#Distance where eligible flat transported items switch to the cached static far model.
+	# Default: 28
+	# Range: 1 ~ 512
+	itemFarStaticModelDistance = 28
+	#Stable percentage of belt items retained in the medium LOD tier.
+	# Default: 50
+	# Range: 0 ~ 100
+	itemRenderMidPercent = 50
+	#Stable percentage of belt items retained in the sparse LOD tier.
+	# Default: 20
+	# Range: 0 ~ 100
+	itemRenderFarPercent = 20
+	#Maximum distance for Create's flat fake shadow below transported items.
+	# Default: 24
+	# Range: 0 ~ 512
+	itemFakeShadowDistance = 24
+	#Omit Create's flat transported-item shadow whenever a shaderpack is active.
+	skipItemFakeShadowsWithShaders = true
+	#Maximum distance for extra visual copies of large item stacks.
+	# Default: 12
+	# Range: 0 ~ 64
+	itemStackCopiesDistance = 12
+	#Maximum distance for transported item models in Iris shader shadow passes.
+	#Set to 0 to omit transported item models from shader shadow maps.
+	# Default: 12
+	# Range: 0 ~ 256
+	itemShaderShadowDistance = 12
+	#Maximum distance for fallback-rendered belt bodies in Iris shadow passes.
+	#Ignored while Flywheel visualization is active; set to 0 to omit fallback belt bodies.
+	# Default: 16
+	# Range: 0 ~ 256
+	bodyShaderShadowDistance = 16
+	#Cache stable fallback-rendered belt bodies in persistent GPU vertex buffers.
+	#Uses Sodium's active BufferBuilder layout and preserves Iris extended vertex attributes.
+	bodyMainVboEnabled = true
+	#Maximum native and GPU memory used by cached belt-body meshes.
+	# Default: 64
+	# Range: 8 ~ 512
+	bodyMainVboMaxCacheMiB = 64
+	#Soft per-frame budget for building and uploading belt-body VBOs.
+	# Default: 2.0
+	# Range: 0.25 ~ 16.0
+	bodyMainVboMaxUploadMillisPerFrame = 2.0
+
+[kineticAudio]
+	# Default: 48
+	# Range: 0 ~ 512
+	maxDistance = 48
+	# Default: 4
+	# Range: 1 ~ 20
+	farIntervalTicks = 4
+
+[steamJetParticles]
+	# Default: 96
+	# Range: 0 ~ 4096
+	maxPerTick = 96
+	# Default: 16
+	# Range: 1 ~ 512
+	nearDistance = 16
+	# Default: 32
+	# Range: 1 ~ 1024
+	midDistance = 32
+	# Default: 80
+	# Range: 0 ~ 100
+	nearPercent = 80
+	# Default: 50
+	# Range: 0 ~ 100
+	midPercent = 50
+	# Default: 25
+	# Range: 0 ~ 100
+	farPercent = 25
+	#Queue steam jet sounds only inside this distance. Set to 0 to disable sound culling.
+	# Default: 96
+	# Range: 0 ~ 1024
+	soundDistance = 96
+
+[chainConveyorRender]
+	#Enable Chain Conveyor span culling, light caching, and far-distance geometry LOD.
+	enabled = true
+	#Use Sodium's bulk vertex writer for Chain Conveyor spans when it is available.
+	directVertexWriter = true
+	#Render one double-sided face instead of two beyond Create's 48-block chain MIP distance.
+	farSinglePlane = true
+	#Skip a chain span when its complete bounds are behind the main camera plane.
+	behindCameraCulling = true
+	#Maximum camera-to-chain distance in blocks.
+	# Default: 192
+	# Range: 32 ~ 512
+	maxRenderDistance = 192
+	#Maximum distance for Chain Conveyor spans in shader shadow passes.
+	#Set to 0 to omit their shadows; wheels and transported packages are unaffected.
+	# Default: 0
+	# Range: 0 ~ 256
+	shadowRenderDistance = 0
+
+[kineticMachineVbo]
+	#Enable persistent VBO rendering for mixers, mechanical presses, and mechanical crafters.
+	#Animation remains exact through per-instance matrices; dynamic UVs stay on Create's original path.
+	enabled = true
+	#Render mixers, mechanical presses, and mechanical crafters in Iris shadow passes.
+	#Disabled by default to omit their complete block-entity renderers from shader shadows.
+	renderShaderShadows = false

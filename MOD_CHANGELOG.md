@@ -2,17 +2,132 @@
 
 Permanent history of direct mod-set changes for Antarchy - Ascension.
 
-## Pre Release alpha 1.0 - 2026-08-20
+## Alpha 1.0 - 2026-08-30
+
+Active mod JARs: **598**
+
+### Added (30)
+
+- `AdvancedCoreInfo-neoforge-1.21.1-1.1.0.jar` | Version: 1.1.0 [aci]
+- `ae2_overclocked-1.2.3-fix2-beta1-1.21.1Neoforge.jar` | Version: 1.2.3-fix2-beta1 [ae2_overclocked]
+- `ae2cs-1.21.1-1.2.1.jar` | Version: 1.2.1 [ae2cs]
+- `ae2lt-2.1.0-beta.2.jar` | Version: 2.1.0-beta.2 [ae2lt]
+- `ae2ltpp-1.2.0-beta.1.jar` | Version: 1.2.0-beta.1 [ae2ltpp]
+- `ae2omnicells-1.21.1-neoforge-1.1.6.jar` | Version: 1.1.6 [ae2omnicells]
+- `ae2tooltipfix-neoforge-1.0.0+1.21.1.jar` | Version: 1.0.0 [ae2tooltipfix]
+- `carryon-neoforge-1.21.1-2.2.6.13.jar` | Version: 2.2.6.13 [carryon]
+- `CenteredCrosshair-1.0.2-NeoForge-1.21.1.jar` | Version: 1.0.2 [centeredcrosshair]
+- `clickadv-1.21-3.8.jar` | Version: 3.8 [clickadv]
+- `connectedglass-1.1.14-neoforge-mc1.21.jar` | Version: 1.1.14 [connectedglass]
+- `Evolved Mekanism-1.21.1-1.2.1-fix3.jar` | Version: 1.2.1-fix3 [evolvedmekanism]
+- `extraspecialhub-1.0.0+1.21.1-neoforge.jar` | Version: 1.0.0 [extraspecialhub]
+- `farsight-1.21.1-5.1.jar` | Version: 5.1 [farsight_view]
+- `fusion-1.3.14a-neoforge-mc1.21.1.jar` | Version: 1.3.14a [fusion]
+- `igleelib-1.21.1-1.2.7.jar` | Version: 1.2.7 [igleelib]
+- `JadeAddons-1.21.1-NeoForge-6.1.0.jar` | Version: 6.1.0 [jadeaddons]
+- `leaky-1.21-3.4.jar` | Version: 3.4 [leaky]
+- `LegendaryTooltips-1.21.1-neoforge-1.5.5.jar` | Version: 1.5.5 [legendarytooltips]
+- `ltxec-neoforge-1.0.1.jar` | Version: 1.0.1 [ltxec]
+- `me_beam_former-1.21.1-1.3.0.jar` | Version: 1.3.0 [me_beam_former]
+- `MekanismEnchantableMekasuit-1.21.1-1.0.3.jar` | Version: 1.0.3 [enchantablemekasuit]
+- `Prism-1.21.1-neoforge-1.0.11.jar` | Version: 1.0.11 [prism]
+- `simple_weather-1.0.13-hotfix.jar` | Version: 1.0.13-hotfix [simple_weather]
+- `StellarCreateOptimization-1.0.3-NeoForge-1.21.1.jar` | Version: 1.0.3 [stellarcreateoptimization]
+- `structurify-neoforge-2.0.34+mc1.21.1.jar` | Version: 2.0.34 [structurify]
+- `swiftgen-neoforge-1.21.1.jar` | Version: 1.0.0 [swiftgen]
+- `thunderbolt-2.0.0-beta.2.jar` | Version: 2.0.0-beta.2 [thunderbolt]
+- `ultimine_rewind-2.1.0.jar` | Version: 2.1.0 [ultimine_rewind]
+- `wishfulrecipes-1.21.1-neoforge-1.jar` | Version: 1 [wishfulrecipes]
+
+### Removed (11)
+
+- `AdvancedPeripherals-1.21.1-0.8.0a.jar` | Version: 0.8.0a [advancedperipherals]
+- `byepregen-1.1.0.1.jar` | Version: 1.1.0.1 [byepregen]
+- `cc-tweaked-1.21.1-forge-1.120.2.jar` | Version: 1.120.2 [computercraft]
+- `classicperipherals-neoforge-1.21.1-0.6.2.jar` | Version: 0.6.2 [classicperipherals]
+- `decocraft_nature-1.0.7-1.21.1-neoforge.jar` | Version: 1.0.7 [decocraft_nature]
+- `decocraft-3.0.11-1.21.1-neoforge.jar` | Version: 3.0.11 [decocraft]
+- `jeioptimizer-1.21.1-1.1.0-19.42.jar` | Version: 1.1.0-19.42 [jeioptimizer]
+- `mahou_tsukai_combat-1.0.2-neoforge-1.21.1.jar` | Version: 1.0.2 [mahou_tsukai_combat]
+- `mahoutsukai-1.21.1-v1.36.27.jar` | Version: v1.36.27 [mahoutsukai]
+- `netherwartblock-neoforge-1.21.1-7.2.jar` | Version: 7.2 [netherwartblock]
+- `saturn-mc1.21.1-0.1.5.jar` | Version: 0.1.5 [saturn]
+
+### Updated (69)
+
+- `Ad-Astra-Giselle-Addon-neoforge-1.21.1-8.3.jar` | Version: 8.1 -> 8.3 [ad_astra_giselle_addon]
+- `adastra-1.21.1-1.16.22-neoforge.jar` | Version: 1.16.14 -> 1.16.22 [ad_astra]
+- `AdvancedLootInfo-neoforge-1.21.1-2.1.0.jar` | Version: 1.12.0 -> 2.1.0 [ali]
+- `ae2importexportcard-1.21.1-1.6.0.jar` | Version: 1.5.0 -> 1.6.0 [ae2importexportcard]
+- `amendments-1.21-2.1.9-neoforge.jar` | Version: 2.1.7 -> 2.1.9 [amendments]
+- `antarchy_ascension_companion-0.1.0-alpha.jar` | Version: 0.1.1 -> 0.1.0-alpha [antarchy_ascension_companion]
+- `applied_extended_crafting-1.2.0.jar` | Version: 1.1.2 -> 1.2.0 [applied_extended_crafting]
+- `appliedsoul-1.21.1-2.1.0-hotfix.jar` | Version: 2.0.3 -> 2.1.0-hotfix [appliedsoul]
+- `ars_nouveau-1.21.1-5.13.1.jar` | Version: 5.13.0 -> 5.13.1 [ars_nouveau]
+- `ars_unification-1.2.20.jar` | Version: 1.2.19 -> 1.2.20 [ars_unification]
+- `ars_zero-1.21.1-2.0.2.jar` | Version: 2.0.1 -> 2.0.2 [ars_zero]
+- `artifacts-neoforge-13.2.3.jar` | Version: 13.2.1 -> 13.2.3 [artifacts]
+- `baguettelib-1.21.1-NeoForge-2.0.6.jar` | Version: 2.0.3 -> 2.0.6 [baguettelib]
+- `borderlesswindow-1.6.0.jar` | Version: 1.5.1 -> 1.6.0 [borderlesswindow]
+- `calmtheleaks-1.2.4+1.21.1-neoforge.jar` | Version: 1.2.3 -> 1.2.4 [calmtheleaks]
+- `chunksending-1.21-3.9.jar` | Version: 3.7 -> 3.9 [chunksending]
+- `collapsible_groups-neoforge-1.21.1-1.4.4.jar` | Version: 1.4.3 -> 1.4.4 [collapsible_groups]
+- `ConstructionSticks-1.21.1-1.5.0.jar` | Version: 1.4.2 -> 1.5.0 [constructionstick]
+- `copycats-3.0.8+mc.1.21.1-neoforge.jar` | Version: 3.0.4 -> 3.0.8 [copycats]
+- `craftingtweaks-neoforge-1.21.1-21.1.11.jar` | Version: 21.1.10 -> 21.1.11 [craftingtweaks]
+- `create-enchantment-industry-2.5.3b.jar` | Version: 2.5.2 -> 2.5.3b [create_enchantment_industry]
+- `CreativeCore_NEOFORGE_v2.13.44_mc1.21.1.jar` | Version: v2.13.43 -> v2.13.44 [creativecore]
+- `cupboard-1.21.1-4.1.jar` | Version: 4.0 -> 4.1 [cupboard]
+- `cyclopscore-1.21.1-neoforge-1.29.3.jar` | Version: 1.29.2 -> 1.29.3 [cyclopscore]
+- `enchdesc-neoforge-1.21.1-21.1.11.jar` | Version: 21.1.10 -> 21.1.11 [enchdesc]
+- `evilcraft-1.21.1-neoforge-1.2.94.jar` | Version: 1.2.93 -> 1.2.94 [evilcraft]
+- `extraspecialcore-2.0.1+1.21.1-neoforge.jar` | Version: 1.3.0 -> 2.0.1 [extraspecialcore]
+- `extraspeciallib-1.0.1+1.21.1-neoforge.jar` | Version: 1.0.0 -> 1.0.1 [extraspeciallib]
+- `fancymenu_neoforge_3.9.12_MC_1.21.1.jar` | Version: 3.9.10 -> 3.9.12 [fancymenu]
+- `FarmersDelight-1.21.1-1.3.4.jar` | Version: 1.3.3 -> 1.3.4 [farmersdelight]
+- `forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar` | Version: 0.116.15+2.3.4 -> 0.116.15+2.3.5 [fabric_api]
+- `ftb-quests-neoforge-2101.1.34.jar` | Version: 2101.1.33 -> 2101.1.34 [ftbquests]
+- `ftb-teams-neoforge-2101.1.11.jar` | Version: 2101.1.10 -> 2101.1.11 [ftbteams]
+- `iceandfire-2.1.2.jar` | Version: 2.1.1 -> 2.1.2 [iceandfire]
+- `ImmediatelyFast-NeoForge-1.6.13+1.21.1.jar` | Version: 1.6.12 -> 1.6.13 [immediatelyfast]
+- `integratedcrafting-1.21.1-neoforge-1.5.0-646.jar` | Version: 1.4.7-615 -> 1.5.0-646 [integratedcrafting]
+- `integrateddynamics-1.21.1-neoforge-1.35.0-1995.jar` | Version: 1.34.1 -> 1.35.0-1995 [integrateddynamics]
+- `integratedmekanism-1.21.1-neoforge-1.1.0.jar` | Version: 1.0.4-110 -> 1.1.0 [integratedmekanism]
+- `integratedterminals-1.21.1-neoforge-1.8.0-841.jar` | Version: 1.7.0-800 -> 1.8.0-841 [integratedterminals]
+- `integratedtunnels-1.21.1-neoforge-1.10.0-736.jar` | Version: 1.9.4-671 -> 1.10.0-736 [integratedtunnels]
+- `inventorypets-2.2.9.jar` | Version: 2.2.8 -> 2.2.9 [inventorypets]
+- `IrisSearch-1.6.1-neoforge.jar` | Version: 1.6.0 -> 1.6.1 [iris_search]
+- `jei-1.21.1-neoforge-19.51.0.417.jar` | Version: 19.44.0.403 -> 19.51.0.417 [jei]
+- `JustEnoughMekanismMultiblocks-1.21.1-7.18.jar` | Version: 7.16 -> 7.18 [jei_mekanism_multiblocks]
+- `kubejs-neoforge-2101.7.2-build.374.jar` | Version: 2101.7.2-build.368 -> 2101.7.2-build.374 [kubejs]
+- `L_Ender's Cataclysm 1.21.1-3.33.jar` | Version: 3.32 -> 3.33 [cataclysm]
+- `little-big-redstone-1.9.10-1.21.1.jar` | Version: 1.9.8 -> 1.9.10 [little_big_redstone]
+- `lootr-neoforge-1.21.1-1.11.38.124.jar` | Version: 1.11.38.123 -> 1.11.38.124 [lootr]
+- `mekmm-1.21.1-1.4.1.jar` | Version: 1.4.0 -> 1.4.1 [mekmm]
+- `modernfix-neoforge-5.27.24+mc1.21.1.jar` | Version: 5.27.20 -> 5.27.24 [modernfix]
+- `ModularBees-1.21.1-3.4-neoforge.jar` | Version: 3.3 -> 3.4 [modularbees]
+- `MoogsStructureLib-neoforge-1.21.1-3.1.2.jar` | Version: 3.1.1 -> 3.1.2 [moogs_structures]
+- `moonlight-1.21.1-3.5.2-neoforge.jar` | Version: 3.4.1 -> 3.5.2 [moonlight]
+- `morph-neoforge-1.21.1-1.1.0.jar` | Version: 1.0.0 -> 1.1.0 [morph]
+- `occultism-1.21.1-neoforge-1.224.4.jar` | Version: 1.224.2 -> 1.224.4 [occultism]
+- `polymorph_plus-neoforge-1.3.1+1.21.1.jar` | Version: 1.2.1 -> 1.3.1 [polymorph_plus]
+- `rebind_narrator-1.21.1-neoforge-2026.08.29.jar` | Version: 2025.12.23 -> 2026.08.29 [rebind_narrator]
+- `reliquified_artifacts-1.21.1-1.0.8.jar` | Version: 1.0.7 -> 1.0.8 [reliquified_artifacts]
+- `rftoolsbuilder-1.21-7.0.6.jar` | Version: 7.0.5 -> 7.0.6 [rftoolsbuilder]
+- `sodium-neoforge-0.8.13+mc1.21.1.jar` | Version: 0.8.13-beta.2 -> 0.8.13 [sodium]
+- `sophisticated_jei_index-1.2.2+1.21.1.jar` | Version: 1.2.1 -> 1.2.2 [sophisticated_jei_index]
+- `sophisticatedcore-1.21.1-1.4.90.2299.jar` | Version: 1.4.89.2291 -> 1.4.90.2299 [sophisticatedcore]
+- `supplementaries-1.21.1-3.9.6-neoforge.jar` | Version: 3.9.1 -> 3.9.6 [supplementaries]
+- `tesseract-api-neoforge-1.12.16-1.21.1.jar` | Version: 1.12.15 -> 1.12.16 [tesseract_api]
+- `titanium-1.21-4.0.50.jar` | Version: 4.0.45 -> 4.0.50 [titanium]
+- `torchmaster-neoforge-1.21.1-21.1.10.jar` | Version: 21.1.9 -> 21.1.10 [torchmaster]
+- `twilight_forest_final_boss-2.1.2+4.8.3345+1.21.1.jar` | Version: 2.1.0+4.7.3196 -> 2.1.2+4.8.3345 [twilight_forest_final_boss]
+- `xaeroworldmap-neoforge-1.21.1-1.45.0.jar` | Version: 1.44.2 -> 1.45.0 [xaeroworldmap]
+- `YungsApi-1.21.1-NeoForge-5.1.8.jar` | Version: 5.1.6 -> 5.1.8 [yungsapi]
+
+## Alpha 1.0 Development - 2026-08-20
 
 Active mod JARs: **579**
-
-### Added (0)
-
-- None
-
-### Removed (0)
-
-- None
 
 ### Updated (3)
 
@@ -20,17 +135,22 @@ Active mod JARs: **579**
 - `ars_zero-1.21.1-2.0.1.jar` | Version: 2.0.0 -> 2.0.1 [ars_zero]
 - `repurposed_structures-7.5.22+1.21.1-neoforge.jar` | Version: 7.5.21 -> 7.5.22 [repurposed_structures]
 
-## We are still Pre Alpha 1.0 - 2026-08-19
+## Alpha 1.0 Development - 2026-08-19
 
 Active mod JARs: **579**
 
-### Added (2)
+### Added (6)
 
+- `cmpreviewfixer-21.1-1.1.0.jar` | Version: 21.1-1.1.0 [cmpreviewfixer]
+- `gpumemleakfix-1.21-1.8.jar` | Version: 1.8 [gpumemleakfix]
+- `memguard-1.0.4.jar` | Version: 1.0.4 [memguard]
+- `saturn-mc1.21.1-0.1.5.jar` | Version: 0.1.5 [saturn]
 - `lootr_liason-1.2.2+1.21.1-neoforge.jar` | Version: 1.2.2 [lootr_liason]
 - `omnitools-1.2.2.jar` | Version: 1.2.2 [omnitools]
 
-### Removed (1)
+### Removed (2)
 
+- `YungsBetterCaves-1.21.1-NeoForge-3.1.4.jar` | Version: 3.1.4 [bettercaves]
 - `create_sa_curios_jetpacks-neoforge-1.21.1-1.2.4.jar` | Version: 1.2.4 [create_sa_curios_jetpacks]
 
 ### Updated (14)
@@ -50,41 +170,18 @@ Active mod JARs: **579**
 - `supplementaries-1.21.1-3.9.1-neoforge.jar` | Version: 3.8.10 -> 3.9.1 [supplementaries]
 - `uranus-3.0-beta.1.jar` | Version: 2.4.1-bugfix -> 3.0-beta.1 [uranus]
 
-## More Mod Updates for Alpha Pre-Release 1.0 - 2026-08-19
-
-Active mod JARs: **578**
-
-### Added (4)
-
-- `cmpreviewfixer-21.1-1.1.0.jar` | Version: 21.1-1.1.0 [cmpreviewfixer]
-- `gpumemleakfix-1.21-1.8.jar` | Version: 1.8 [gpumemleakfix]
-- `memguard-1.0.4.jar` | Version: 1.0.4 [memguard]
-- `saturn-mc1.21.1-0.1.5.jar` | Version: 0.1.5 [saturn]
-
-### Removed (1)
-
-- `YungsBetterCaves-1.21.1-NeoForge-3.1.4.jar` | Version: 3.1.4 [bettercaves]
-
-### Updated (0)
-
-- None
-
-## Still Pre-Alpha 1.0, mod updates - 2026-08-18
+## Alpha 1.0 Development - 2026-08-18
 
 Active mod JARs: **575**
 
-### Added (0)
+### Updated (33)
 
-- None
-
-### Removed (0)
-
-- None
-
-### Updated (30)
-
-- `AdvancedPeripherals-1.21.1-0.8.0a.jar` | Version: 0.7.62b -> 0.8.0a [advancedperipherals]
+- `Ad-Astra-Giselle-Addon-neoforge-1.21.1-8.1.jar` | Version: 8.0 -> 8.1 [ad_astra_giselle_addon]
 - `antarchy_ascension_companion-0.1.1.jar` | Version: 0.1.1 (File contents changed at same version) [antarchy_ascension_companion]
+- `ftb-quests-neoforge-2101.1.32.jar` | Version: 2101.1.31 -> 2101.1.32 [ftbquests]
+- `iceandfire-2.1.jar` | Version: 2.0 -> 2.1 [iceandfire]
+- `jei-1.21.1-neoforge-19.44.0.403.jar` | Version: 19.44.0.401 -> 19.44.0.403 [jei]
+- `AdvancedPeripherals-1.21.1-0.8.0a.jar` | Version: 0.7.62b -> 0.8.0a [advancedperipherals]
 - `appliedschematicannon-1.0.4.jar` | Version: 1.0.3 -> 1.0.4 [appliedschematicannon]
 - `ars_zero-1.21.1-2.0.0-beta4.jar` | Version: 1.11.1 -> 2.0.0-beta4 [ars_zero]
 - `commoncapabilities-1.21.1-neoforge-2.11.5-363.jar` | Version: 2.11.5 -> 2.11.5-363 [commoncapabilities]
@@ -102,7 +199,6 @@ Active mod JARs: **575**
 - `integratedterminals-1.21.1-neoforge-1.7.0-800.jar` | Version: 1.7.0 -> 1.7.0-800 [integratedterminals]
 - `integratedtunnels-1.21.1-neoforge-1.9.4-671.jar` | Version: 1.9.4 -> 1.9.4-671 [integratedtunnels]
 - `irons_spellbooks-1.21.1-3.16.3.jar` | Version: 3.16.2 -> 3.16.3 [irons_spellbooks]
-- `jei-1.21.1-neoforge-19.44.0.403.jar` | Version: 19.44.0.402 -> 19.44.0.403 [jei]
 - `lucky_block-neoforge-0.2.0+1.21.1.jar` | Version: 0.1.4 -> 0.2.0 [lucky]
 - `MoogsStructureLib-neoforge-1.21.1-3.1.0.jar` | Version: 3.0.3 -> 3.1.0 [moogs_structures]
 - `NeoAuth-1.21.1-1.0.1.jar` | Version: 1.0.0 -> 1.0.1 [neo_auth]
@@ -114,27 +210,7 @@ Active mod JARs: **575**
 - `titanium-1.21-4.0.45.jar` | Version: 4.0.43 -> 4.0.45 [titanium]
 - `transfer_labels-0.1.9.jar` | Version: 0.1.8 -> 0.1.9 [transfer_labels]
 
-## Still Pre-Alpha 1.0 - 2026-08-18
-
-Active mod JARs: **575**
-
-### Added (0)
-
-- None
-
-### Removed (0)
-
-- None
-
-### Updated (5)
-
-- `Ad-Astra-Giselle-Addon-neoforge-1.21.1-8.1.jar` | Version: 8.0 -> 8.1 [ad_astra_giselle_addon]
-- `antarchy_ascension_companion-0.1.1.jar` | Version: 0.1.1 (File contents changed at same version) [antarchy_ascension_companion]
-- `ftb-quests-neoforge-2101.1.32.jar` | Version: 2101.1.31 -> 2101.1.32 [ftbquests]
-- `iceandfire-2.1.jar` | Version: 2.0 -> 2.1 [iceandfire]
-- `jei-1.21.1-neoforge-19.44.0.402.jar` | Version: 19.44.0.401 -> 19.44.0.402 [jei]
-
-## Alpha 1.0 Pre-Release Expansion - 2026-08-17
+## Alpha 1.0 Expansion - 2026-08-17
 
 Active mod JARs: **575**
 
@@ -321,7 +397,7 @@ Active mod JARs: **575**
 - `sophisticatedstorage-1.21.1-1.5.87.2089.jar` | Version: 1.5.85.2077 -> 1.5.87.2089 [sophisticatedstorage]
 - `supplementaries-1.21.1-3.8.10-neoforge.jar` | Version: 3.8.10 (File contents changed at same version) [supplementaries]
 
-## Alpha 1.0 - 2026-08-14
+## Alpha 1.0 Development - 2026-08-14
 
 Active mod JARs: **428**
 

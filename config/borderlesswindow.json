@@ -11,7 +11,17 @@
   "overlay_water": true,
   "overlay_fire": true,
   "overlay_fire_smart": true,
+  "overlay_pumpkin": true,
+  "overlay_freeze": true,
+  "overlay_portal": true,
+  "overlay_spyglass": true,
   "bob_camera": "FULL",
   "bob_hand": true,
-  "enchantment_level_style": "MIXED"
+  "enchantment_level_style": "MIXED",
+  "distortion_portal": 100,
+  "distortion_nausea": 100,
+  "fov_speed": 100,
+  "fov_flying": 100,
+  "fov_bow": 100,
+  "fov_fluid": 100
 }

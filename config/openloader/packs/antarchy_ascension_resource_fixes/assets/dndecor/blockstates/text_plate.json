@@ -1,0 +1,148 @@
+{
+  "variants": {
+    "extended=false,face=ceiling,facing=east,waterlogged=false": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=false,face=ceiling,facing=east,waterlogged=true": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=false,face=ceiling,facing=north,waterlogged=false": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=false,face=ceiling,facing=north,waterlogged=true": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=false,face=ceiling,facing=south,waterlogged=false": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=false,face=ceiling,facing=south,waterlogged=true": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=false,face=ceiling,facing=west,waterlogged=false": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=false,face=ceiling,facing=west,waterlogged=true": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=false,face=floor,facing=east,waterlogged=false": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=false,face=floor,facing=east,waterlogged=true": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=false,face=floor,facing=north,waterlogged=false": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=false,face=floor,facing=north,waterlogged=true": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=false,face=floor,facing=south,waterlogged=false": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=false,face=floor,facing=south,waterlogged=true": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=false,face=floor,facing=west,waterlogged=false": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=false,face=floor,facing=west,waterlogged=true": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=false,face=wall,facing=east,waterlogged=false": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=false,face=wall,facing=east,waterlogged=true": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=false,face=wall,facing=north,waterlogged=false": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=false,face=wall,facing=north,waterlogged=true": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=false,face=wall,facing=south,waterlogged=false": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=false,face=wall,facing=south,waterlogged=true": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=false,face=wall,facing=west,waterlogged=false": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=false,face=wall,facing=west,waterlogged=true": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=true,face=ceiling,facing=east,waterlogged=false": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=true,face=ceiling,facing=east,waterlogged=true": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=true,face=ceiling,facing=north,waterlogged=false": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=true,face=ceiling,facing=north,waterlogged=true": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=true,face=ceiling,facing=south,waterlogged=false": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=true,face=ceiling,facing=south,waterlogged=true": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=true,face=ceiling,facing=west,waterlogged=false": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=true,face=ceiling,facing=west,waterlogged=true": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=true,face=floor,facing=east,waterlogged=false": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=true,face=floor,facing=east,waterlogged=true": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=true,face=floor,facing=north,waterlogged=false": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=true,face=floor,facing=north,waterlogged=true": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=true,face=floor,facing=south,waterlogged=false": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=true,face=floor,facing=south,waterlogged=true": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=true,face=floor,facing=west,waterlogged=false": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=true,face=floor,facing=west,waterlogged=true": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=true,face=wall,facing=east,waterlogged=false": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=true,face=wall,facing=east,waterlogged=true": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=true,face=wall,facing=north,waterlogged=false": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=true,face=wall,facing=north,waterlogged=true": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=true,face=wall,facing=south,waterlogged=false": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=true,face=wall,facing=south,waterlogged=true": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=true,face=wall,facing=west,waterlogged=false": {
+      "model": "dndecor:block/text_plate"
+    },
+    "extended=true,face=wall,facing=west,waterlogged=true": {
+      "model": "dndecor:block/text_plate"
+    }
+  }
+}

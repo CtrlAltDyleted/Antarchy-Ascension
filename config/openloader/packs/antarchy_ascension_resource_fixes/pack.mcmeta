@@ -2,5 +2,17 @@
   "pack": {
     "pack_format": 34,
     "description": "Antarchy - Ascension resource fixes"
+  },
+  "filter": {
+    "block": [
+      {
+        "namespace": "extraspecialhub",
+        "path": "lang/en_us\\.json"
+      },
+      {
+        "namespace": "extraspecialcore",
+        "path": "font/gnu_unifont\\.json"
+      }
+    ]
   }
 }

@@ -120,3 +120,15 @@ de.keksuccino.drippyloadingscreen.customization.DrippyOverlayScreen {
 com.soleapixel.betterpanorama.gui.PanoramaBrowserScreen {
 }
 
+net.minecraft.client.gui.screens.ConfirmScreen {
+}
+
+com.mrbysco.neoauth.impl.gui.AuthMethodScreen {
+}
+
+com.mrbysco.neoauth.impl.gui.MicrosoftAuthScreen {
+}
+
+net.minecraft.client.gui.screens.DisconnectedScreen {
+}
+
