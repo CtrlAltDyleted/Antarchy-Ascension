@@ -12,9 +12,6 @@
 !/.github/
 !/.github/**
 
-!/tools/
-!/tools/**
-
 # Pack configuration
 !/config/
 !/config/**
@@ -100,4 +97,3 @@
 /config/openloader/packs/*.zip
 /config/extraspecialhub/windows/_example_window.json
 configureddefaults/README.md
-tools/
