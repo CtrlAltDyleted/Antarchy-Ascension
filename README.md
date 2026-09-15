@@ -10,7 +10,7 @@ The pack combines major progression systems including Create, Applied Energistic
 
 ## Status
 
-Antarchy - Ascension is currently in **Alpha 1.0**.
+Antarchy - Ascension is currently in **Alpha 1.1**.
 
 Alpha builds are functional test releases intended for broader playtesting while development continues. Core systems are playable, but progression, quests, recipes, configuration, balancing, compatibility, and mod selection may still change substantially.
 
