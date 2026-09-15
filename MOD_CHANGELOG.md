@@ -2,7 +2,7 @@
 
 Permanent history of direct mod-set changes for Antarchy - Ascension.
 
-## Unreleased - 2026-09-14
+## Alpha 1.1 - 2026-09-14
 
 Active mod JARs: **604**
 
