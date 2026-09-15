@@ -23,3 +23,8 @@
 	# Default: 20
 	# Range: 5 ~ 100
 	controllerCacheLifetime = 20
+
+[belt]
+	#Replace FluidLogistics' 11x11x11 mechanical fluid gun scan with a per-Level target index.
+	#Has no effect when FluidLogistics is not installed.
+	fluidGunTargetIndexEnabled = true

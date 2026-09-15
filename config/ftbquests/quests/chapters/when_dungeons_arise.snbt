@@ -3,7 +3,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "when_dungeons_arise"
-	group: ""
+	group: "0DB2701AC66EF66D"
 	icon: {
 		id: "minecraft:golden_sword"
 	}

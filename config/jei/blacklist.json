@@ -332,15 +332,6 @@
     "hide_mode": "WILDCARD",
     "ingredient": {
       "ingredient": {
-        "id": "expandedae:colorable_drive"
-      },
-      "type": "item_stack"
-    }
-  },
-  {
-    "hide_mode": "WILDCARD",
-    "ingredient": {
-      "ingredient": {
         "id": "productivebees:advanced_quark_blossom_beehive"
       },
       "type": "item_stack"

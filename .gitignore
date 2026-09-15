@@ -73,6 +73,10 @@
 /config/zfastnoise.mixin.properties
 /config/*.bak
 /config/**/*.bak
+/config/**/*.bak.*
+/kubejs/**/*.bak.*
+/config/kubejsstudio.json
+/config/kubejsstudio/
 /kubejs/*_scripts/main.js
 
 # KubeJS generated/runtime state

@@ -111,6 +111,8 @@
   "jadeaddons.create:table_cloth": null,
   "jadeaddons.lootr:info": null,
   "jadeaddons.lootr:inventory": null,
+  "logisticsnetworks:logistics_node_entity": null,
+  "logisticsnetworks:node_attached": null,
   "mekajadeupgrade:upgrades": null,
   "mekanism:data_provider": null,
   "mekanism:entity_data_provider": null,

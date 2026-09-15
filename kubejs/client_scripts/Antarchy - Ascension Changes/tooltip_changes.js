@@ -1,3 +1,4 @@
+// Uranium scrap tooltip
 ItemEvents.modifyTooltips(event => {
   event.add(
     'antarchy:raw_uranium_scrap',

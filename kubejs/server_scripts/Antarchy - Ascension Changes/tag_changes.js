@@ -1,6 +1,5 @@
-// Remove unused Ancient Stone ore variants.
-
-const retiredAllTheOresOtherOres = [
+// Removes AllTheOres Ancient Stone ore variants
+const removedAllTheOresOtherOres = [
     'alltheores:other_aluminum_ore',
     'alltheores:other_cinnabar_ore',
     'alltheores:other_fluorite_ore',
@@ -21,13 +20,21 @@ const retiredAllTheOresOtherOres = [
 ]
 
 ServerEvents.tags('item', event => {
-    retiredAllTheOresOtherOres.forEach(id => {
+    removedAllTheOresOtherOres.forEach(id => {
         event.removeAllTagsFrom(id)
     })
+
+    // Engineer's Goggles Head Slot Removals
+    event.remove('curios:head', [
+        'create:goggles',
+        'actuallyadditions:engineers_goggles',
+        'actuallyadditions:engineers_goggles_advanced',
+        'occultengineering:combined_goggles'
+    ])
 })
 
 ServerEvents.tags('block', event => {
-    retiredAllTheOresOtherOres.forEach(id => {
+    removedAllTheOresOtherOres.forEach(id => {
         event.removeAllTagsFrom(id)
     })
 })

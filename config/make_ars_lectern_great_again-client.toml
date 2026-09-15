@@ -1,2 +1,4 @@
 #Whether to disable search filed auto focus.
 disableSearchAutoFocus = true
+#Whether to close screen when E pressed.
+closeScreenWhenEPressed = true

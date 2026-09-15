@@ -82,6 +82,10 @@
     "entity": true,
     "semiblock": true
   },
+  "logisticsnetworks": {
+    "logistics_node_entity": true,
+    "node_attached": true
+  },
   "apotheosis": {
     "adventure": true
   },

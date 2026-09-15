@@ -132,3 +132,18 @@ com.mrbysco.neoauth.impl.gui.MicrosoftAuthScreen {
 net.minecraft.client.gui.screens.DisconnectedScreen {
 }
 
+net.mehvahdjukaar.moonlight.core.client.config.ModsTilesScreen {
+}
+
+net.mehvahdjukaar.moonlight.core.client.config.MoonlightConfigSelectScreen {
+}
+
+net.mehvahdjukaar.moonlight.core.client.config.MoonlightConfigScreen {
+}
+
+net.mehvahdjukaar.moonlight.core.client.config.DiscoverModsScreen {
+}
+
+net.minecraft.client.gui.screens.worldselection.EditWorldScreen {
+}
+

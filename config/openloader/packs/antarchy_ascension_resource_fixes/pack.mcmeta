@@ -12,6 +12,10 @@
       {
         "namespace": "extraspecialcore",
         "path": "font/gnu_unifont\\.json"
+      },
+      {
+        "namespace": "better_lib",
+        "path": "lang/en_us\\.json"
       }
     ]
   }

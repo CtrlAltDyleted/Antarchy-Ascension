@@ -2,6 +2,39 @@
 
 ## Alpha 1.0
 
+### 2026-09-14
+
+#### Added
+
+- Added Better Tooltips and Better Advanced Tooltips
+- Added Gallery
+- Added Logistics Networks
+- Added No See No Tick
+- Added KubeJS Studio and MezzConfig
+- Added the "Chapter 1: Introduction" FTB Quests chapter group
+
+#### Fixed
+
+- Fixed Engineer's Goggles also appearing in the generic Curios Head slot
+- Fixed the duplicate Create and Immersive Engineering steel plate pressing recipe
+- Fixed Better Lib's malformed English language resource
+- Fixed the stale Expanded AE JEI blacklist entry
+
+#### Changed
+
+- Changed 84 existing mod versions to their current installed versions
+- Changed the Time in a Bottle recipe to use the GAG Time Sand Pouch
+- Changed the FancyMenu title, pause, and universal menu layouts
+- Changed Antarchy KubeJS scripts into consolidated recipe, tag, recipe-viewer, and tooltip scripts
+- Changed JEI configuration to the current MezzConfig-backed layout
+
+#### Removed
+
+- Removed KubeJS Tweaks
+- Removed the old one-purpose Antarchy KubeJS scripts after consolidation
+- Removed the obsolete ByePregen configuration
+- Removed the old FancyMenu options screen layout
+
 ### 2026-08-30
 
 #### Added
