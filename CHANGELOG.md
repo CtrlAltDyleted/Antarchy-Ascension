@@ -1,6 +1,6 @@
 # Antarchy - Ascension Changelog
 
-## Alpha 1.0
+## Alpha 1.1
 
 ### 2026-09-14
 
@@ -34,6 +34,8 @@
 - Removed the old one-purpose Antarchy KubeJS scripts after consolidation
 - Removed the obsolete ByePregen configuration
 - Removed the old FancyMenu options screen layout
+
+## Alpha 1.0
 
 ### 2026-08-30
 
