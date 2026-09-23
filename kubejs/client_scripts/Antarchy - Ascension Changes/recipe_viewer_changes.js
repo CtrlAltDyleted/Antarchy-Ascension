@@ -300,6 +300,8 @@ const removedMaterialIntegrationItems = [
 ]
 
 RecipeViewerEvents.removeEntriesCompletely('item', event => {
+    event.remove('nep:import_card')
+
     removedAllTheOresOtherOres.forEach(id => {
         event.remove(id)
     })

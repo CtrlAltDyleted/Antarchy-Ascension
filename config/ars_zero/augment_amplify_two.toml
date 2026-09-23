@@ -1,7 +1,7 @@
 #General settings
 [general]
 	#Is Enabled? (Optional glyph from Adams Ars Plus, disabled by default).
-	enabled = false
+	enabled = true
 	#Cost
 	# Default: 80
 	# Range: > -2147483648

@@ -423,20 +423,20 @@ function cleanUpUraniumAndYellorium(event) {
         event.replaceInput(
             { id: id },
             'antarchy:uranium_ingot',
-            'antarchy_ascension_companion:dense_uranium_ingot'
+            'antarchyascension:dense_uranium_ingot'
         )
     })
 
     event.replaceInput(
         { id: 'antarchy:attitude_adjuster' },
         'antarchy:uranium_block',
-        'antarchy_ascension_companion:dense_uranium_block'
+        'antarchyascension:dense_uranium_block'
     )
 
     event.replaceInput(
         { id: 'antarchy:rainbow_sugar' },
         'antarchy:uranium_nugget',
-        'antarchy_ascension_companion:dense_uranium_nugget'
+        'antarchyascension:dense_uranium_nugget'
     )
 
     // Extreme Reactors still hardcodes yellorium in these
@@ -831,6 +831,8 @@ const removedMaterialIntegrationRecipes = [
 ]
 
 ServerEvents.recipes(event => {
+    event.remove({ id: 'nep:import_card' })
+
     removedAllTheOresRecipes.forEach(id => {
         event.remove({ id: id })
     })

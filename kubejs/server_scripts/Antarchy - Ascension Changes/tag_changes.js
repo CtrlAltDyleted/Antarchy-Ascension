@@ -19,6 +19,16 @@ const removedAllTheOresOtherOres = [
     'alltheores:other_zinc_ore'
 ]
 
+const wirelessTerminals = [
+    'ae2:wireless_terminal',
+    'ae2:wireless_crafting_terminal',
+    'ae2wtlib:wireless_pattern_access_terminal',
+    'ae2wtlib:wireless_pattern_encoding_terminal',
+    'ae2wtlib:wireless_universal_terminal',
+    'advanced_ae:wireless_quantum_crafter_terminal',
+    'ae2driveterminal:wireless_drive_terminal'
+]
+
 ServerEvents.tags('item', event => {
     removedAllTheOresOtherOres.forEach(id => {
         event.removeAllTagsFrom(id)
@@ -31,6 +41,10 @@ ServerEvents.tags('item', event => {
         'actuallyadditions:engineers_goggles_advanced',
         'occultengineering:combined_goggles'
     ])
+
+    // Wireless Terminal Curios Tag Correction
+    event.remove('curios:curio', wirelessTerminals)
+    event.add('curios:wireless_terminal', wirelessTerminals)
 })
 
 ServerEvents.tags('block', event => {

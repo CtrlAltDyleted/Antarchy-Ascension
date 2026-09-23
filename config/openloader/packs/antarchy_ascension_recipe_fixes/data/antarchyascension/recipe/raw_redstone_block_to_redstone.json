@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "regions_unexplored:raw_redstone_block"
+    }
+  ],
+  "result": {
+    "id": "minecraft:redstone",
+    "count": 4
+  }
+}
