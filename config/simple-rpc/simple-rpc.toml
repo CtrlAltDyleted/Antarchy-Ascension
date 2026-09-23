@@ -1,0 +1,267 @@
+# Antarchy - Ascension Simple Discord RPC configuration
+# Simple RPC 4.x
+
+[general]
+	applicationID = "1550345490053472327"
+	enabled = true
+	debugging = false
+	launcherIntegration = false
+	rpcImageServer = false
+	rpcImageServerUrl = "https://rpcavatar.firstdark.dev"
+	version = 27
+
+# Game loading
+[init]
+	enabled = true
+
+	[[init.presence]]
+		type = "PLAYING"
+		description = "Launching Antarchy - Ascension"
+		state = "Loading {{game.mods}} mods"
+		largeImageKey = ["antarchy_ascension_title"]
+		largeImageText = "Antarchy - Ascension"
+		smallImageKey = ["{{images.player}}"]
+		smallImageText = "{{player.name}}"
+		streamingActivityUrl = ""
+
+		[[init.presence.buttons]]
+			label = "Join the Discord"
+			url = "https://discord.gg/vfJQjDusZF"
+
+		[[init.presence.buttons]]
+			label = "View on CurseForge"
+			url = "https://www.curseforge.com/minecraft/modpacks/antarchy-ascension"
+
+# Main menu
+[main_menu]
+	enabled = true
+
+	[[main_menu.presence]]
+		type = "PLAYING"
+		description = "At the Main Menu"
+		state = "Preparing to Ascend"
+		largeImageKey = ["antarchy_ascension_title"]
+		largeImageText = "Antarchy - Ascension"
+		smallImageKey = ["{{images.player}}"]
+		smallImageText = "{{player.name}}"
+		streamingActivityUrl = ""
+
+		[[main_menu.presence.buttons]]
+			label = "Join the Discord"
+			url = "https://discord.gg/vfJQjDusZF"
+
+		[[main_menu.presence.buttons]]
+			label = "View on CurseForge"
+			url = "https://www.curseforge.com/minecraft/modpacks/antarchy-ascension"
+
+# Multiplayer server list
+[server_list]
+	enabled = true
+
+	[[server_list.presence]]
+		type = "PLAYING"
+		description = "Browsing Multiplayer"
+		state = "Looking for a server"
+		largeImageKey = ["antarchy_ascension_title"]
+		largeImageText = "Antarchy - Ascension"
+		smallImageKey = ["{{images.player}}"]
+		smallImageText = "{{player.name}}"
+		streamingActivityUrl = ""
+
+		[[server_list.presence.buttons]]
+			label = "Join the Discord"
+			url = "https://discord.gg/vfJQjDusZF"
+
+		[[server_list.presence.buttons]]
+			label = "View on CurseForge"
+			url = "https://www.curseforge.com/minecraft/modpacks/antarchy-ascension"
+
+# Realms are not part of the Antarchy - Ascension experience
+[realms_list]
+	enabled = false
+
+	[[realms_list.presence]]
+		type = "PLAYING"
+		description = "Antarchy - Ascension"
+		state = "Minecraft {{game.version}}"
+		largeImageKey = ["antarchy_ascension_title"]
+		largeImageText = "Antarchy - Ascension"
+		smallImageKey = ["{{images.player}}"]
+		smallImageText = "{{player.name}}"
+		streamingActivityUrl = ""
+		buttons = []
+
+# Joining a world/server
+[join_game]
+	enabled = true
+
+	[[join_game.presence]]
+		type = "PLAYING"
+		description = "Entering the World"
+		state = "Joining game..."
+		largeImageKey = ["antarchy_ascension_title"]
+		largeImageText = "Antarchy - Ascension"
+		smallImageKey = ["{{images.player}}"]
+		smallImageText = "{{player.name}}"
+		streamingActivityUrl = ""
+
+		[[join_game.presence.buttons]]
+			label = "Join the Discord"
+			url = "https://discord.gg/vfJQjDusZF"
+
+		[[join_game.presence.buttons]]
+			label = "View on CurseForge"
+			url = "https://www.curseforge.com/minecraft/modpacks/antarchy-ascension"
+
+# Singleplayer
+[single_player]
+	enabled = true
+
+	[[single_player.presence]]
+		type = "PLAYING"
+		description = "Exploring {{world.name}}"
+		state = "{{world.biome}} • Day {{world.time.day}}"
+		largeImageKey = ["antarchy_ascension_title"]
+		largeImageText = "Antarchy - Ascension"
+		smallImageKey = ["{{images.player}}"]
+		smallImageText = "{{player.name}}"
+		streamingActivityUrl = ""
+
+		[[single_player.presence.buttons]]
+			label = "Join the Discord"
+			url = "https://discord.gg/vfJQjDusZF"
+
+		[[single_player.presence.buttons]]
+			label = "View on CurseForge"
+			url = "https://www.curseforge.com/minecraft/modpacks/antarchy-ascension"
+
+# Multiplayer
+[multi_player]
+	enabled = true
+
+	[[multi_player.presence]]
+		type = "PLAYING"
+		description = "Playing on {{server.name}}"
+		state = "{{server.players.count}} / {{server.players.max}} players • {{world.biome}}"
+		largeImageKey = ["antarchy_ascension_title"]
+		largeImageText = "Antarchy - Ascension"
+		smallImageKey = ["{{images.player}}"]
+		smallImageText = "{{player.name}}"
+		streamingActivityUrl = ""
+
+		[[multi_player.presence.buttons]]
+			label = "Join the Discord"
+			url = "https://discord.gg/vfJQjDusZF"
+
+		[[multi_player.presence.buttons]]
+			label = "View on CurseForge"
+			url = "https://www.curseforge.com/minecraft/modpacks/antarchy-ascension"
+
+# Realms are not part of the Antarchy - Ascension experience
+[realms]
+	enabled = false
+
+	[[realms.presence]]
+		type = "PLAYING"
+		description = "Antarchy - Ascension"
+		state = "Minecraft {{game.version}}"
+		largeImageKey = ["antarchy_ascension_title"]
+		largeImageText = "Antarchy - Ascension"
+		smallImageKey = ["{{images.player}}"]
+		smallImageText = "{{player.name}}"
+		streamingActivityUrl = ""
+		buttons = []
+
+# Pause/game menu
+[paused]
+	enabled = true
+
+	[[paused.presence]]
+		type = "PLAYING"
+		description = "In the Game Menu"
+		state = "{{world.biome}} • Day {{world.time.day}}"
+		largeImageKey = ["antarchy_ascension_title"]
+		largeImageText = "Antarchy - Ascension"
+		smallImageKey = ["{{images.player}}"]
+		smallImageText = "{{player.name}}"
+		streamingActivityUrl = ""
+
+		[[paused.presence.buttons]]
+			label = "Join the Discord"
+			url = "https://discord.gg/vfJQjDusZF"
+
+		[[paused.presence.buttons]]
+			label = "View on CurseForge"
+			url = "https://www.curseforge.com/minecraft/modpacks/antarchy-ascension"
+
+# Fallback
+[generic]
+
+	[[generic.presence]]
+		type = "PLAYING"
+		description = "Playing Antarchy - Ascension"
+		state = "{{game.mods}} mods loaded"
+		largeImageKey = ["antarchy_ascension_title"]
+		largeImageText = "Antarchy - Ascension"
+		smallImageKey = ["{{images.player}}"]
+		smallImageText = "{{player.name}}"
+		streamingActivityUrl = ""
+
+		[[generic.presence.buttons]]
+			label = "Join the Discord"
+			url = "https://discord.gg/vfJQjDusZF"
+
+		[[generic.presence.buttons]]
+			label = "View on CurseForge"
+			url = "https://www.curseforge.com/minecraft/modpacks/antarchy-ascension"
+
+# Custom placeholders
+[custom]
+	enabled = false
+	variables = []
+
+# Keep disabled until dimension-specific artwork is added.
+[dimension_overrides]
+	enabled = false
+
+	[[dimension_overrides.dimensions]]
+		name = "overworld"
+
+		[[dimension_overrides.dimensions.presence]]
+			type = "PLAYING"
+			description = "Exploring the Overworld"
+			state = "{{world.biome}} • Day {{world.time.day}}"
+			largeImageKey = ["antarchy_ascension_title"]
+			largeImageText = "Antarchy - Ascension"
+			smallImageKey = ["{{images.player}}"]
+			smallImageText = "{{player.name}}"
+			streamingActivityUrl = ""
+			buttons = []
+
+	[[dimension_overrides.dimensions]]
+		name = "the_nether"
+
+		[[dimension_overrides.dimensions.presence]]
+			type = "PLAYING"
+			description = "Exploring the Nether"
+			state = "{{world.biome}} • Day {{world.time.day}}"
+			largeImageKey = ["antarchy_ascension_title"]
+			largeImageText = "Antarchy - Ascension"
+			smallImageKey = ["{{images.player}}"]
+			smallImageText = "{{player.name}}"
+			streamingActivityUrl = ""
+			buttons = []
+
+	[[dimension_overrides.dimensions]]
+		name = "the_end"
+
+		[[dimension_overrides.dimensions.presence]]
+			type = "PLAYING"
+			description = "Exploring the End"
+			state = "{{world.biome}} • Day {{world.time.day}}"
+			largeImageKey = ["antarchy_ascension_title"]
+			largeImageText = "Antarchy - Ascension"
+			smallImageKey = ["{{images.player}}"]
+			smallImageText = "{{player.name}}"
+			streamingActivityUrl = ""
+			buttons = []

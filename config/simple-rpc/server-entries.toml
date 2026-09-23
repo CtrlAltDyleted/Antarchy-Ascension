@@ -1,0 +1,29 @@
+# Antarchy - Ascension official server Rich Presence override
+# Simple Discord RPC 4.x
+
+# Enable/Disable Server Entries overrides
+enabled = true
+# Internal Version Number. NO TOUCHY!
+version = 3
+
+# Official Antarchy - Ascension server
+[[entry]]
+	ip = "ctrlaltdyleted.org"
+
+	[[entry.presence]]
+		type = "PLAYING"
+		description = "Playing on the Official Server"
+		state = "{{server.players.count}} / {{server.players.max}} players • {{world.biome}}"
+		largeImageKey = ["antarchy_ascension_title"]
+		largeImageText = "Antarchy - Ascension"
+		smallImageKey = ["{{images.player}}"]
+		smallImageText = "{{player.name}}"
+		streamingActivityUrl = ""
+
+		[[entry.presence.buttons]]
+			label = "Join the Discord"
+			url = "https://discord.gg/vfJQjDusZF"
+
+		[[entry.presence.buttons]]
+			label = "View on CurseForge"
+			url = "https://www.curseforge.com/minecraft/modpacks/antarchy-ascension"

@@ -147,3 +147,6 @@ net.mehvahdjukaar.moonlight.core.client.config.DiscoverModsScreen {
 net.minecraft.client.gui.screens.worldselection.EditWorldScreen {
 }
 
+dev.aika.smsn.client.gui.screen.VersionCheckWarningScreen {
+}
+
