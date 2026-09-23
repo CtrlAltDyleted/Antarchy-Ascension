@@ -10,7 +10,7 @@ The pack combines major progression systems including Create, Applied Energistic
 
 ## Status
 
-Antarchy - Ascension is currently in **Alpha 1.1**.
+Antarchy - Ascension is currently targeting **0.2.0-alpha**.
 
 Alpha builds are functional test releases intended for broader playtesting while development continues. Core systems are playable, but progression, quests, recipes, configuration, balancing, compatibility, and mod selection may still change substantially.
 
@@ -88,9 +88,7 @@ Major exploration paths include:
 
 Exploration and dimensional progression are intended to remain useful throughout the pack rather than becoming obsolete once automation develops.
 
-## Technology and Automation
-
-Automation is a major part of Antarchy - Ascension.
+## Technology, Automation, and Magic
 
 Major systems include:
 
@@ -104,13 +102,9 @@ Major systems include:
 - Replication
 - Extended Crafting
 
-These systems are intended to interact through progression, resource requirements, infrastructure, processing chains, storage, and endgame crafting.
-
-## Magic
-
-Magic systems are integrated alongside technological progression rather than treated as completely separate paths.
-
 Major magical content includes systems such as Ars Nouveau along with additional magical equipment, resources, exploration, and progression from other included mods.
+
+These systems will interact through progression, resource requirements, infrastructure, processing chains, storage, and endgame crafting.
 
 ## Quests
 
@@ -118,67 +112,13 @@ FTB Quests is used to guide progression, introduce major systems, explain import
 
 The quest system is still under active development during Alpha.
 
-## Antarchy - Ascension Companion
+## Antarchy - Ascension
 
-The pack includes the custom **Antarchy - Ascension Companion** mod.
+The pack includes the custom **Antarchy - Ascension** mod.
 
-The Companion provides pack-specific content, integration, compatibility fixes, and behavior that cannot be handled cleanly through normal configuration or datapacks alone.
+The custom mod provides pack-specific content, integration, compatibility fixes, and behavior that cannot be handled cleanly through normal configuration or datapacks alone.
 
-It is developed specifically for Antarchy - Ascension and evolves alongside the pack.
-
-## Repository Contents
-
-This repository contains the files used to develop and configure Antarchy - Ascension.
-
-Important tracked content includes:
-
-- `config/` - shared mod configuration
-- `configureddefaults/` - distributable configured defaults and pack-specific default data
-- `defaultconfigs/` - default world and server configuration
-- `kubejs/` - KubeJS configuration and pack scripting
-- `.gitattributes` - repository line-ending rules
-- `.gitignore` - exclusions for local, generated, and runtime Minecraft data
-
-The pack also uses OpenLoader for pack-level datapack and resource-pack fixes.
-
-Antarchy-specific OpenLoader content is organized into six categories:
-
-- Data fixes
-- Loot table fixes
-- Recipe fixes
-- Resource fixes
-- Tag fixes
-- World generation fixes
-
-Additional quests, resources, scripts, and other customization may be added as development continues.
-
-## Mod Files
-
-This repository does **not** redistribute the third-party mod JAR files used by the modpack.
-
-Mods are obtained through their respective distribution platforms and remain the property of their respective authors.
-
-Each mod, library, resource, and dependency remains subject to its own license and distribution terms.
-
-The custom Antarchy - Ascension Companion mod is maintained separately as part of the pack's development.
-
-## Development
-
-The repository tracks pack-level configuration and custom development files while excluding local or generated data such as:
-
-- Third-party mod JARs
-- Worlds and saves
-- Logs
-- Crash reports
-- Launcher metadata
-- Runtime caches
-- Temporary files
-- Local server data
-- User-specific settings
-- Generated diagnostic output
-- Locally installed resource-pack and shader-pack binaries
-
-This keeps the repository focused on the files that define Antarchy - Ascension itself.
+It is developed specifically for Antarchy - Ascension and will evolve alongside the pack.
 
 ## Credits
 
