@@ -84,6 +84,7 @@
 	# Range: 0 ~ 256
 	itemShaderShadowDistance = 12
 	#Requested maximum distance for fallback-rendered belt body geometry in Iris shadow passes.
+	#Only applies when bodyShaderShadowCullingEnabled is true; otherwise the shaderpack controls the shadow range.
 	#The fallback uses one decision for the complete belt and caps this at 16 blocks; from 8 to 16 blocks it retains one stable belt in four.
 	#This is ignored while Flywheel visualization is active. Set to 0 to omit fallback belt bodies from shadow maps.
 	# Default: 16
@@ -101,6 +102,10 @@
 	# Default: 2.0
 	# Range: 0.25 ~ 8.0
 	bodyMainPersistentVboMaxUploadMillisPerFrame = 2.0
+	#Opt into lossy camera-distance culling and stable sampling of belt body shader shadows.
+	#Disabled by default to preserve belt-to-belt shading and ground shadows within the shaderpack's shadow range.
+	#Enabling this can let sunlight through stacked belts. Persistent VBOs and bulk vertex writes remain active either way.
+	bodyShaderShadowCullingEnabled = false
 
 [kineticAudio]
 	# Default: 48

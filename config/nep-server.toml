@@ -1,0 +1,471 @@
+#Per-mod integration modules with individual per-machine integration toggles.
+#Disabled integrations stop encoding patterns and stop pattern providers from pushing to those machines; already-encoded patterns stay in the world and resume working when the integration is re-enabled.
+[modules]
+
+	#Actually Additions integration.
+	[modules.actuallyadditions]
+		#Master override for Actually Additions integration.
+		#When disabled, every Actually Additions module below is disabled regardless of its own toggle.
+		allow_actuallyadditions_module = true
+		#Empowering Module: An Empowerer with a pattern provider against it takes a whole recipe at once.
+		#Each item in the craft goes to their designated recipe slot automatically. The base item goes to the Empowerer and the rest to each Display Stand.
+		#The stands still supply the energy, and the finished item stays in the Empowerer.
+		empowering = true
+		#Atomic Reconstruction Module: Encodes Atomic Reconstructor recipes as patterns for the Atomic Empowering Matrix.
+		#The patterns also push their ingredients into adjacent inventories like a plain processing pattern, so a dropper feeding a real Atomic Reconstructor works too.
+		atomicReconstruction = true
+
+		#Atomic Empowering Matrix:
+		[modules.actuallyadditions.atomicEmpoweringMatrix]
+			#The Atomic Empowering Matrix runs whole empowering and atomic reconstruction recipes inside a single block.
+			enabled = true
+			#Treats the Matrix as a requester, allowing it to auto-pull, auto-craft, and auto-request a set of recipe ingredients from the ME network when a craft it owes is left without materials.
+			#When disabled, a Matrix left short of materials stalls until you manually restock it.
+			autoRequest = true
+			#Energy a Matrix craft costs, as a percentage of the recipe's own energy cost.
+			#100 charges exactly what the real machine would; raise it to make recipes more expensive.
+			# Default: 100
+			# Range: 0 ~ 10000
+			energyCostPercent = 100
+			#Maximum energy the Matrix accepts per tick, in FE.
+			# Default: 40000
+			# Range: > 1
+			chargeRate = 40000
+			#Size of the Matrix's internal energy buffer, in FE.
+			# Default: 320000
+			# Range: > 1000
+			energyCapacity = 320000
+			#Ticks the Matrix spends on an atomic reconstruction craft. 20 ticks is one second.
+			#The real Atomic Reconstructor fires once every 100 ticks and converts everything lying in its beam in that one pulse, so it has no per-item duration.
+			# Default: 4
+			# Range: 1 ~ 24000
+			atomicReconstructionCraftTicks = 4
+			#Ticks the Matrix spends on an empowering craft. 20 ticks is one second.
+			#The recipe's own duration is not used: an empowering recipe takes between 30 and 500 ticks in the real multiblock.
+			# Default: 20
+			# Range: 1 ~ 24000
+			empoweringCraftTicks = 20
+			#Energy the Matrix draws from its ME network while crafting, in AE per tick. Progress stops whenever the network cannot supply this much power.
+			#This is separate from the FE it crafts with, and pays for the ME network side of the machine.
+			# Default: 500
+			# Range: 0 ~ 1000000
+			meNetworkDrain = 500
+			#Energy the Matrix draws from its ME network while idle, in AE per tick. This standing cost is read once when the Matrix joins a network, so changing it needs a world reload.
+			# Default: 10
+			# Range: 0 ~ 1000000
+			idleMeNetworkDrain = 10
+			#Channels the Matrix takes up on its ME network. Any value above 8 has to pass through dense cables.
+			#This is read once when the Matrix joins a network, so changing it needs a world reload. Set to 0 for a Matrix that takes up no channels at all.
+			# Default: 15
+			# Range: 0 ~ 128
+			meNetworkChannels = 15
+
+	#Apothic Enchanting integration.
+	[modules.apothic_enchanting]
+		#Master override for Apothic Enchanting integration.
+		#When disabled, every Apothic Enchanting module below is disabled regardless of its own toggle.
+		allow_apothic_enchanting_module = true
+
+		#Infusion Module:
+		[modules.apothic_enchanting.infusion]
+			#The Enchanting Table of the Raven runs infusion recipes pushed by a pattern provider, setting its eterna, quanta, and arcana to whatever the recipe needs and putting the player's own values back afterwards.
+			enabled = true
+			#Experience points one Bottle o' Enchanting pays towards an automated infusion, which decides how many bottles a pattern asks for.
+			#A thrown bottle is worth 3 to 11 points, so the default pays ten times what one is worth by hand and keeps the bottle count of a craft small. Lower values make automated infusion more expensive.
+			# Default: 70
+			# Range: 1 ~ 1000
+			experiencePerBottle = 70
+			#Pays an automated infusion with a fluid from the #c:experience tag whenever one is loaded, falling back to Bottles o' Enchanting when the tag is empty.
+			#When disabled, patterns always ask for bottles. Either payment is accepted by the table, so patterns already encoded keep working.
+			preferExperienceFluid = true
+			#Millibuckets of experience fluid one experience point costs, which decides how much fluid a pattern asks for.
+			# Default: 20
+			# Range: 1 ~ 1000
+			millibucketsPerExperience = 20
+
+	#Compact Crafting integration.
+	[modules.compactcrafting]
+		#Master override for Compact Crafting integration.
+		#When disabled, every Compact Crafting module below is disabled regardless of its own toggle.
+		allow_compactcrafting_module = true
+
+		#Miniaturization Controller:
+		[modules.compactcrafting.miniaturizationController]
+			#The Miniaturization Controller runs miniaturization patterns on a real projector field instead of inside itself: it stacks the recipe's blocks in the field, throws the catalyst in, and collects what the field produces.
+			#It must be placed touching one of the field's projectors, which is how it reads that field's size and centre, and it carries no field size ceiling of its own.
+			enabled = true
+			#Treats the Controller as a requester, allowing it to auto-pull, auto-craft, and auto-request a set of recipe ingredients from the ME network when a craft it owes is left without materials.
+			#When disabled, a Controller left short of materials stalls until you restock it by hand.
+			autoRequest = true
+			#How many blocks the Controller places into the field per tick.
+			#Raise it to fill the field faster, or past the block count of your largest recipe to have every layout appear in a single tick.
+			# Default: 1
+			# Range: 1 ~ 4096
+			blocksPerTick = 1
+			#Energy the Controller draws from its ME network while the field is crafting, in AE per tick. The field stops being paid for whenever the network cannot supply this much power.
+			#The field itself keeps its own crafting time, so this is the whole running cost of the machine.
+			# Default: 500
+			# Range: 0 ~ 1000000
+			meNetworkDrain = 500
+			#Energy the Controller draws from its ME network while idle, in AE per tick. This standing cost is read once when the Controller joins a network, so changing it needs a world reload.
+			# Default: 10
+			# Range: 0 ~ 1000000
+			idleMeNetworkDrain = 10
+			#Channels the Controller takes up on its ME network. Any value above 8 has to pass through dense cables.
+			#This is read once when the Controller joins a network, so changing it needs a world reload. Set to 0 for a Controller that takes up no channels at all.
+			# Default: 7
+			# Range: 0 ~ 128
+			meNetworkChannels = 7
+
+		#Miniaturization Matrix:
+		[modules.compactcrafting.miniaturizationMatrix]
+			#The Miniaturization Matrix runs miniaturization recipes inside a single block, without needing field projectors.
+			enabled = true
+			#Treats the Matrix as a requester, allowing it to auto-pull, auto-craft, and auto-request a set of recipe ingredients from the ME network when a craft it owes is left without materials.
+			#When disabled, a Matrix left short of materials stalls until you restock it by hand.
+			autoRequest = true
+			#Length of a Matrix craft, as a percentage of the recipe's own crafting time. A miniaturization recipe carries its own duration, 200 ticks unless the recipe says otherwise.
+			#Raise it to make the single-block shortcut slower than building the field would be.
+			# Default: 100
+			# Range: 1 ~ 10000
+			craftTimePercent = 100
+			#Largest field a recipe may need for the Matrix to run it: small (3x3x3), medium (5x5x5), large (7x7x7), or absurd (9x9x9).
+			#Lower it to keep the biggest recipes on the real projectors while the Matrix handles the smaller ones.
+			maximumFieldSize = "absurd"
+			#Energy the Matrix draws from its ME network while crafting, in AE per tick. Progress stops whenever the network cannot supply this much power.
+			#Miniaturization crafting has no energy cost of its own, so this is the whole running cost of the machine.
+			# Default: 500
+			# Range: 0 ~ 1000000
+			meNetworkDrain = 500
+			#Energy the Matrix draws from its ME network while idle, in AE per tick. This standing cost is read once when the Matrix joins a network, so changing it needs a world reload.
+			# Default: 10
+			# Range: 0 ~ 1000000
+			idleMeNetworkDrain = 10
+			#Channels the Matrix takes up on its ME network. Any value above 8 has to pass through dense cables.
+			#This is read once when the Matrix joins a network, so changing it needs a world reload. Set to 0 for a Matrix that takes up no channels at all.
+			# Default: 15
+			# Range: 0 ~ 128
+			meNetworkChannels = 15
+
+	#Create integration.
+	[modules.create]
+		#Master override for Create integration.
+		#When disabled, every Create module below is disabled regardless of its own toggle.
+		allow_create_module = true
+		#Spout Filling Module: Automates `create:filling` recipes and Create's generic bucket and bottle filling.
+		#Covers both machines: a Spout over a Depot, and the Assembly Matrix, which fills without either.
+		filling = true
+
+		#Deployer Module:
+		[modules.create.deploying]
+			#Automates the Deployer for create:deploying and create:item_application recipes.
+			#The Depot is the machine: the base item is staged on it and a Deployer two blocks above presses onto it.
+			#The Assembly Matrix runs the same recipes on its own, with no Depot or Deployer built.
+			enabled = true
+			#Allows Deployers holding an axe strip a log on a Depot. Depends on the deploying module above.
+			#Adds a real Deploying recipe for every log in #minecraft:logs that an axe can strip. The axe is not consumed and takes no damage, matching Create's own axe recipes for de-oxidising copper.
+			logStripping = true
+
+		#Mechanical Crafter Module:
+		[modules.create.mechanicalCrafting]
+			#Automates Create's Mechanical Crafters, with a pattern provider feeding the array.
+			#The recipe is captured by building it once in a real crafter array rather than encoded at a terminal.
+			enabled = true
+			#Toggles crafting/processing patterns auto-resolving to vanilla shaped or shapeless recipes for Mechanical Crafters.
+			#When disabled, only genuine Create Mechanical Crafting recipes are driven.
+			#Also requires Create's own 'recipes.allowRegularCraftingInCrafter' to be enabled.
+			allowRegularCrafting = true
+
+		#Sequenced Assembly Controller:
+		[modules.create.sequencedAssembly]
+			#Automates `create:sequenced_assembly` on a real belt line built out of Create machines.
+			#The Controller is a black box around the whole line: One pattern goes in and the finished item(s) comes out, with the Controller feeding every station and recirculating until it is done.
+			enabled = true
+			#Maximum distance, in blocks, that a linked input, output, or machine station may sit from the Sequenced Assembly Controller.
+			#Endpoints beyond this range are rejected when syncing the linker, guarding against distant links that would force-load far chunks every poll.
+			# Default: 16
+			# Range: 1 ~ 128
+			linkRange = 16
+			#Treats the Sequenced Assembly Controller as a requester, allowing it to auto-pull, auto-craft, and auto-request a set of recipe ingredients from the ME network when a chance recipe rolls junk.
+			#When disabled, an unlucky streak halts the controller until you restock it by hand.
+			autoRequest = true
+			#Capacity of the Sequenced Assembly Controller's staging tank, per distinct fluid, in millibuckets.
+			#A pattern whose fluids will not fit is rejected until the Controller has fed what it already holds to its Spouts.
+			# Default: 64000
+			# Range: 1000 ~ 1000000
+			tankCapacity = 64000
+			#Ticks a recipe may make no progress before the Controller counts it as halted (out of materials).
+			#When halted with another recipe waiting, the Controller cleans out its stations and rotates the stuck recipe to the back of its queue so the others keep running. 20 ticks is one second.
+			# Default: 100
+			# Range: 0 ~ 24000
+			haltGrace = 100
+			#Ticks the Controller keeps clearing its output Depot after its pending recipes are dropped or its buffers are emptied.
+			#The clock restarts every time something is reclaimed. 20 ticks is one second.
+			# Default: 200
+			# Range: 0 ~ 24000
+			reclaimGrace = 200
+			#Channels the Controller takes up on its ME network. Any value above 8 has to pass through dense cables.
+			#This is read once when the Controller joins a network, so changing it needs a world reload. Set to 0 for a Controller that takes up no channels at all.
+			# Default: 7
+			# Range: 0 ~ 128
+			meNetworkChannels = 7
+
+		#Assembly Matrix:
+		[modules.create.sequencedAssemblyMatrix]
+			#The Assembly Matrix runs a whole sequenced assembly recipe inside a single block.
+			enabled = true
+			#Bypasses the output chances of sequenced assembly recipes, so the Matrix craft always yields the recipe's primary result.
+			#When disabled, the Matrix rolls the recipe's result pool exactly as a physical line does: unlucky rolls produce junk, which is placed into network storage, and the ingredients for that attempt are lost.
+			guaranteedResults = false
+			#Treats the Assembly Matrix as a requester, allowing it to auto-pull, auto-craft, and auto-request a set of recipe ingredients from the ME network when a craft it owes is left without materials.
+			#This lets a Matrix with guaranteedResults disabled retry after a chance recipe rolls junk. When disabled, an unlucky streak stalls the crafting network until manually fixed.
+			autoRequest = true
+			#Energy the Matrix draws from its ME network while assembling, in AE per tick. Progress stops whenever the network cannot supply this much power.
+			# Default: 500
+			# Range: 0 ~ 1000000
+			meNetworkDrain = 500
+			#Energy the Matrix draws from its ME network while idle, in AE per tick. This standing cost is read once when the Matrix joins a network, so changing it needs a world reload.
+			# Default: 10
+			# Range: 0 ~ 1000000
+			idleMeNetworkDrain = 10
+			#Rotational stress the Matrix draws once it reaches Create's maximum rotation speed, in Create Stress Units.
+			#Draw rises with shaft speed between minimumSpeed and that maximum. A Matrix drawing more stress assembles faster.
+			# Default: 294912
+			# Range: 1 ~ 16777216
+			stressUnits = 294912
+			#Rotational stress the Matrix draws at minimumSpeed (see below), in Create Stress Units. This is the least stress a working Matrix can process recipes at.
+			#The ratio between stressUnits and this figure is how fast a fully fed Matrix assembles.
+			# Default: 8192
+			# Range: 1 ~ 16777216
+			stressUnitsMinimum = 8192
+			#Shaft speed the Matrix needs to run, in RPM. Below this the Matrix does no work and draws no stress at all.
+			# Default: 32
+			# Range: 1 ~ 1024
+			minimumSpeed = 32
+			#Ticks the Matrix takes to assemble one item while drawing its maximum stress.
+			#At lower stress the craft takes proportionally longer, up to 'stressUnits / stressUnitsMinimum' times this value.
+			# Default: 5
+			# Range: 1 ~ 1200
+			craftTicks = 5
+			#Capacity of each of the Matrix's four internal tanks, in millibuckets.
+			# Default: 64000
+			# Range: 1000 ~ 1000000
+			tankCapacity = 64000
+			#Size of the Matrix's internal energy buffer, in FE. Only sequenced assembly recipes with an energising step (Create: New Age) cost energy; the buffer grows on its own when a single craft needs more than this.
+			# Default: 1000000
+			# Range: 1000 ~ 2147483647
+			energyCapacity = 1000000
+			#Maximum energy the Matrix accepts per tick, in FE.
+			# Default: 100000
+			# Range: 1 ~ 2147483647
+			chargeRate = 100000
+			#Channels the Matrix takes up on its ME network. Anything above 8 has to connect via a dense cable, and a network with no ME Controller cannot carry more than 8 channels in total.
+			#This is read once when the Matrix joins a network, so changing it needs a world reload. Set to 0 for a Matrix that takes up no channels at all.
+			# Default: 15
+			# Range: 0 ~ 128
+			meNetworkChannels = 15
+
+	#Draconic Evolution integration.
+	[modules.draconicevolution]
+		#Master override for Draconic Evolution integration.
+		#When disabled, every Draconic Evolution module below is disabled regardless of its own toggle.
+		allow_draconicevolution_module = true
+		#Fusion Crafting Module: The Crafting Core is the machine, and the network stages the catalyst in the core, loads every Crafting Injector around it, and starts the craft.
+		fusionCrafting = true
+
+		#Injector Fusion Matrix:
+		[modules.draconicevolution.fusionMatrix]
+			#The Injector Fusion Matrix runs a whole fusion crafting recipe inside a single block, with no Crafting Core or Injectors.
+			enabled = true
+			#Treats the Injector Fusion Matrix as a requester, allowing it to auto-pull, auto-craft, and auto-request a set of recipe ingredients from the ME network when a craft it owes is left without materials.
+			#When disabled, a Matrix left short of materials stalls until you restock it by hand.
+			autoRequest = true
+			#Energy a Matrix craft costs, as a percentage of the fusion recipe's own energy cost.
+			#100 charges exactly what the real multiblock would; raise it to make recipes more expensive.
+			# Default: 100
+			# Range: 0 ~ 10000
+			energyCostPercent = 100
+			#Maximum energy the Matrix accepts per tick, in FE. Draconic Evolution's own OP transfer counts the same.
+			#This is the speed limit on the charging phase, standing in for the charge rate of the Injectors it replaces.
+			# Default: 10000000
+			# Range: 1 ~ 9223372036854775807
+			chargeRate = 10000000
+			#Size of an unupgraded Matrix's internal energy buffer, in FE.
+			#The default is sized for the priciest Draconium tier recipe; upgrade cores raise it to their own tier's ceiling.
+			# Default: 2000000
+			# Range: 1000 ~ 9223372036854775807
+			energyCapacity = 2000000
+			#Ticks the Matrix spends on the crafting phase once it is fully charged. 20 ticks is one second.
+			# Default: 20
+			# Range: 1 ~ 24000
+			craftTicks = 20
+			#Energy the Matrix draws from its ME network while fusing, in AE per tick. Progress stops whenever the network cannot supply this much power.
+			# Default: 500
+			# Range: 0 ~ 1000000
+			meNetworkDrain = 500
+			#Energy the Matrix draws from its ME network while idle, in AE per tick. This standing cost is read once when the Matrix joins a network, so changing it needs a world reload.
+			# Default: 10
+			# Range: 0 ~ 1000000
+			idleMeNetworkDrain = 10
+			#Channels the Matrix takes up on its ME network. Any value above 8 has to pass through dense cables.
+			#This is read once when the Matrix joins a network, so changing it needs a world reload. Set to 0 for a Matrix that takes up no channels at all.
+			# Default: 15
+			# Range: 0 ~ 128
+			meNetworkChannels = 15
+			#Highest fusion recipe tier the Matrix will run: 'draconium', 'wyvern', 'draconic', or 'chaotic'.
+			maximumTier = "chaotic"
+
+			#Draconic Evolution cores slotted into the Injector Fusion Matrix's upgrade slot tune the machine to the tier of core it holds. Each higher tier compounds lower tiers' upgrades.
+			#One slot means one tier at a time; Wyvern Cores increases energy buffer; Draconic Cores also increase fusion speed; Chaotic Cores also decrease energy costs.
+			[modules.draconicevolution.fusionMatrix.upgrades]
+				#Quantity of Cores accepted. Each is measured against a full slot, so lowering this makes each core better.
+				#Set to 0 to disable the upgrade slot entirely.
+				# Default: 16
+				# Range: 0 ~ 64
+				maxCores = 16
+				#Ticks the Matrix holds on to energy that no longer fits after cores leave the upgrade slot. The Matrix can be topped up or re-tiered without voiding the energy buffer. 20 ticks is one second.
+				#The buffer reads as full for the window and takes no more energy in; anything still over the smaller buffer when the window closes is lost.
+				#Set to 0 to void the excess the moment a core comes out.
+				# Default: 100
+				# Range: 0 ~ 24000
+				coreSwapGrace = 100
+				#Energy buffer a full slot of Wyvern Cores reaches, in FE. Each core adds an equal share, so the buffer climbs in a straight line from energyCapacity to here.
+				#The default covers the priciest Wyvern tier recipe, Awakened Draconium Block.
+				# Default: 50000000
+				# Range: 1000 ~ 2147483647
+				wyvernCapacity = 50000000
+				#Energy buffer a full slot of Draconic Cores reaches, in FE. Each core multiplies rather than adds, so the buffer climbs steeply toward the end of the slot.
+				#The default covers the priciest Draconic tier recipe, the Draconic Staff of Power.
+				# Default: 256000000
+				# Range: 1000 ~ 2147483647
+				draconicCapacity = 256000000
+				#Crafting time fully upgraded Draconic Cores can cut, as a percentage. A partly filled slot scales linearly toward this cap.
+				# Default: 38
+				# Range: 0 ~ 99
+				draconicCraftTimeReductionPercent = 38
+				#Energy buffer a full slot of Chaotic Cores reaches, in FE, multiplying the same way Draconic Cores do.
+				#The default covers the priciest recipe in the base mod, the Chaotic Staff of Power.
+				#Keeping this under `maxInt` matters: Most cables will read the buffer as permanently full and stop pushing, though some mod's cables will still work.
+				# Default: 1024000000
+				# Range: 1000 ~ 2147483647
+				chaoticCapacity = 1024000000
+				#Most of a recipe's charged energy cost a full slot of Chaotic Cores can cut, as a percentage. A partly filled slot scales linearly toward this cap.
+				# Default: 50
+				# Range: 0 ~ 99
+				chaoticEnergyCostReductionPercent = 50
+				#Crafting phase length a full slot of Chaotic Cores reaches, in ticks. A partly filled slot scales linearly from craftTicks down to this floor.
+				#Values above craftTicks are ignored, so Chaotic Cores never slow a Matrix down.
+				# Default: 4
+				# Range: 1 ~ 24000
+				chaoticMinimumCraftTicks = 4
+
+	#Mystical Agriculture integration.
+	[modules.mysticalagriculture]
+		#Master override for Mystical Agriculture integration.
+		#When disabled, every Mystical Agriculture module below is disabled regardless of its own toggle.
+		allow_mysticalagriculture_module = true
+		#Infusion Altar Module: An Infusion Altar with a pattern provider against it takes a whole craft at once, with the centre item going into the altar and one ingredient onto each of its Infusion Pedestals.
+		#The altar starts itself but does NOT automatically return the finished product.
+		infusion = true
+		#Awakening Altar Module: An Awakening Altar with a pattern provider against it takes a whole craft at once, with the centre item going into the altar, one ingredient onto each of its four Awakening Pedestals, and each recipe's essences into the four Essence Vessels.
+		#The altar starts itself but does NOT automatically return the finished product.
+		awakening = true
+
+		#Infused Awakening Matrix:
+		[modules.mysticalagriculture.infusedAwakeningMatrix]
+			#The Infused Awakening Matrix runs infusion and awakening recipes inside a single block.
+			#Its four essence tanks stand in for the Essence Vessels an awakening recipe would otherwise need.
+			enabled = true
+			#Treats the Matrix as a requester, allowing it to auto-pull, auto-craft, and auto-request a set of recipe ingredients from the ME network when a craft it owes is left without materials.
+			#When disabled, a Matrix left short of materials stalls until you restock it by hand.
+			autoRequest = true
+			#Ticks the Matrix spends on a craft, whichever recipe it is running. 20 ticks is one second.
+			#Both altars normally take 100 ticks.
+			# Default: 20
+			# Range: 1 ~ 24000
+			craftTicks = 20
+			#Capacity of the Infusion Matrix's essence tanks, per essence, in item quantity. A tank takes one essence at a time and is free for any other the moment it empties.
+			#A regular Essence Vessel holds 40, which is exactly one craft of the priciest awakening recipe.
+			# Default: 40
+			# Range: 40 ~ 512
+			essenceTankCapacity = 40
+			#Energy the Matrix draws from its ME network while crafting, in AE per tick. Progress stops whenever the network cannot supply this much power.
+			#Infusion and awakening have no energy cost of their own, so this is the whole running cost of the machine.
+			# Default: 500
+			# Range: 0 ~ 1000000
+			meNetworkDrain = 500
+			#Energy the Matrix draws from its ME network while idle, in AE per tick. This standing cost is read once when the Matrix joins a network, so changing it needs a world reload.
+			# Default: 10
+			# Range: 0 ~ 1000000
+			idleMeNetworkDrain = 10
+			#Channels the Matrix takes up on its ME network. Any value above 8 has to pass through dense cables.
+			#This is read once when the Matrix joins a network, so changing it needs a world reload. Set to 0 for a Matrix that takes up no channels at all.
+			# Default: 15
+			# Range: 0 ~ 128
+			meNetworkChannels = 15
+
+#Pattern behaviour outside any one integration.
+[patterns]
+	#Lets a NEP pattern be crafted back into a plain AE2 Processing Pattern carrying the same ingredients and result, one pattern per crafting grid.
+	#This is the escape hatch for a pack that moves a recipe onto a machine NEP does not drive, so an encoded NEP pattern can never leave a player with no way to automate the craft.
+	#Patterns that keep an ingredient instead of consuming it, such as Deploying and Filling, are refused: a Processing Pattern has no way to say an ingredient comes back, and converting one would consume the tool on every craft.
+	processingPatternConversion = true
+
+#Machine Hub behaviour.
+[machineHub]
+	#The Machine Hub presents the inventories it is linked to as one inventory, so a pattern provider against the Hub can load a multiblock whose item and fluid hatches are separate blocks.
+	#When disabled, a placed Hub keeps its links but stops offering storage, so pattern providers ignore it entirely.
+	enabled = true
+	#Maximum distance, in blocks, that a linked inventory may sit from the Machine Hub. This is also how far the Hub's scan may reach.
+	#Links beyond this range are refused when syncing the Hub Linker, guarding against distant links that would force-load far chunks on every push.
+	# Default: 16
+	# Range: 1 ~ 64
+	linkRange = 16
+	#How many inventories one Machine Hub may be linked to, and how many a scan may propose. The screen shows twelve rows at a time and scrolls past that.
+	# Default: 24
+	# Range: 1 ~ 64
+	maximumLinks = 24
+	#How many blocks the Machine Hub's scan may walk through before it stops, which is what bounds the cost of pressing the button.
+	#The scan spreads from the blocks touching the Hub through anything that looks like part of the same machine, so it never walks off into the terrain and rarely gets near this ceiling. Raise it for a machine larger than the budget can cover.
+	# Default: 128
+	# Range: 4 ~ 1024
+	scanBudget = 128
+	#How many plain blocks in a row the Machine Hub's scan may step through between one machine part and the next.
+	#The scan travels freely through blocks carrying a block entity, which is every hatch, port and controller. Everything else is casing, and casing is only crossed for this many blocks at a time, and only when it belongs to a mod that already owns a machine part nearby. Raise it for a multiblock with thick walls between its hatches; set it to zero to have the scan follow machine parts alone.
+	# Default: 3
+	# Range: 0 ~ 8
+	casingDepth = 3
+	#Blocks the Machine Hub's scan always treats as machine parts, written as block ids (modid:block) or mod id regex (modid:*).
+	#Whatever stands against a whitelisted block is trusted the way blocks touching the Hub are, and a whitelisted casing is crossed without counting against casingDepth.
+	#The block tag nep:machine_hub/parts does the same thing in a datapack.
+	scanWhitelist = []
+	#Blocks the Machine Hub's scan never walks through and never proposes, written as block ids (modid:block) or mod id regex (modid:*). The blacklist wins over the whitelist.
+	#The block tag nep:machine_hub/blocked does the same thing in a datapack, and ships with common player storage (chests, barrels, shulker boxes) and general terrain and building blocks (dirt, stone, sand, wood, wool, concrete) already in it.
+	scanBlacklist = []
+	#Blocks a Machine Hub refuses to link at all, even from a Hub Linker plan, written as block ids (modid:block) or a mod id regex (modid:*).
+	#The scan can still go through them to whatever lies beyond. The block tag nep:machine_hub/unlinkable does the same thing in a datapack.
+	linkBlacklist = []
+	#Channels the Machine Hub takes up on its ME network before its links are counted. Each linked inventory adds meNetworkChannelsPerLink on top, and anything above 8 has to pass through dense cables.
+	#This is read once when the Hub joins a network, so changing it needs a world reload. Set both this and meNetworkChannelsPerLink to 0 for a Hub that takes up no channels at all.
+	# Default: 11
+	# Range: 0 ~ 128
+	meNetworkChannels = 11
+	#Channels each inventory linked to the Machine Hub adds to what the Hub takes up, standing in for a bus each hatch would otherwise need.
+	#A Hub can take up to the channel limit at most depending on your AE2 config. Set to 0 to have links cost nothing.
+	# Default: 1
+	# Range: 0 ~ 128
+	meNetworkChannelsPerLink = 1
+
+#Pattern Provider behaviour.
+[provider]
+	#Ticks an Import Card keeps collecting a result the network has stopped waiting for. This is what returns items already sent to a machine when a job is cancelled partway through.
+	#The clock restarts every time the card collects something, so a run of results still in flight all come back. This grace period only runs once a job ends.
+	#Set to 0 to give a cancelled job a single collection attempt and nothing more.
+	# Default: 200
+	# Range: 0 ~ 24000
+	importCardGrace = 200
+
+#Mod Debug configuration.
+[debug]
+	#Log diagnostics to the server log at INFO level (e.g. every pattern-provider push to a machine and why it was accepted or rejected).
+	verbose_logging = false
