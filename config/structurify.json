@@ -3,7 +3,8 @@
   "config_datetime": "2026-08-28_08-06-18",
   "general": {
     "disable_all_structures": false,
-    "prevent_structure_overlap": false,
+    "prevent_structure_overlap": true,
+    "overlap_padding": 0,
     "enable_global_spacing_and_separation_modifier": false,
     "global_spacing_and_separation_modifier": 1.0
   },
