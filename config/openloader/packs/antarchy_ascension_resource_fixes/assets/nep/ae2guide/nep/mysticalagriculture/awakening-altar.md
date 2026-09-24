@@ -43,7 +43,7 @@ item_ids:
 
 * Build the altar with its four Awakening Pedestals and four Essence Vessels in the ring Mystical Agriculture expects. All eight are part of the machine.
 * Put a Pattern Provider against any face of the altar and drop <ItemLink id="nep:awakening_pattern"/> patterns in it.
-* Add a [Crafting Result Import Card](/ae2helpers/result_import_card.md) to that Provider so the finished item comes back off the altar's output slot.
+* Add a [Crafting Result Import Card](ae2helpers:ae2helpers/result_import_card.md) to that Provider so the finished item comes back off the altar's output slot.
 
 <ItemImage id="minecraft:air" scale="0.5"/>
 

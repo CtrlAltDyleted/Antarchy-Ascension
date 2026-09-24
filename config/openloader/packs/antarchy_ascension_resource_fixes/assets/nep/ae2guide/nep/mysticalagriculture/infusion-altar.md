@@ -43,7 +43,7 @@ item_ids:
 
 * Build the altar and its eight pedestals exactly as Mystical Agriculture wants them. The pedestals are part of the machine, not decoration.
 * Put a Pattern Provider against any face of the altar and drop <ItemLink id="nep:infusion_pattern"/> patterns in it.
-* Add a [Crafting Result Import Card](/ae2helpers/result_import_card.md) to that Provider. The altar leaves its result in its own output slot, and the card is what brings it back to the network.
+* Add a [Crafting Result Import Card](ae2helpers:ae2helpers/result_import_card.md) to that Provider. The altar leaves its result in its own output slot, and the card is what brings it back to the network.
 
 <ItemImage id="minecraft:air" scale="0.5"/>
 

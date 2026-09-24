@@ -41,7 +41,7 @@ item_ids:
 * Build the Empowerer exactly as Actually Additions wants it: four Display Stands, three blocks away on each horizontal axis, all at the same height.
 * Put a Pattern Provider against any face of the **Empowerer** and drop <ItemLink id="nep:empowering_pattern"/> patterns in it.
 * Keep the four stands powered. They are still the only source of energy the craft has, and the Empowerer itself holds none.
-* Add a [Crafting Result Import Card](/ae2helpers/result_import_card.md) to the Provider if you wish the crafted item to be returned directly to the system once the craft is finished, otherwise the finished item will be left in the Empowerer.
+* Add a [Crafting Result Import Card](ae2helpers:ae2helpers/result_import_card.md) to the Provider if you wish the crafted item to be returned directly to the system once the craft is finished, otherwise the finished item will be left in the Empowerer.
 
 <ItemImage id="minecraft:air" scale="0.5"/>
 

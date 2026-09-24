@@ -47,7 +47,7 @@ item_ids:
 * Build the array as Create wants it: one connected group of <ItemLink id="create:mechanical_crafter"/> whose arrows all lead to a single output.
 * The array needs rotational speed. The Provider only stages ingredients, it does not turn anything.
 * The Pattern Provider goes on any crafter in the array, not on the block the output drops into.
-* No [Crafting Result Import Card](/ae2helpers/result_import_card.md) is needed. The result leaves through the output crafter exactly as it does for a hand-fed array.
+* No [Crafting Result Import Card](ae2helpers:ae2helpers/result_import_card.md) is needed. The result leaves through the output crafter exactly as it does for a hand-fed array.
 
 <ItemImage id="minecraft:air" scale="0.5"/>
 

@@ -1,5 +1,31 @@
 # Antarchy - Ascension Changelog
 
+## 0.2.0-alpha
+
+### 2026-09-23
+
+#### Added
+
+- Added the Antarchy - Ascension 0.2.0-alpha mod and updated the mod manifest
+- Added animated End Remastered eye textures and an ancient portal frame resource override
+- Added in-game guide pages for Not Enough Patterns integrations and updated compass display names
+
+#### Fixed
+
+- Fixed AE2 Crystal Science machines stalling at zero progress with Time in a Bottle Entity Fix installed
+- Fixed the raw redstone recipe loop
+- Fixed small blimp structures so the blimp and island generate together
+- Fixed End Remastered portal rooms in Integrated Strongholds
+- Fixed overlapping Pattern Provider upgrade slots and removed the disabled Not Enough Patterns Import Card from recipes and compatible upgrades
+- Fixed NEP guide 
+- Fixed Shaders being on by default
+
+#### Changed
+
+- Enabled the Ars Zero Amplify II/III and Area of Effect II/III augments
+- Updated structure generation settings and removed the obsolete Overlapless configuration
+- Organized JEI's mod list and updated pack configuration for the current mod set
+
 ## Alpha 1.1
 
 ### 2026-09-14

@@ -50,7 +50,7 @@ item_ids:
 * Build the Fusion Crafting multiblock exactly as Draconic Evolution wants it: Injectors in straight cardinal lines, facing the Core, at least Draconic Evolution's minimum distance away and within its injector range.
 * The Provider goes on the <ItemLink id="draconicevolution:crafting_core"/>, not on an Injector.
 * Injectors still need power. The network loads them with items; it does not charge them.
-* Return the finished item from the Fusion Crafting Core to the network with a suitable output path. AE2 Helpers' [Crafting Result Import Card](/ae2helpers/result_import_card.md) is documented for adjacent sided machines; verify compatibility before relying on it here.
+* Return the finished item from the Fusion Crafting Core to the network with a suitable output path. AE2 Helpers' [Crafting Result Import Card](ae2helpers:ae2helpers/result_import_card.md) is documented for adjacent sided machines; verify compatibility before relying on it here.
 
 > <Color id="yellow">It has to be an ordinary Pattern Provider.</Color> An <ItemLink id="ae2:pattern_provider"/> or an <ItemLink id="ae2:cable_pattern_provider"/> touching the Core is what NEP listens to. Another mod's Fusion-specific provider loads the Injectors through its own routing and never offers the pattern to NEP, so a <ItemLink id="nep:fusion_crafting_pattern"/> sitting in one of those is out of NEP's hands. Pick one or the other for a given Core: two of them aimed at the same Core take turns loading it and get in each other's way.
 

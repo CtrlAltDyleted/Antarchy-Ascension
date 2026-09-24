@@ -36,7 +36,7 @@ item_ids:
 
 * Put a Pattern Provider against any face of the table. That is the whole build.
 * No bookshelves, no Hellshelves, no Sightshelves. Shelves feed a table's stats, and this table's stats are set instead, so the ring around it does nothing for an automated craft.
-* An [Crafting Result Import Card](/ae2helpers/result_import_card.md) is also not required. The craft finishes in one tick and the result is handed straight back to the Provider that asked for it. If a Provider is not available, any other inventory touching the table takes it instead, and with no connected inventory at all the table drops it on top of itself rather than holding the job up.
+* A [Crafting Result Import Card](ae2helpers:ae2helpers/result_import_card.md) is also not required. The craft finishes in one tick and the result is handed straight back to the Provider that asked for it. If a Provider is not available, any other inventory touching the table takes it instead, and with no connected inventory at all the table drops it on top of itself rather than holding the job up.
 * Only the Table of the Raven takes patterns as no other tables can be dialled to a recipe's requirements.
 
 <ItemImage id="minecraft:air" scale="0.5"/>

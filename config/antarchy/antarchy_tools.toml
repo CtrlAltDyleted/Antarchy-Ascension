@@ -793,6 +793,9 @@
 	# Default: 64
 	# Range: 0 ~ 4096
 	guardianBoundaryProjectileCap = 64
+	# Default: 50.0
+	# Range: 0.0 ~ 4096.0
+	giantFryingPanAttackDamage = 50.0
 
 [eyeOfTheStorm]
 	enabled = true
