@@ -1,6 +1,6 @@
 # Antarchy - Ascension Changelog
 
-## 0.2.0-alpha
+## 0.2.0 Alpha
 
 ### 2026-09-23
 
