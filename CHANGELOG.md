@@ -6,7 +6,7 @@
 
 #### Added
 
-- Added the Antarchy - Ascension 0.2.0-alpha mod and updated the mod manifest
+- Added the Antarchy - Ascension 0.2.0 Alpha mod and updated the mod manifest
 - Added animated End Remastered eye textures and an ancient portal frame resource override
 - Added in-game guide pages for Not Enough Patterns integrations and updated compass display names
 
