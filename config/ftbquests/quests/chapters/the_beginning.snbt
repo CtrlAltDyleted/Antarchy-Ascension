@@ -261,16 +261,19 @@
 				{
 					id: "46C0C73007AC05EF"
 					item: { count: 1, id: "utilitarian:snad" }
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "738B4AB1D17CCA47"
 					item: { count: 1, id: "utilitarian:redstone_clock" }
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "364E6195B0F7CD44"
 					item: { components: { "ftbfiltersystem:filter": "or(item(minecraft:sugar_cane)item(minecraft:cactus))", "minecraft:custom_name": "\"Cactus or Sugar Cane\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1213,7 +1216,7 @@
 				"2B0B612E5826A3DA"
 				"5E61BA6960339FAB"
 			]
-			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "75A6591BBD45C461"
 			tasks: [{
 				id: "09C4E021F916F5E8"
@@ -1272,6 +1275,7 @@
 				"241629BCC1A18BEF"
 				"337B998BA11AABD0"
 			]
+			hide_until_deps_visible: true
 			id: "1C8FFE53D06DE36F"
 			tasks: [{
 				id: "456A0D7DF3DBBA41"
@@ -1289,6 +1293,7 @@
 				"730B249B3F5A4F0F"
 				"52FECFF0BDDA7E9E"
 			]
+			hide_until_deps_visible: true
 			id: "2500D96A429C8278"
 			shape: "hexagon"
 			size: 1.5d
