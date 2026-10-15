@@ -2,6 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
+    "B": {
+      "item": "mekanism:basic_control_circuit"
+    },
     "C": {
       "tag": "c:ingots/copper"
     },
@@ -14,16 +17,13 @@
     "O": {
       "tag": "c:ingots/osmium"
     },
-    "W": {
-      "tag": "minecraft:planks"
-    },
     "Z": {
       "tag": "c:ingots/steel"
     }
   },
   "pattern": [
     "IZI",
-    "WOW",
+    "BOB",
     "CFC"
   ],
   "result": {
