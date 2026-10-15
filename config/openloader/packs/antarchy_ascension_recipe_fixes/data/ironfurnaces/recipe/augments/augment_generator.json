@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ZR#",
+    "PXP",
+    "#R#"
+  ],
+  "key": {
+    "#": {
+      "tag": "c:stones"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "R": {
+      "tag": "c:dusts/redstone"
+    },
+    "X": {
+      "item": "minecraft:repeater"
+    },
+    "Z": {
+      "tag": "c:ingots/steel"
+    }
+  },
+  "result": {
+    "id": "ironfurnaces:augment_generator"
+  }
+}

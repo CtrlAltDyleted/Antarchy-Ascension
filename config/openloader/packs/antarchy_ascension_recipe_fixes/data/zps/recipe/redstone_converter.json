@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "C": {
+      "item": "zps:cable"
+    },
+    "I": {
+      "tag": "c:ingots/space_metal"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    " C ",
+    "III",
+    "RRR"
+  ],
+  "result": {
+    "id": "zps:redstone_converter",
+    "count": 2
+  },
+  "show_notification": true
+}

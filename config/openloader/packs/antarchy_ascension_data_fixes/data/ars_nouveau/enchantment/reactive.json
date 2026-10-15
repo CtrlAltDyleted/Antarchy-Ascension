@@ -1,0 +1,38 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.ars_nouveau.reactive"
+  },
+  "max_cost": {
+    "base": 12,
+    "per_level_above_first": 11
+  },
+  "max_level": 4,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 11
+  },
+  "slots": [
+    "any"
+  ],
+  "supported_items": {
+    "type": "neoforge:not",
+    "value": [
+      "nether_remastered:seal_piece_1",
+      "nether_remastered:seal_piece_2",
+      "nether_remastered:seal_piece_3",
+      "nether_remastered:seal_piece_4",
+      "nether_remastered:seal_crystal",
+      "antarchyascension:skybound_sigil",
+      "antarchyascension:grounded_sigil",
+      "antarchyascension:nether_crystal_seed",
+      "antarchyascension:nether_core",
+      "aether:bronze_dungeon_key",
+      "antarchyascension:skybound_key",
+      "antarchyascension:frozen_exanimate_essence",
+      "naturescompass:naturescompass",
+      "explorerscompass:explorerscompass"
+    ]
+  },
+  "weight": 1
+}

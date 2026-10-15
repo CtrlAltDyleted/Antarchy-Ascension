@@ -1,0 +1,211 @@
+{
+	autofocus_id: "4E0AB14C24416743"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome"
+	group: ""
+	icon: {
+		components: {
+			"ftbquests:icon": "kubejs:textures/quest_icons/pack_logo.png"
+		}
+		id: "ftbquests:custom_icon"
+	}
+	id: "77EAA804883E19D8"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				components: {
+					"ftbquests:icon": "kubejs:textures/quest_icons/pack_logo.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "4E0AB14C24416743"
+			rewards: [{
+				auto: "enabled"
+				id: "44E7F5C4C6DB532A"
+				item: {
+					count: 1
+					id: "ftbquests:book"
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: {
+					components: {
+						"ftbquests:icon": "kubejs:textures/quest_icons/pack_logo.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "79EF147A39B890D9"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4E0AB14C24416743"]
+			icon: {
+				id: "ftbquests:book"
+			}
+			id: "4EA4FB8A550E2A77"
+			tasks: [{
+				id: "0E884510353FC15F"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4E0AB14C24416743"]
+			icon: {
+				components: {
+					"ftbquests:icon": "ftbteams:textures/teams.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "61EA94ECBC1E5A96"
+			tasks: [{
+				icon: {
+					id: "minecraft:player_head"
+				}
+				id: "2CD3B63A25BD5FBF"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4E0AB14C24416743"]
+			icon: {
+				components: {
+					"ftbquests:icon": "ftblibrary:icons/globe"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "1E311BE950695BFB"
+			tasks: [{
+				id: "3A410D517E972A12"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4E0AB14C24416743"]
+			icon: {
+				components: {
+					"ftbquests:icon": "ftblibrary:icons/keyboard"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "79D44307D1CD7C76"
+			tasks: [{
+				id: "2940CA3AD85304BD"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4E0AB14C24416743"]
+			icon: {
+				id: "createdeco:decal_warning"
+			}
+			id: "102049B6088E4226"
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				icon: {
+					id: "createdeco:decal_warning"
+				}
+				id: "7AEF30AE7295B1C1"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4E0AB14C24416743"]
+			icon: {
+				components: {
+					"ftbquests:icon": "moonlight:textures/gui/sprites/media/discord.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "56FF4A052F4B1F4E"
+			tasks: [{
+				id: "3773FAA52054B80A"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"4EA4FB8A550E2A77"
+				"79D44307D1CD7C76"
+				"1E311BE950695BFB"
+				"102049B6088E4226"
+				"61EA94ECBC1E5A96"
+				"56FF4A052F4B1F4E"
+				"03340171A9F60D98"
+				"580A2BACA71EC494"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				components: {
+					"ftbquests:icon": "ftblibrary:icons/heart"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "582C56657BA3A103"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "7367B102FEC50FFB"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 5.25d
+		}
+		{
+			dependencies: ["4E0AB14C24416743"]
+			icon: {
+				components: {
+					"ftbquests:icon": "moonlight:textures/gui/sprites/media/github.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "580A2BACA71EC494"
+			tasks: [{
+				id: "6003953F126A6F5E"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4E0AB14C24416743"]
+			icon: {
+				id: "minecraft:spyglass"
+			}
+			id: "03340171A9F60D98"
+			tasks: [{
+				icon: {
+					id: "minecraft:spyglass"
+				}
+				id: "0E19961596CB6C6F"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+	]
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "ingredient": {"item": "create_better_motors:raw_reggarfonite_block"},
+  "result": {"id": "create_better_motors:reggarfonite_block", "count": 1},
+  "experience": 6.3,
+  "cookingtime": 900
+}

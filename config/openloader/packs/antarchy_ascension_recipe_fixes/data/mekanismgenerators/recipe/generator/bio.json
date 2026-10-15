@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "mekanism:alloys/infused"
+    },
+    "B": {
+      "tag": "c:fuels/bio"
+    },
+    "C": {
+      "tag": "c:circuits/basic"
+    },
+    "I": {
+      "tag": "c:ingots/iron"
+    },
+    "R": {
+      "tag": "c:dusts/redstone"
+    },
+    "Z": {
+      "tag": "c:ingots/steel"
+    }
+  },
+  "pattern": [
+    "RAR",
+    "BCB",
+    "ZAI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mekanismgenerators:bio_generator"
+  }
+}

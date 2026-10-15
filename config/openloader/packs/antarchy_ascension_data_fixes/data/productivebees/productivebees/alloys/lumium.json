@@ -6,7 +6,7 @@
   "blinding": true,
   "conditions": [
     {
-      "modid": "antarchy_intentionally_missing",
+      "modid": "antarchyascension_intentionally_missing",
       "type": "neoforge:mod_loaded"
     }
   ]

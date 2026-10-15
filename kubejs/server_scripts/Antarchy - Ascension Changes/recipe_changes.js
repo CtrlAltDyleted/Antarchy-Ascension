@@ -1,30 +1,7 @@
-// Removes AllTheOres materials
+// Removes unused AllTheOres materials; platinum is enabled for Oritech.
 // Also removes duplicate ore-processing recipes shared with the Ancient Stone / Mekanism compat cleanup below
 const removedAllTheOresRecipes = [
     "ae2:matter_cannon/nuggets/iridium",
-    "ae2:matter_cannon/nuggets/platinum",
-    "allthecompressed:compress/cinnabar_block_1x",
-    "allthecompressed:compress/enderium_block_1x",
-    "allthecompressed:compress/iridium_block_1x",
-    "allthecompressed:compress/lumium_block_1x",
-    "allthecompressed:compress/peridot_block_1x",
-    "allthecompressed:compress/platinum_block_1x",
-    "allthecompressed:compress/raw_iridium_block_1x",
-    "allthecompressed:compress/raw_platinum_block_1x",
-    "allthecompressed:compress/ruby_block_1x",
-    "allthecompressed:compress/sapphire_block_1x",
-    "allthecompressed:compress/signalum_block_1x",
-    "allthecompressed:decompress/cinnabar_block_1x",
-    "allthecompressed:decompress/enderium_block_1x",
-    "allthecompressed:decompress/iridium_block_1x",
-    "allthecompressed:decompress/lumium_block_1x",
-    "allthecompressed:decompress/peridot_block_1x",
-    "allthecompressed:decompress/platinum_block_1x",
-    "allthecompressed:decompress/raw_iridium_block_1x",
-    "allthecompressed:decompress/raw_platinum_block_1x",
-    "allthecompressed:decompress/ruby_block_1x",
-    "allthecompressed:decompress/sapphire_block_1x",
-    "allthecompressed:decompress/signalum_block_1x",
     "alltheores:alloy_smelting/enderium_ingot",
     "alltheores:alloy_smelting/lumium_ingot",
     "alltheores:alloy_smelting/signalum_ingot",
@@ -44,12 +21,6 @@ const removedAllTheOresRecipes = [
     "alltheores:arcfurnace/lumium/from_plate",
     "alltheores:arcfurnace/lumium/from_rod",
     "alltheores:arcfurnace/lumium/ingot",
-    "alltheores:arcfurnace/platinum/from_dust",
-    "alltheores:arcfurnace/platinum/from_gear",
-    "alltheores:arcfurnace/platinum/from_plate",
-    "alltheores:arcfurnace/platinum/from_raw",
-    "alltheores:arcfurnace/platinum/from_raw_block",
-    "alltheores:arcfurnace/platinum/from_rod",
     "alltheores:arcfurnace/signalum/from_dust",
     "alltheores:arcfurnace/signalum/from_gear",
     "alltheores:arcfurnace/signalum/from_plate",
@@ -74,9 +45,6 @@ const removedAllTheOresRecipes = [
     "alltheores:crafting/hammer/lumium/dust_from_ingot",
     "alltheores:crafting/hammer/peridot/dust_from_gem",
     "alltheores:crafting/hammer/peridot/gem_from_ore",
-    "alltheores:crafting/hammer/platinum/dust_from_ingot",
-    "alltheores:crafting/hammer/platinum/dust_from_ore",
-    "alltheores:crafting/hammer/platinum/dust_from_raw",
     "alltheores:crafting/hammer/ruby/dust_from_gem",
     "alltheores:crafting/hammer/ruby/gem_from_ore",
     "alltheores:crafting/hammer/sapphire/dust_from_gem",
@@ -101,15 +69,6 @@ const removedAllTheOresRecipes = [
     "alltheores:crafting/lumium/rod",
     "alltheores:crafting/peridot/block_from_gem",
     "alltheores:crafting/peridot/gem_from_block",
-    "alltheores:crafting/platinum/block_from_ingot",
-    "alltheores:crafting/platinum/gear",
-    "alltheores:crafting/platinum/ingot_from_block",
-    "alltheores:crafting/platinum/ingot_from_nugget",
-    "alltheores:crafting/platinum/nugget_from_ingot",
-    "alltheores:crafting/platinum/plate",
-    "alltheores:crafting/platinum/raw_block_from_raw",
-    "alltheores:crafting/platinum/raw_from_raw_block",
-    "alltheores:crafting/platinum/rod",
     "alltheores:crafting/ruby/block_from_gem",
     "alltheores:crafting/ruby/gem_from_block",
     "alltheores:crafting/sapphire/block_from_gem",
@@ -132,10 +91,6 @@ const removedAllTheOresRecipes = [
     "alltheores:crusher/lumium/from_ingot",
     "alltheores:crusher/peridot/from_gem",
     "alltheores:crusher/peridot/from_ore",
-    "alltheores:crusher/platinum/from_ingot",
-    "alltheores:crusher/platinum/from_ore",
-    "alltheores:crusher/platinum/from_raw",
-    "alltheores:crusher/platinum/from_raw_block",
     "alltheores:crusher/ruby/from_gem",
     "alltheores:crusher/ruby/from_ore",
     "alltheores:crusher/sapphire/from_gem",
@@ -151,10 +106,6 @@ const removedAllTheOresRecipes = [
     "alltheores:crushing/lumium/from_dust",
     "alltheores:crushing/peridot/from_gem",
     "alltheores:crushing/peridot/from_ore",
-    "alltheores:crushing/platinum/from_dust",
-    "alltheores:crushing/platinum/from_ore",
-    "alltheores:crushing/platinum/from_raw",
-    "alltheores:crushing/platinum/from_raw_block",
     "alltheores:crushing/ruby/from_gem",
     "alltheores:crushing/ruby/from_ore",
     "alltheores:crushing/sapphire/from_gem",
@@ -169,13 +120,9 @@ const removedAllTheOresRecipes = [
     "alltheores:metalpress/lumium/gear",
     "alltheores:metalpress/lumium/plate",
     "alltheores:metalpress/lumium/rod",
-    "alltheores:metalpress/platinum/gear",
-    "alltheores:metalpress/platinum/plate",
-    "alltheores:metalpress/platinum/rod",
     "alltheores:metalpress/signalum/gear",
     "alltheores:metalpress/signalum/plate",
     "alltheores:metalpress/signalum/rod",
-    "alltheores:platinum_ore_hammer",
     "alltheores:processing/cinnabar/dust/from_gem",
     "alltheores:processing/cinnabar/dust/from_ore",
     "alltheores:processing/cinnabar/from_dust",
@@ -201,23 +148,6 @@ const removedAllTheOresRecipes = [
     "alltheores:processing/peridot/dust/from_gem",
     "alltheores:processing/peridot/dust/from_ore",
     "alltheores:processing/peridot/from_dust",
-    "alltheores:processing/platinum/clump/from_ore",
-    "alltheores:processing/platinum/clump/from_raw",
-    "alltheores:processing/platinum/clump/from_raw_block",
-    "alltheores:processing/platinum/clump/from_shard",
-    "alltheores:processing/platinum/crystal/from_slurry",
-    "alltheores:processing/platinum/dirty_dust/from_clump",
-    "alltheores:processing/platinum/dust/from_dirty_dust",
-    "alltheores:processing/platinum/dust/from_ingot",
-    "alltheores:processing/platinum/dust/from_ore",
-    "alltheores:processing/platinum/dust/from_raw",
-    "alltheores:processing/platinum/dust/from_raw_block",
-    "alltheores:processing/platinum/shard/from_crystal",
-    "alltheores:processing/platinum/shard/from_ore",
-    "alltheores:processing/platinum/shard/from_raw",
-    "alltheores:processing/platinum/shard/from_raw_block",
-    "alltheores:processing/platinum/slurry/dirty/from_ore",
-    "alltheores:processing/platinum/slurry/dirty/from_raw",
     "alltheores:processing/ruby/dust/from_gem",
     "alltheores:processing/ruby/dust/from_ore",
     "alltheores:processing/ruby/from_dust",
@@ -234,9 +164,6 @@ const removedAllTheOresRecipes = [
     "alltheores:sag_milling/lumium/ingot",
     "alltheores:sag_milling/peridot/gem",
     "alltheores:sag_milling/peridot/ore",
-    "alltheores:sag_milling/platinum/ingot",
-    "alltheores:sag_milling/platinum/ore",
-    "alltheores:sag_milling/platinum/raw",
     "alltheores:sag_milling/ruby/gem",
     "alltheores:sag_milling/ruby/ore",
     "alltheores:sag_milling/sapphire/gem",
@@ -254,43 +181,15 @@ const removedAllTheOresRecipes = [
     "alltheores:smelting/iridium/raw_smelting",
     "alltheores:smelting/lumium/dust_blasting",
     "alltheores:smelting/lumium/dust_smelting",
-    "alltheores:smelting/platinum/dust_blasting",
-    "alltheores:smelting/platinum/dust_smelting",
-    "alltheores:smelting/platinum/ore_blasting",
-    "alltheores:smelting/platinum/ore_smelting",
-    "alltheores:smelting/platinum/raw_blasting",
-    "alltheores:smelting/platinum/raw_block_blasting",
-    "alltheores:smelting/platinum/raw_block_smelting",
-    "alltheores:smelting/platinum/raw_smelting",
     "alltheores:smelting/signalum/dust_blasting",
     "alltheores:smelting/signalum/dust_smelting",
-    "create:crushing/platinum_ore",
-    "create:crushing/raw_platinum",
-    "immersiveengineering:arcfurnace/dust_platinum",
-    "immersiveengineering:arcfurnace/ore_platinum",
-    "immersiveengineering:arcfurnace/raw_block_platinum",
-    "immersiveengineering:arcfurnace/raw_ore_platinum",
-    "immersiveengineering:crafting/hammercrushing_platinum",
-    "immersiveengineering:crafting/raw_hammercrushing_platinum",
-    "immersiveengineering:crusher/ingot_platinum",
-    "immersiveengineering:crusher/ore_platinum",
-    "immersiveengineering:crusher/raw_block_platinum",
-    "immersiveengineering:crusher/raw_ore_platinum",
-    "immersiveengineering:metalpress/gear_platinum",
-    "immersiveengineering:metalpress/plate_platinum",
-    "immersiveengineering:metalpress/rod_platinum",
-    "immersiveengineering:metalpress/wire_platinum",
     "industrialforegoing:laser_drill_ore/ores/cinnabar",
     "industrialforegoing:laser_drill_ore/ores/peridot",
     "industrialforegoing:laser_drill_ore/ores/ruby",
     "industrialforegoing:laser_drill_ore/ores/sapphire",
     "industrialforegoing:laser_drill_ore/raw_materials/cinnabar",
     "industrialforegoing:laser_drill_ore/raw_materials/iridium",
-    "industrialforegoing:laser_drill_ore/raw_materials/platinum",
-    "integrateddynamics:mechanical_squeezer/ore/raw_platinum",
-    "integrateddynamics:squeezer/ore/raw_platinum",
     "mysticalagriculture:essence/common/iridium_ingot",
-    "mysticalagriculture:essence/common/platinum_ingot",
     "mysticalagriculture:essence/gems/peridot",
     "mysticalagriculture:essence/gems/ruby",
     "mysticalagriculture:essence/gems/sapphire",
@@ -301,7 +200,6 @@ const removedAllTheOresRecipes = [
     "mysticalagriculture:seed/crafting/iridium",
     "mysticalagriculture:seed/crafting/lumium",
     "mysticalagriculture:seed/crafting/peridot",
-    "mysticalagriculture:seed/crafting/platinum",
     "mysticalagriculture:seed/crafting/ruby",
     "mysticalagriculture:seed/crafting/sapphire",
     "mysticalagriculture:seed/crafting/signalum",
@@ -309,7 +207,6 @@ const removedAllTheOresRecipes = [
     "mysticalagriculture:seed/infusion/iridium",
     "mysticalagriculture:seed/infusion/lumium",
     "mysticalagriculture:seed/infusion/peridot",
-    "mysticalagriculture:seed/infusion/platinum",
     "mysticalagriculture:seed/infusion/ruby",
     "mysticalagriculture:seed/infusion/sapphire",
     "mysticalagriculture:seed/infusion/signalum",
@@ -324,11 +221,6 @@ const removedAllTheOresRecipes = [
     "occultism:crushing/lumium_dust_from_ingot",
     "occultism:crushing/peridot_dust_from_gem",
     "occultism:crushing/peridot_dust_from_ore",
-    "occultism:crushing/platinum_dirty_dust_from_clump",
-    "occultism:crushing/platinum_dust_from_ingot",
-    "occultism:crushing/platinum_dust_from_ore",
-    "occultism:crushing/platinum_dust_from_raw",
-    "occultism:crushing/platinum_dust_from_raw_block",
     "occultism:crushing/ruby_dust_from_gem",
     "occultism:crushing/ruby_dust_from_ore",
     "occultism:crushing/sapphire_dust_from_gem",
@@ -348,45 +240,21 @@ const removedAllTheOresRecipes = [
     "occultism:miner/ores/cinnabar_ore",
     "occultism:miner/ores/iridium_ore",
     "occultism:miner/ores/peridot_ore",
-    "occultism:miner/ores/platinum_ore",
     "occultism:miner/ores/ruby_ore",
     "occultism:miner/ores/sapphire_ore",
     "productivebees:centrifuge/alloys/honeycomb_enderium",
     "productivebees:centrifuge/alloys/honeycomb_lumium",
     "productivebees:centrifuge/alloys/honeycomb_signalum",
-    "productivebees:centrifuge/dusts/honeycomb_platinum",
     "productivebees:centrifuge/gems/honeycomb_cinnabar",
     "productivebees:centrifuge/gems/honeycomb_cinnabar_dust",
     "productivebees:centrifuge/gems/honeycomb_peridot",
     "productivebees:centrifuge/gems/honeycomb_ruby",
     "productivebees:centrifuge/gems/honeycomb_sapphire",
     "productivebees:centrifuge/raw_materials/honeycomb_iridium",
-    "productivebees:centrifuge/raw_materials/honeycomb_platinum",
     "productivebees:ftbic/canning/iridium_bee",
     "replication:matter_values/c/tags/ingots/iridium",
-    "replication:matter_values/c/tags/ingots/platinum",
-    "alltheores:processing/platinum/slurry/dirty/from_raw_block",
     "alltheores:processing/iridium/slurry/dirty/from_raw_block"
 ]
-
-// Fix the Create Steel pressing recipe
-function fixCreateSteelPressing(event) {
-    event.remove({ id: 'create:pressing/steel_ingot' })
-
-    event.custom({
-        type: 'create:pressing',
-        ingredients: [
-            {
-                tag: 'c:ingots/steel'
-            }
-        ],
-        results: [
-            {
-                id: 'alltheores:steel_plate'
-            }
-        ]
-    }).id('create:pressing/steel_ingot')
-}
 
 // Dense uranium / yellorium cleanup
 function cleanUpUraniumAndYellorium(event) {
@@ -544,10 +412,9 @@ const removedEvolvedMekanismUraniumRecipes = [
     'evolvedmekanism:processing/uranium/ore/shiverstone_from_raw'
 ]
 
-// Removes duplicate and unused ore processing (Ancient Stone silver/aluminum + AllTheOres iridium/platinum duplicates)
+// Removes duplicate and unused ore processing (Ancient Stone silver/aluminum + unused AllTheOres iridium processing)
 const antarchyDuplicateOreRecipeIds = [
     "alltheores:processing/iridium/slurry/from_dirty",
-    "alltheores:processing/platinum/slurry/from_dirty",
     "iceandfire:furnace/deepslate_silver_ingot",
     "iceandfire:furnace/deepslate_silver_ingot_blasting",
     "iceandfire:furnace/silver_ingot",
@@ -618,191 +485,11 @@ const antarchyDuplicateOreRecipeIds = [
     "xycraft_machines:compat/mek/processing/aluminum/slurry/dirty/from_raw_ore"
 ]
 
-// Removes unused Productive Bees, Mystical Agriculture and AllTheCompressed recipes
-// (1x AllTheCompressed variants and common/gems/thermal essence + crafting/infusion seeds are already
-// removed above via removedAllTheOresRecipes; only the non-duplicate entries remain here.)
 const removedMaterialIntegrationRecipes = [
-    "allthecompressed:compress/cinnabar_block_2x",
-    "allthecompressed:compress/cinnabar_block_3x",
-    "allthecompressed:compress/cinnabar_block_4x",
-    "allthecompressed:compress/cinnabar_block_5x",
-    "allthecompressed:compress/cinnabar_block_6x",
-    "allthecompressed:compress/cinnabar_block_7x",
-    "allthecompressed:compress/cinnabar_block_8x",
-    "allthecompressed:compress/cinnabar_block_9x",
-    "allthecompressed:compress/enderium_block_2x",
-    "allthecompressed:compress/enderium_block_3x",
-    "allthecompressed:compress/enderium_block_4x",
-    "allthecompressed:compress/enderium_block_5x",
-    "allthecompressed:compress/enderium_block_6x",
-    "allthecompressed:compress/enderium_block_7x",
-    "allthecompressed:compress/enderium_block_8x",
-    "allthecompressed:compress/enderium_block_9x",
-    "allthecompressed:compress/iridium_block_2x",
-    "allthecompressed:compress/iridium_block_3x",
-    "allthecompressed:compress/iridium_block_4x",
-    "allthecompressed:compress/iridium_block_5x",
-    "allthecompressed:compress/iridium_block_6x",
-    "allthecompressed:compress/iridium_block_7x",
-    "allthecompressed:compress/iridium_block_8x",
-    "allthecompressed:compress/iridium_block_9x",
-    "allthecompressed:compress/lumium_block_2x",
-    "allthecompressed:compress/lumium_block_3x",
-    "allthecompressed:compress/lumium_block_4x",
-    "allthecompressed:compress/lumium_block_5x",
-    "allthecompressed:compress/lumium_block_6x",
-    "allthecompressed:compress/lumium_block_7x",
-    "allthecompressed:compress/lumium_block_8x",
-    "allthecompressed:compress/lumium_block_9x",
-    "allthecompressed:compress/peridot_block_2x",
-    "allthecompressed:compress/peridot_block_3x",
-    "allthecompressed:compress/peridot_block_4x",
-    "allthecompressed:compress/peridot_block_5x",
-    "allthecompressed:compress/peridot_block_6x",
-    "allthecompressed:compress/peridot_block_7x",
-    "allthecompressed:compress/peridot_block_8x",
-    "allthecompressed:compress/peridot_block_9x",
-    "allthecompressed:compress/platinum_block_2x",
-    "allthecompressed:compress/platinum_block_3x",
-    "allthecompressed:compress/platinum_block_4x",
-    "allthecompressed:compress/platinum_block_5x",
-    "allthecompressed:compress/platinum_block_6x",
-    "allthecompressed:compress/platinum_block_7x",
-    "allthecompressed:compress/platinum_block_8x",
-    "allthecompressed:compress/platinum_block_9x",
-    "allthecompressed:compress/raw_iridium_block_2x",
-    "allthecompressed:compress/raw_iridium_block_3x",
-    "allthecompressed:compress/raw_iridium_block_4x",
-    "allthecompressed:compress/raw_iridium_block_5x",
-    "allthecompressed:compress/raw_iridium_block_6x",
-    "allthecompressed:compress/raw_iridium_block_7x",
-    "allthecompressed:compress/raw_iridium_block_8x",
-    "allthecompressed:compress/raw_iridium_block_9x",
-    "allthecompressed:compress/raw_platinum_block_2x",
-    "allthecompressed:compress/raw_platinum_block_3x",
-    "allthecompressed:compress/raw_platinum_block_4x",
-    "allthecompressed:compress/raw_platinum_block_5x",
-    "allthecompressed:compress/raw_platinum_block_6x",
-    "allthecompressed:compress/raw_platinum_block_7x",
-    "allthecompressed:compress/raw_platinum_block_8x",
-    "allthecompressed:compress/raw_platinum_block_9x",
-    "allthecompressed:compress/ruby_block_2x",
-    "allthecompressed:compress/ruby_block_3x",
-    "allthecompressed:compress/ruby_block_4x",
-    "allthecompressed:compress/ruby_block_5x",
-    "allthecompressed:compress/ruby_block_6x",
-    "allthecompressed:compress/ruby_block_7x",
-    "allthecompressed:compress/ruby_block_8x",
-    "allthecompressed:compress/ruby_block_9x",
-    "allthecompressed:compress/sapphire_block_2x",
-    "allthecompressed:compress/sapphire_block_3x",
-    "allthecompressed:compress/sapphire_block_4x",
-    "allthecompressed:compress/sapphire_block_5x",
-    "allthecompressed:compress/sapphire_block_6x",
-    "allthecompressed:compress/sapphire_block_7x",
-    "allthecompressed:compress/sapphire_block_8x",
-    "allthecompressed:compress/sapphire_block_9x",
-    "allthecompressed:compress/signalum_block_2x",
-    "allthecompressed:compress/signalum_block_3x",
-    "allthecompressed:compress/signalum_block_4x",
-    "allthecompressed:compress/signalum_block_5x",
-    "allthecompressed:compress/signalum_block_6x",
-    "allthecompressed:compress/signalum_block_7x",
-    "allthecompressed:compress/signalum_block_8x",
-    "allthecompressed:compress/signalum_block_9x",
-    "allthecompressed:decompress/cinnabar_block_2x",
-    "allthecompressed:decompress/cinnabar_block_3x",
-    "allthecompressed:decompress/cinnabar_block_4x",
-    "allthecompressed:decompress/cinnabar_block_5x",
-    "allthecompressed:decompress/cinnabar_block_6x",
-    "allthecompressed:decompress/cinnabar_block_7x",
-    "allthecompressed:decompress/cinnabar_block_8x",
-    "allthecompressed:decompress/cinnabar_block_9x",
-    "allthecompressed:decompress/enderium_block_2x",
-    "allthecompressed:decompress/enderium_block_3x",
-    "allthecompressed:decompress/enderium_block_4x",
-    "allthecompressed:decompress/enderium_block_5x",
-    "allthecompressed:decompress/enderium_block_6x",
-    "allthecompressed:decompress/enderium_block_7x",
-    "allthecompressed:decompress/enderium_block_8x",
-    "allthecompressed:decompress/enderium_block_9x",
-    "allthecompressed:decompress/iridium_block_2x",
-    "allthecompressed:decompress/iridium_block_3x",
-    "allthecompressed:decompress/iridium_block_4x",
-    "allthecompressed:decompress/iridium_block_5x",
-    "allthecompressed:decompress/iridium_block_6x",
-    "allthecompressed:decompress/iridium_block_7x",
-    "allthecompressed:decompress/iridium_block_8x",
-    "allthecompressed:decompress/iridium_block_9x",
-    "allthecompressed:decompress/lumium_block_2x",
-    "allthecompressed:decompress/lumium_block_3x",
-    "allthecompressed:decompress/lumium_block_4x",
-    "allthecompressed:decompress/lumium_block_5x",
-    "allthecompressed:decompress/lumium_block_6x",
-    "allthecompressed:decompress/lumium_block_7x",
-    "allthecompressed:decompress/lumium_block_8x",
-    "allthecompressed:decompress/lumium_block_9x",
-    "allthecompressed:decompress/peridot_block_2x",
-    "allthecompressed:decompress/peridot_block_3x",
-    "allthecompressed:decompress/peridot_block_4x",
-    "allthecompressed:decompress/peridot_block_5x",
-    "allthecompressed:decompress/peridot_block_6x",
-    "allthecompressed:decompress/peridot_block_7x",
-    "allthecompressed:decompress/peridot_block_8x",
-    "allthecompressed:decompress/peridot_block_9x",
-    "allthecompressed:decompress/platinum_block_2x",
-    "allthecompressed:decompress/platinum_block_3x",
-    "allthecompressed:decompress/platinum_block_4x",
-    "allthecompressed:decompress/platinum_block_5x",
-    "allthecompressed:decompress/platinum_block_6x",
-    "allthecompressed:decompress/platinum_block_7x",
-    "allthecompressed:decompress/platinum_block_8x",
-    "allthecompressed:decompress/platinum_block_9x",
-    "allthecompressed:decompress/raw_iridium_block_2x",
-    "allthecompressed:decompress/raw_iridium_block_3x",
-    "allthecompressed:decompress/raw_iridium_block_4x",
-    "allthecompressed:decompress/raw_iridium_block_5x",
-    "allthecompressed:decompress/raw_iridium_block_6x",
-    "allthecompressed:decompress/raw_iridium_block_7x",
-    "allthecompressed:decompress/raw_iridium_block_8x",
-    "allthecompressed:decompress/raw_iridium_block_9x",
-    "allthecompressed:decompress/raw_platinum_block_2x",
-    "allthecompressed:decompress/raw_platinum_block_3x",
-    "allthecompressed:decompress/raw_platinum_block_4x",
-    "allthecompressed:decompress/raw_platinum_block_5x",
-    "allthecompressed:decompress/raw_platinum_block_6x",
-    "allthecompressed:decompress/raw_platinum_block_7x",
-    "allthecompressed:decompress/raw_platinum_block_8x",
-    "allthecompressed:decompress/raw_platinum_block_9x",
-    "allthecompressed:decompress/ruby_block_2x",
-    "allthecompressed:decompress/ruby_block_3x",
-    "allthecompressed:decompress/ruby_block_4x",
-    "allthecompressed:decompress/ruby_block_5x",
-    "allthecompressed:decompress/ruby_block_6x",
-    "allthecompressed:decompress/ruby_block_7x",
-    "allthecompressed:decompress/ruby_block_8x",
-    "allthecompressed:decompress/ruby_block_9x",
-    "allthecompressed:decompress/sapphire_block_2x",
-    "allthecompressed:decompress/sapphire_block_3x",
-    "allthecompressed:decompress/sapphire_block_4x",
-    "allthecompressed:decompress/sapphire_block_5x",
-    "allthecompressed:decompress/sapphire_block_6x",
-    "allthecompressed:decompress/sapphire_block_7x",
-    "allthecompressed:decompress/sapphire_block_8x",
-    "allthecompressed:decompress/sapphire_block_9x",
-    "allthecompressed:decompress/signalum_block_2x",
-    "allthecompressed:decompress/signalum_block_3x",
-    "allthecompressed:decompress/signalum_block_4x",
-    "allthecompressed:decompress/signalum_block_5x",
-    "allthecompressed:decompress/signalum_block_6x",
-    "allthecompressed:decompress/signalum_block_7x",
-    "allthecompressed:decompress/signalum_block_8x",
-    "allthecompressed:decompress/signalum_block_9x",
     "mysticalagriculture:seed/reprocessor/enderium",
     "mysticalagriculture:seed/reprocessor/iridium",
     "mysticalagriculture:seed/reprocessor/lumium",
     "mysticalagriculture:seed/reprocessor/peridot",
-    "mysticalagriculture:seed/reprocessor/platinum",
     "mysticalagriculture:seed/reprocessor/ruby",
     "mysticalagriculture:seed/reprocessor/sapphire",
     "mysticalagriculture:seed/reprocessor/signalum",
@@ -812,7 +499,6 @@ const removedMaterialIntegrationRecipes = [
     "productivebees:bee_breeding/alloys/signalum_bee",
     "productivebees:bee_breeding/gems/cinnabar_bee",
     "productivebees:bee_breeding/raw_materials/iridium_bee",
-    "productivebees:bee_breeding/raw_materials/platinum_bee",
     "productivebees:bee_conversion/gems/green_sapphire_bee",
     "productivebees:bee_conversion/gems/peridot_bee",
     "productivebees:bee_conversion/gems/ruby_bee",
@@ -826,18 +512,69 @@ const removedMaterialIntegrationRecipes = [
     "productivebees:bee_produce/gems/ruby_bee",
     "productivebees:bee_produce/gems/sapphire_bee",
     "productivebees:bee_produce/raw_materials/iridium_bee",
-    "productivebees:bee_produce/raw_materials/platinum_bee",
     "productivebees:centrifuge/gems/honeycomb_green_sapphire"
 ]
 
 ServerEvents.recipes(event => {
+    // Antarchy - Ascension early AE2 boundary: conventional silicon and lunar resources.
+    event.remove({ id: 'mekanism:compat/ae2/sand_to_silicon' })
+    event.remove({ id: 'extendedae:quartz_blend' })
+    event.remove({ id: 'extendedae:quartz_blend_alt' })
+    event.custom({
+        type: 'minecraft:crafting_shapeless',
+        category: 'misc',
+        ingredients: [
+            { item: 'ae2:certus_quartz_dust' },
+            [{ item: 'minecraft:coal' }, { item: 'minecraft:charcoal' }],
+            [{ item: 'minecraft:coal' }, { item: 'minecraft:charcoal' }],
+            { tag: 'c:sands' }, { tag: 'c:sands' }, { tag: 'c:sands' },
+            { tag: 'c:sands' }, { tag: 'c:sands' }, { tag: 'c:sands' }
+        ],
+        result: { id: 'extendedae:quartz_blend', count: 6 }
+    }).id('extendedae:quartz_blend')
+
+    event.remove({ id: 'appliedpneumatics:amadron/emerald_to_certus_quartz_crystal' })
+    event.remove({ id: 'appliedpneumatics:amadron/emerald_to_sky_stone_block' })
+
+    // The Charger is the Fluix Researcher's workstation. Requiring lunar Certus
+    // gates the profession while preserving its original trades and gifts.
+    event.remove({ id: 'ae2:network/blocks/crystal_processing_charger' })
+    event.custom({
+        type: 'minecraft:crafting_shaped',
+        category: 'misc',
+        pattern: ['aba', 'ac ', 'aba'],
+        key: {
+            a: { tag: 'c:ingots/iron' },
+            b: { tag: 'c:ingots/copper' },
+            c: { item: 'ae2:certus_quartz_crystal' }
+        },
+        result: { id: 'ae2:charger', count: 1 }
+    }).id('ae2:network/blocks/crystal_processing_charger')
+
+    // Crystal Science's Nether dust has no consumers in the installed recipes.
+    // Keep the registered legacy item but make its pulverizer produce Mekanism dust.
+    event.remove({ id: 'ae2cs:pulverizer/nether_quartz_dust' })
+    event.custom({
+        type: 'ae2cs:crystal_pulverizer_recipe_serializer',
+        energy_cost: 8000,
+        input: { count: 1, tag: 'c:gems/quartz' },
+        result: { count: 1, id: 'mekanism:dust_quartz' }
+    }).id('ae2cs:pulverizer/nether_quartz_dust')
+
+    // A Spacial Bee now requires lunar Certus to establish the renewable colony.
+    event.remove({ id: 'productivebees:bee_breeding/appliedenergistics2/spacial_bee' })
+    event.custom({
+        type: 'productivebees:bee_conversion',
+        source: 'productivebees:crystalline',
+        result: 'productivebees:spacial',
+        item: { item: 'ae2:quartz_block' }
+    }).id('productivebees:bee_conversion/appliedenergistics2/spacial_bee_lunar')
+
     event.remove({ id: 'nep:import_card' })
 
     removedAllTheOresRecipes.forEach(id => {
         event.remove({ id: id })
     })
-
-    fixCreateSteelPressing(event)
 
     event.remove({ id: 'create:pressing/compat/immersiveengineering/plate_steel' })
 
@@ -862,9 +599,4 @@ ServerEvents.recipes(event => {
     removedMaterialIntegrationRecipes.forEach(id => {
         event.remove({ id: id })
     })
-})
-
-// KubeJS Studio Recipes
-ServerEvents.generateData('after_mods', event => {
-    event.json('tiab:recipe/time_in_a_bottle', {"type":"minecraft:crafting_shaped","pattern":["###","ABA","CDC"],"key":{"#":{"tag":"c:ingots/gold"},"A":{"tag":"c:gems/diamond"},"B":{"item":"gag:time_sand_pouch"},"C":{"tag":"c:gems/lapis"},"D":{"item":"minecraft:glass_bottle"}},"result":{"id":"tiab:time_in_a_bottle","count":1}})
 })

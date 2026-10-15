@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "ABA",
+    "CDC"
+  ],
+  "key": {
+    "#": {
+      "tag": "c:ingots/gold"
+    },
+    "A": {
+      "tag": "c:gems/diamond"
+    },
+    "B": {
+      "item": "gag:time_sand_pouch"
+    },
+    "C": {
+      "tag": "c:gems/lapis"
+    },
+    "D": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "result": {
+    "id": "tiab:time_in_a_bottle",
+    "count": 1
+  }
+}

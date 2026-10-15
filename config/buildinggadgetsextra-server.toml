@@ -9,3 +9,9 @@ multitoolMaxRange = 0
 multitoolRangeMultiplier = 2.0
 #Emit detailed, rate-limited Builder's Multitool diagnostic instrumentation. Disabled by default.
 debugInstrumentation = false
+#Maximum Copy/Paste selection and native structure import volume, including air. Applies to native BG2 gadgets and the Builder's Multitool.
+#Forge 1.16.5 world copying uses Building Gadgets' own Max Copy Dimensions setting. Cut/Paste limits are separate.
+#Larger templates use more server memory and can pause copying/rendering. Existing byte budgets still apply.
+# Default: 100000
+# Range: 1 ~ 1000000
+maxCopyVolume = 100000

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "ingredient": {
+    "tag": "c:storage_blocks/raw_aluminum"
+  },
+  "result": {
+    "id": "alltheores:aluminum_block",
+    "count": 1
+  },
+  "experience": 6.3,
+  "cookingtime": 900
+}

@@ -7,7 +7,7 @@
 	enableBulkColoring = true
 	#.
 	#If Bulk Freezing should be enabled
-	enableBulkFreezing = true
+	enableBulkFreezing = false
 	#.
 	#If Bulk Sanding should be enabled
 	enableBulkSanding = true

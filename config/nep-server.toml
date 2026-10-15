@@ -59,6 +59,9 @@
 			# Default: 15
 			# Range: 0 ~ 128
 			meNetworkChannels = 15
+			#Lets the Matrix charge a craft from its ME network's own power whenever its FE buffer runs short.
+			#The network's last tenth of stored power is left alone, so a craft drawing its charge cannot brown the network out.
+			meNetworkCharge = true
 
 	#Apothic Enchanting integration.
 	[modules.apothic_enchanting]
@@ -264,6 +267,9 @@
 			# Default: 15
 			# Range: 0 ~ 128
 			meNetworkChannels = 15
+			#Lets the Matrix pay for an energising step from its ME network's own power whenever its FE buffer runs short.
+			#The network's last tenth of stored power is left alone, so a craft drawing its charge cannot brown the network out.
+			meNetworkCharge = true
 
 	#Draconic Evolution integration.
 	[modules.draconicevolution]
@@ -314,6 +320,9 @@
 			meNetworkChannels = 15
 			#Highest fusion recipe tier the Matrix will run: 'draconium', 'wyvern', 'draconic', or 'chaotic'.
 			maximumTier = "chaotic"
+			#Lets the Matrix charge a fusion craft from its ME network's own power whenever its FE buffer runs short.
+			#The network's last tenth of stored power is left alone, so a craft drawing its charge cannot brown the network out.
+			meNetworkCharge = true
 
 			#Draconic Evolution cores slotted into the Injector Fusion Matrix's upgrade slot tune the machine to the tier of core it holds. Each higher tier compounds lower tiers' upgrades.
 			#One slot means one tier at a time; Wyvern Cores increases energy buffer; Draconic Cores also increase fusion speed; Chaotic Cores also decrease energy costs.
@@ -404,6 +413,440 @@
 			# Range: 0 ~ 128
 			meNetworkChannels = 15
 
+	#Malum integration.
+	[modules.malum]
+		#Master override for Malum integration.
+		#When disabled, every Malum module below is disabled regardless of its own toggle.
+		allow_malum_module = true
+		#Spirit Infusion Module: A Spirit Altar with a pattern provider against it takes a whole craft at once, with each recipe component going to the altar or its pedestals in range.
+		#The altar runs the infusion at its own pace, obelisks included, and the finished item goes back to the pattern provider instead of dropping in-world.
+		spiritInfusion = true
+		#A Spirit Crucible with a pattern provider against it takes a whole focusing craft at once, with each recipe component going into its slot and the finished node going back to the pattern provider instead of dropping in-world.
+		#The crucible runs the focusing at its own pace, augments and accelerators included.
+		spiritFocusing = true
+		#A Runic Workbench with a pattern provider against it takes a whole rune at once, with the primary ingredient going onto the bench and the second one supplied straight from the network rather than from your hand.
+		#The workbench shapes the rune at its own pace and the finished rune goes back to the pattern provider instead of dropping in-world.
+		runeworking = true
+		#Percent chance for a Pure Spirit to come out of a soul harvest on an entity in the nep:pure_spirit_sources tag.
+		#Set to 0 to stop Pure Spirits dropping altogether.
+		# Default: 5
+		# Range: 0 ~ 100
+		pureSpiritDropChance = 5
+
+		#The Rite of Reaping, a corrupted greater rite that finishes off wounded monsters and feeds the spirits they drop straight into an ME network.
+		[modules.malum.riteOfReaping]
+			#Blocks from the totem base the rite reaches for monsters, and the same radius it sweeps for loose spirit shards afterwards.
+			# Default: 8
+			# Range: 1 ~ 64
+			reapingRiteKillRange = 8
+			#Health percentage a monster must be at or under before the rite executes it.
+			# Default: 25
+			# Range: 1 ~ 100
+			executionThresholdPercent = 25
+			#Blocks from the totem base the rite searches for an ME network to hand the harvested spirits to.
+			#Only chunks already in memory are checked, so a rite never loads terrain to find a network.
+			# Default: 8
+			# Range: 1 ~ 64
+			networkRange = 8
+			#Ticks between the rite's sweeps for monsters to execute. Malum's own rites sweep every 100.
+			# Default: 20
+			# Range: 1 ~ 200
+			sweepTicks = 20
+			#Whether the rite sends a spark flying at every monster it claims, the way Malum's own rites do.
+			#Turn off on mob-heavy packs: the blow then lands the moment a sweep finds the monster, with no spark entity to spawn or track.
+			sparks = true
+
+		#Focused Spirit Matrix:
+		[modules.malum.focusedSpiritMatrix]
+			#The Focused Spirit Matrix runs spirit infusion recipes inside a single block.
+			#Its input buffer stands in for the spirit slots and the pedestals a recipe would otherwise need.
+			enabled = true
+			#Whether the Matrix shapes runes as well. Off leaves it refusing runeworking patterns outright so the network can look for a real Runic Workbench instead.
+			#This ONLY affects the Matrix. The Runeworking module above, which is a pattern provider against a real Runic Workbench, has its own config.
+			runeworking = true
+			#Treats the Matrix as a requester, allowing it to auto-pull, auto-craft, and auto-request a set of recipe ingredients from the ME network when a craft it owes is left without materials.
+			#When disabled, a Matrix left short of materials stalls until you restock it by hand.
+			autoRequest = true
+			#Ticks the Matrix spends on a craft. 20 ticks is one second.
+			#A Spirit Altar caps at 300 ticks, but only its first craft pays that in full: a repeat craft resumes at 80% and spends 60 ticks fetching each extra ingredient, which averages about 180 ticks across Malum's infusions.
+			# Default: 90
+			# Range: 1 ~ 24000
+			craftTicks = 90
+			#Energy the Matrix draws from its ME network while crafting, in AE per tick. Progress stops whenever the network cannot supply this much power.
+			#Spirit infusion has no energy cost of its own, so this is the whole running cost of the machine.
+			# Default: 500
+			# Range: 0 ~ 1000000
+			meNetworkDrain = 500
+			#Energy the Matrix draws from its ME network while idle, in AE per tick. This standing cost is read once when the Matrix joins a network, so changing it needs a world reload.
+			# Default: 10
+			# Range: 0 ~ 1000000
+			idleMeNetworkDrain = 10
+			#Channels the Matrix takes up on its ME network. Any value above 8 has to pass through dense cables.
+			#This is read once when the Matrix joins a network, so changing it needs a world reload. Set to 0 for a Matrix that takes up no channels at all.
+			# Default: 15
+			# Range: 0 ~ 128
+			meNetworkChannels = 15
+			#Spirits per kind the Matrix keeps in its spirit bank while Restock Spirits is on, in item quantity.
+			#The bank is network storage, so the shards it holds count toward a craft the moment they are in it, and restocking only ever pulls from somewhere else on the network.
+			# Default: 64
+			# Range: 1 ~ 1024
+			spiritStock = 64
+
+			#Malum Obelisks slotted into the Focused Spirit Matrix's upgrade slot speed its infusions up, the way they accelerate a real Spirit Altars.
+			[modules.malum.focusedSpiritMatrix.upgrades]
+				#Whether the Matrix offers an obelisk upgrade slot at all. Off closes the slot and leaves infusion running at craftTicks.
+				#Independent of the catalyzer slot.
+				#Obelisks already installed when this is turned off stop counting but can still be taken back out.
+				obeliskSlot = true
+				#Quantity of Runewood Obelisks accepted, and the count a full slot is measured against. Lowering this makes each obelisk better rather than lowering the ceiling, since a full slot always reaches obeliskMinimumCraftTicks.
+				#To close the slot entirely, use obeliskSlot above.
+				# Default: 32
+				# Range: 1 ~ 64
+				maxObelisks = 32
+				#Crafting time a full slot of Runewood Obelisks reaches, in ticks. Upgrades scales linearly from craftTicks down to this floor, following maxObelisks.
+				#Values above craftTicks are ignored, so obelisks never slow a Matrix down.
+				# Default: 5
+				# Range: 1 ~ 24000
+				obeliskMinimumCraftTicks = 5
+
+			#Spirit focusing in the Matrix, which needs a Matrix Impetus in its impetus slot and is sped up by Matrix Catalyzers.
+			#A Matrix Impetus stands in for every one of Malum's, so a single Matrix focuses every node rather than one Matrix per metal.
+			[modules.malum.focusedSpiritMatrix.focusing]
+				#Whether the Matrix runs any Spirit Focusing at all. Off leaves it an infusion-only machine: it refuses spirit focusing patterns outright so the network can look elsewhere, and closes both the catalyzer and the impetus slots.
+				#This ONLY affects the Matrix. The Spirit Focusing module above, which is a pattern provider against a real Spirit Crucible, has its own config.
+				#Catalyzers and an impetus already installed when this is turned off stop counting but can still be taken back out.
+				enabled = true
+				#Durability of a Matrix Impetus before it is spent.
+				# Default: 1600
+				# Range: 1 ~ 100000
+				impetusDurability = 1600
+				#Whether focusing in the Matrix spends the Matrix Impetus' durability, the way a real Spirit Crucible cracks its impetus.
+				#On by default, which is what gives the catalyzers' restoration something to repair. The craft that spends the last of an impetus still finishes and leaves a Fractured Matrix Impetus in the slot, which a Repair Pylon puts back together.
+				consumeImpetusDurability = true
+				#Whether the Matrix offers a catalyzer slot at all. Off closes the slot and leaves focusing running at the recipe's own speed with none of the effects below.
+				#Catalyzers already installed when this is turned off stop counting but can still be taken back out.
+				catalyzerSlot = true
+				#Quantity of Matrix Catalyzers accepted, which defines the 'value per upgrade' curve. Every cap below is what a full slot reaches, so one catalyzer is worth its cap divided by this.
+				#Lowering this makes each catalyzer better without changing what a full slot is worth. To switch a single effect off, set its own cap to 0; to close the slot entirely, use catalyzerSlot above.
+				# Default: 4
+				# Range: 1 ~ 64
+				maxCatalyzers = 4
+				#Focusing time a full slot of Matrix Catalyzers can cut, as a percentage of the recipe's own time. Upgrades scales linearly toward this cap.
+				#At 100 a full slot finishes any focusing craft in a single tick.
+				# Default: 75
+				# Range: 0 ~ 100
+				catalyzerCraftTimeReductionPercent = 75
+				#Chance a full slot of Matrix Catalyzers repairs the Matrix Impetus after a focusing craft that spent durability, as a percentage. Upgrades scales linearly toward this cap.
+				#One success mends 1% of the impetus' maximum durability, matching Malum's Mending Diffuser. Above 100 the surplus is a further guaranteed repair, so 250 mends twice over with a 50% chance at a third.
+				#Does nothing while consumeImpetusDurability is off, since an impetus that never wears has nothing to mend.
+				# Default: 50
+				# Range: 0 ~ 1000
+				catalyzerRestorationPercent = 50
+				#Chance a full slot of Matrix Catalyzers chains one focusing craft straight into the next, as a percentage. Upgrades scales linearly toward this cap.
+				#A chained craft still claims its own ingredients and impetus durability; it only restarts near enough completion that it finishes in 10 ticks, the way Malum's Warping Engine skips a crucible forward.
+				#Capped at 99% to avoid infinite-looping crafts: at 100% every craft would chain into the next one forever.
+				# Default: 25
+				# Range: 0 ~ 99
+				catalyzerChainFocusingPercent = 25
+				#Chance a full slot of Matrix Catalyzers yields a second copy of a focusing craft's output, as a percentage. Upgrades scales linearly toward this cap.
+				#Above 100 the surplus is a further guaranteed copy, so at 250% it always yields two extra with a 50% chance at a third, matching how a Spirit Crucible rolls fortune.
+				#Bonus output is returned to the network alongside what was ordered, so an AE2 crafting job takes what it asked for and the rest lands in storage.
+				# Default: 25
+				# Range: 0 ~ 1000
+				catalyzerFortunePercent = 25
+
+	#Ars Nouveau integration.
+	[modules.ars_nouveau]
+		#Master override for Ars Nouveau integration.
+		#When disabled, every Ars Nouveau module below is disabled regardless of its own toggle.
+		allow_ars_nouveau_module = true
+		#Enchanting Apparatus Module: An Enchanting Apparatus with a pattern provider against it takes a whole craft at once, with the reagent going into the apparatus and one ingredient onto each surrounding Arcane Pedestal.
+		#The apparatus starts itself but does NOT automatically return the finished product.
+		#Only plain enchanting_apparatus recipes are driven. Enchantment, armour upgrade, prestidigitation and spell write recipes derive their result from the reagent's own data, so they can never be encoded as a fixed pattern.
+		enchantingApparatus = true
+		#Imbuement Chamber Module: An Imbuement Chamber with a pattern provider against it takes a whole craft at once, with the reagent going into the chamber and one ingredient onto each Arcane Pedestal touching it.
+		#The chamber draws its own source and runs the craft itself, but does NOT automatically return the finished product.
+		#Only plain imbuement recipes are driven. Addons register their own imbuement recipe types for things like charging a charm or writing a scroll, and those derive their result from the reagent, so they can never be encoded as a fixed pattern.
+		imbuementChamber = true
+
+		#Arcane Lectern:
+		[modules.ars_nouveau.arcaneLectern]
+			#The Arcane Lectern presents its ME network to Ars Nouveau the way a Storage Lectern presents its linked chests, so anything that pulls from a neighbouring inventory can draw straight out of the network.
+			#A Scribes Table is served differently: the Lectern sends a table only the glyph reagents it is still missing, and only while it asks for them.
+			enabled = true
+			#Most distinct item types the Lectern exposes to a neighbouring machine at once.
+			#Machines such as the Wixie Cauldron walk every exposed slot when they look for an ingredient, so a large network is cheaper to serve with a lower cap. Items beyond the cap are not offered. Scribes Tables are not affected, since the Lectern sends them their reagents directly.
+			# Default: 1024
+			# Range: 1 ~ 65536
+			maximumItemTypes = 1024
+			#Energy the Lectern draws from its ME network while idle, in AE per tick. This standing cost is read once when the Lectern joins a network, so changing it needs a world reload.
+			# Default: 10
+			# Range: 0 ~ 1000000
+			idleMeNetworkDrain = 10
+			#How far, in blocks along each axis, a Scribes Table can be from the Lectern and still be sent its glyph reagents.
+			#The Lectern only sends while a table is asking for reagents, so a longer range costs nothing between crafts.
+			# Default: 8
+			# Range: 1 ~ 32
+			scribesTableRange = 8
+
+		#Ritual Conductor:
+		[modules.ars_nouveau.ritualConductor]
+			#The Ritual Conductor keeps a nearby Ritual Brazier running by itself, drawing a ritual tablet out of the ME network, feeding the augments it was configured with, and lighting the ritual once its conditions are met.
+			#Almost every ritual is a world effect rather than a craft, so the Conductor is a trigger rather than a pattern target: it has no output and takes no pattern.
+			#Source is still the Brazier's own problem, drawn from source jars within 6 blocks of it as usual.
+			enabled = true
+			#How far the Conductor looks for a Ritual Brazier, in blocks, as a cube radius around itself. The nearest Brazier found wins.
+			# Default: 4
+			# Range: 1 ~ 16
+			brazierRange = 4
+			#Ticks between Conductor passes. One pass arms the Brazier, feeds every outstanding augment, and tries to start the ritual.
+			#A Conductor that cannot see a Brazier waits five times this long before looking again.
+			# Default: 20
+			# Range: 1 ~ 24000
+			interval = 20
+			#How far around the Brazier the Conductor sweeps up what a ritual dropped, in blocks. Set to 0 to leave dropped items alone.
+			#The sweep runs once, at the moment a ritual finishes, rather than on a timer, so its cost scales with rituals completed and not with time spent waiting.
+			#Items a player threw are never swept, so a Conductor cannot steal what you drop next to the Brazier.
+			# Default: 4
+			# Range: 0 ~ 16
+			collectionRadius = 4
+			#Energy the Conductor draws from its ME network while idle, in AE per tick. This standing cost is read once when the Conductor joins a network, so changing it needs a world reload.
+			# Default: 10
+			# Range: 0 ~ 1000000
+			idleMeNetworkDrain = 10
+
+		#Arcane Enchanting Matrix:
+		[modules.ars_nouveau.arcaneEnchantingMatrix]
+			#The Arcane Enchanting Matrix runs whole Enchanting Apparatus and Imbuement Chamber recipes inside a single block, paying for them from its own Source store.
+			#Imbuement pedestal items are borrowed from the ME network for as long as a job still needs them, then handed back.
+			enabled = true
+			#Treats the Matrix as a requester, allowing it to auto-pull, auto-craft, and auto-request a set of recipe ingredients and imbuement pedestal items from the ME network when a craft it owes is left without materials.
+			#When disabled, a Matrix left short of materials stalls until you manually restock it.
+			autoRequest = true
+			#Ticks the Matrix spends on an Enchanting Apparatus craft before any Accelerate glyphs. 20 ticks is one second.
+			#The real Enchanting Apparatus takes 210 ticks.
+			# Default: 210
+			# Range: 1 ~ 24000
+			apparatusCraftTicks = 210
+			#Ticks the Matrix spends on an imbuement craft before any Accelerate glyphs. 20 ticks is one second.
+			#The real Imbuement Chamber takes 100 ticks once it has its Source.
+			# Default: 100
+			# Range: 1 ~ 24000
+			imbuementCraftTicks = 100
+			#How far the Matrix reaches for Source Jars, in blocks, measured the way Ars Nouveau measures it for the Enchanting Apparatus.
+			#The Matrix only draws what its queued crafts still need, so it never drains nearby jars for a store it has no use for.
+			# Default: 10
+			# Range: 2 ~ 32
+			sourceJarRange = 10
+			#Lets the Matrix draw the Source its queued crafts need out of its ME network when Ars Énergistique is installed.
+			#Nearby Source Jars are drawn from first.
+			meNetworkSource = true
+			#Most Accelerate glyphs the Matrix's speed slot holds. The full stack reaches the minimum craft time below.
+			# Default: 16
+			# Range: 1 ~ 64
+			maxAccelerateGlyphs = 16
+			#Craft time a full stack of Accelerate glyphs brings every recipe down to, in ticks. Fewer glyphs land proportionally between this and the base time.
+			# Default: 10
+			# Range: 1 ~ 24000
+			accelerateMinimumCraftTicks = 10
+			#Most Dampen glyphs the Matrix's efficiency slot holds. The full stack gives the whole Source discount below.
+			# Default: 16
+			# Range: 1 ~ 64
+			maxDampenGlyphs = 16
+			#Source a full stack of Dampen glyphs takes off every craft, as a percentage of the recipe's own cost. Fewer glyphs give a proportional share.
+			# Default: 50
+			# Range: 0 ~ 100
+			dampenSourceDiscountPercent = 50
+			#Energy the Matrix draws from its ME network while crafting, in AE per tick. Progress stops whenever the network cannot supply this much power.
+			# Default: 500
+			# Range: 0 ~ 1000000
+			meNetworkDrain = 500
+			#Energy the Matrix draws from its ME network while idle, in AE per tick. This standing cost is read once when the Matrix joins a network, so changing it needs a world reload.
+			# Default: 10
+			# Range: 0 ~ 1000000
+			idleMeNetworkDrain = 10
+			#Channels the Matrix takes up on its ME network. Any value above 8 has to pass through dense cables.
+			#This is read once when the Matrix joins a network, so changing it needs a world reload. Set to 0 for a Matrix that takes up no channels at all.
+			# Default: 15
+			# Range: 0 ~ 128
+			meNetworkChannels = 15
+
+	#Oritech integration.
+	[modules.oritech]
+		#Master override for Oritech integration.
+		#When disabled, every Oritech module below is disabled regardless of its own toggle.
+		allow_oritech_module = true
+		#Particle Collision Module: Encodes Particle Accelerator collision recipes as patterns, with the two colliding items as ingredients.
+		#The patterns push their ingredients into adjacent inventories like a plain processing pattern.
+		particleCollision = true
+
+		#Particle Collision Matrix:
+		[modules.oritech.particleCollisionMatrix]
+			#The Particle Collision Matrix runs whole particle collision recipes inside a single block, with no accelerator ring.
+			enabled = true
+			#Treats the Matrix as a requester, allowing it to auto-pull, auto-craft, and auto-request a set of recipe ingredients from the ME network when a craft it owes is left without materials.
+			#When disabled, a Matrix left short of materials stalls until you manually restock it.
+			autoRequest = true
+			#Energy a Matrix craft costs, as a percentage of what Oritech's motors would spend speeding one particle up to the recipe's collision speed.
+			#100 charges exactly what the real accelerator would; the cost grows with the square of the recipe's speed.
+			# Default: 100
+			# Range: 0 ~ 10000
+			energyCostPercent = 100
+			#Maximum energy the Matrix accepts per tick, in FE.
+			# Default: 1000000
+			# Range: > 1
+			chargeRate = 1000000
+			#Size of the Matrix's internal energy buffer, in FE.
+			#A craft costing more than this still finishes, paying up to the buffer's worth each tick until it is covered.
+			# Default: 10000000
+			# Range: > 1000
+			energyCapacity = 10000000
+			#Fewest ticks a Matrix craft takes. 20 ticks is one second.
+			#A craft lasts longer whenever its energy cannot be paid as fast as this allows.
+			# Default: 10
+			# Range: 1 ~ 24000
+			craftTicks = 10
+			#Lets the Matrix charge a craft from its ME network's own power whenever its FE buffer runs short.
+			#The network's last tenth of stored power is left alone, so a craft drawing its charge cannot brown the network out.
+			meNetworkCharge = true
+			#Energy the Matrix draws from its ME network while crafting, in AE per tick. Progress stops whenever the network cannot supply this much power.
+			#This is separate from the FE it crafts with, and pays for the ME network side of the machine.
+			# Default: 500
+			# Range: 0 ~ 1000000
+			meNetworkDrain = 500
+			#Energy the Matrix draws from its ME network while idle, in AE per tick. This standing cost is read once when the Matrix joins a network, so changing it needs a world reload.
+			# Default: 10
+			# Range: 0 ~ 1000000
+			idleMeNetworkDrain = 10
+			#Channels the Matrix takes up on its ME network. Any value above 8 has to pass through dense cables.
+			#This is read once when the Matrix joins a network, so changing it needs a world reload. Set to 0 for a Matrix that takes up no channels at all.
+			# Default: 15
+			# Range: 0 ~ 128
+			meNetworkChannels = 15
+
+		#Particle Collision Controller:
+		[modules.oritech.particleCollisionController]
+			#The Particle Collision Controller runs particle collision patterns on a real Particle Accelerator: it launches one particle, waits until it is fast enough, then releases the second into its path.
+			#It links to two Accelerator Controllers on the same ring with the Accelerator Linker, and only takes patterns whose speed it has seen a particle reach in that ring.
+			enabled = true
+			#Treats the Controller as a requester, allowing it to auto-pull, auto-craft, and auto-request a set of recipe ingredients from the ME network when a collision it owes is left without materials.
+			#When disabled, a Controller left short of materials stalls until you restock it by hand.
+			autoRequest = true
+			#Maximum distance, in blocks, that a linked Accelerator Controller may sit from the Particle Collision Controller.
+			# Default: 64
+			# Range: 1 ~ 256
+			linkRange = 64
+			#Ticks the Controller waits for two launched particles to meet before it recalls both and gives the items back.
+			#Raise it for a large ring where the fast particle needs a long lap to catch the slow one.
+			# Default: 1200
+			# Range: 20 ~ 72000
+			collisionTimeout = 1200
+			#Energy the Controller draws from its ME network while a particle is in flight, in AE per tick. A Controller that loses network power still finishes the collision in flight, but starts no new one.
+			#The accelerator's motors still take their own RF, so this is only the Controller's share.
+			# Default: 100
+			# Range: 0 ~ 1000000
+			meNetworkDrain = 100
+			#Energy the Controller draws from its ME network while idle, in AE per tick. This standing cost is read once when the Controller joins a network, so changing it needs a world reload.
+			# Default: 10
+			# Range: 0 ~ 1000000
+			idleMeNetworkDrain = 10
+			#Channels the Controller takes up on its ME network. Any value above 8 has to pass through dense cables.
+			#This is read once when the Controller joins a network, so changing it needs a world reload. Set to 0 for a Controller that takes up no channels at all.
+			# Default: 7
+			# Range: 0 ~ 128
+			meNetworkChannels = 7
+
+	#Occultism integration.
+	[modules.occultism]
+		#Master override for Occultism integration.
+		#When disabled, every Occultism module below is disabled regardless of its own toggle.
+		allow_occultism_module = true
+
+		#Bound Spirit Matrix:
+		[modules.occultism.boundSpiritMatrix]
+			#The Bound Spirit Matrix runs spirit fire, crushing and crystallizing recipes inside a single block.
+			#Spirit fire always works; crushing and crystallizing need a Spirit-Infused Book of that job, whose spirit tier sets the recipes it can run, its speed and its output.
+			enabled = true
+			#Treats the Matrix as a requester, allowing it to auto-pull, auto-craft, and auto-request a set of recipe ingredients from the ME network when a craft it owes is left without materials.
+			#When disabled, a Matrix left short of materials stalls until you manually restock it.
+			autoRequest = true
+			#Ticks the Matrix spends on a spirit fire craft. 20 ticks is one second.
+			#Real spirit fire converts an item the moment it lands in the flames, so it has no per-item duration.
+			# Default: 20
+			# Range: 1 ~ 24000
+			spiritFireCraftTicks = 20
+			#Time a crushing or crystallizing craft takes, as a percentage of what the bound spirit would take in the world.
+			#That base time is the recipe's own duration scaled by Occultism's per-tier time multiplier, so a stronger spirit is faster here too.
+			# Default: 100
+			# Range: 1 ~ 10000
+			craftTimePercent = 100
+			#Energy the Matrix draws from its ME network while crafting, in AE per tick. Progress stops whenever the network cannot supply this much power.
+			# Default: 500
+			# Range: 0 ~ 1000000
+			meNetworkDrain = 500
+			#Energy the Matrix draws from its ME network while idle, in AE per tick. This standing cost is read once when the Matrix joins a network, so changing it needs a world reload.
+			# Default: 10
+			# Range: 0 ~ 1000000
+			idleMeNetworkDrain = 10
+			#Channels the Matrix takes up on its ME network. Any value above 8 has to pass through dense cables.
+			#This is read once when the Matrix joins a network, so changing it needs a world reload. Set to 0 for a Matrix that takes up no channels at all.
+			# Default: 15
+			# Range: 0 ~ 128
+			meNetworkChannels = 15
+
+		#Spirit Provider:
+		[modules.occultism.spiritProvider]
+			#The Spirit Provider takes crushing, crystallizing, smelting and trading crafts from a pattern provider against it and lays the inputs out for a working spirit to collect.
+			#Only a spirit whose work area covers the Provider is served, and its finished products go back through the pattern provider instead of onto the ground.
+			enabled = true
+			#How far, in blocks along each axis, the Provider looks for working spirits.
+			#A spirit further away than this is never served, even when its work area covers the Provider.
+			# Default: 16
+			# Range: 1 ~ 64
+			searchRange = 16
+			#Most crafts the Provider holds at once, counting those still waiting for a spirit.
+			#A pattern provider is turned away while the Provider is full, and tries again later.
+			# Default: 8
+			# Range: 1 ~ 256
+			queueLimit = 8
+
+		#Ritual Controller:
+		[modules.occultism.ritualController]
+			#The Ritual Controller runs Occultism crafting rituals from ritual patterns on a real pentacle: it lays the ingredients into the sacrificial bowls, starts the ritual at the golden bowl and collects the result.
+			#It needs a Spirit-Infused Book, whose spirit tier sets the highest pentacle it may run and how fast its rituals go.
+			enabled = true
+			#Treats the Controller as a requester, allowing it to auto-pull, auto-craft, and auto-request a set of recipe ingredients from the ME network when a ritual it owes is left without materials.
+			#When disabled, a Controller left short of materials stalls until you restock it by hand.
+			autoRequest = true
+			#How far, in blocks along each axis, the Controller looks for the golden sacrificial bowl it drives.
+			#The nearest golden bowl in range is the one it uses.
+			# Default: 4
+			# Range: 1 ~ 16
+			bowlRange = 4
+			#Extra ritual speed for each spirit tier above foliot, as a percentage of the ritual's normal pace.
+			#At 50, a djinni book runs rituals 1.5 times as fast, an afrit book twice as fast and a marid book 2.5 times as fast.
+			# Default: 50
+			# Range: 0 ~ 1000
+			tierSpeedPercent = 50
+			#Lets the Controller repair damaged items stored on its ME network with Occultism's repair rituals while it has no pattern work, once repairing is switched on in its screen.
+			repair = true
+			#Lets the Controller satisfy a ritual's sacrifice with a stand-in item instead of a slain mob, such as a spawn egg or a soul gem holding the right creature.
+			#Which items stand in for which mobs is set by nep:sacrifice_stand_in recipes.
+			sacrificeStandIns = true
+			#Energy the Controller draws from its ME network while a ritual runs, in AE per tick. A Controller that loses network power lets the ritual in progress finish, but starts no new one.
+			# Default: 100
+			# Range: 0 ~ 1000000
+			meNetworkDrain = 100
+			#Energy the Controller draws from its ME network while idle, in AE per tick. This standing cost is read once when the Controller joins a network, so changing it needs a world reload.
+			# Default: 10
+			# Range: 0 ~ 1000000
+			idleMeNetworkDrain = 10
+			#Channels the Controller takes up on its ME network. Any value above 8 has to pass through dense cables.
+			#This is read once when the Controller joins a network, so changing it needs a world reload. Set to 0 for a Controller that takes up no channels at all.
+			# Default: 7
+			# Range: 0 ~ 128
+			meNetworkChannels = 7
+
 #Pattern behaviour outside any one integration.
 [patterns]
 	#Lets a NEP pattern be crafted back into a plain AE2 Processing Pattern carrying the same ingredients and result, one pattern per crafting grid.
@@ -469,3 +912,48 @@
 [debug]
 	#Log diagnostics to the server log at INFO level (e.g. every pattern-provider push to a machine and why it was accepted or rejected).
 	verbose_logging = false
+
+#Machine behaviour outside any one integration.
+[machines]
+	#Lets a recipe be started by hand from a machine's own screen, by pressing the recipe-viewer transfer button on a recipe that machine runs.
+	#The ingredients come out of your own inventory, all at once or not at all, and the result waits in the machine's output buffer instead of going back to the ME network.
+	#When disabled, a machine only ever crafts what a pattern provider pushes to it.
+	manualCrafting = true
+
+#Pattern Decoder behaviour.
+[patternDecoder]
+	#Makes NEP patterns depend on a Pattern Decoder. While enabled, a Pattern Encoding Terminal only encodes a NEP pattern for a mod switched on under mods when its network holds a powered Pattern Decoder carrying that mod's Encoding Module; anything else encodes as a plain Processing Pattern.
+	#When disabled, NEP patterns encode as usual and the Pattern Decoder does nothing. Patterns that were already encoded keep working either way.
+	requireDecoder = false
+	#Channels a Pattern Decoder takes up on its ME network. A Decoder without its channel does not count towards encoding.
+	#This is read once when the Decoder joins a network, so changing it needs a world reload. Set to 0 for a Decoder that takes up no channel at all.
+	# Default: 1
+	# Range: 0 ~ 128
+	meNetworkChannels = 1
+	#Energy a Pattern Decoder draws from its ME network, in AE per tick. This standing cost is read once when the Decoder joins a network, so changing it needs a world reload.
+	# Default: 5
+	# Range: 0 ~ 1000000
+	idleMeNetworkDrain = 5
+
+	#Which integrations need their Encoding Module in a Pattern Decoder while requireDecoder is enabled. A mod switched off here encodes its NEP patterns as usual.
+	[patternDecoder.mods]
+		#Whether actuallyadditions patterns need their Encoding Module.
+		actuallyadditions = true
+		#Whether apothic_enchanting patterns need their Encoding Module.
+		apothic_enchanting = true
+		#Whether ars_nouveau patterns need their Encoding Module.
+		ars_nouveau = true
+		#Whether compactcrafting patterns need their Encoding Module.
+		compactcrafting = true
+		#Whether create patterns need their Encoding Module.
+		create = true
+		#Whether draconicevolution patterns need their Encoding Module.
+		draconicevolution = true
+		#Whether malum patterns need their Encoding Module.
+		malum = true
+		#Whether mysticalagriculture patterns need their Encoding Module.
+		mysticalagriculture = true
+		#Whether oritech patterns need their Encoding Module.
+		oritech = true
+		#Whether occultism patterns need their Encoding Module.
+		occultism = true

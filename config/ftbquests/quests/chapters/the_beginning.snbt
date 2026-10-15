@@ -1,0 +1,1415 @@
+{
+	autofocus_id: "0E80BD3DCDAB7372"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_beginning"
+	group: "0DB2701AC66EF66D"
+	hide_quest_until_deps_visible: true
+	icon: {
+		id: "nether_remastered:seal_of_the_underworld_item"
+	}
+	id: "6AC5E192FD50BBDD"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0E80BD3DCDAB7372"]
+			icon: {
+				id: "minecraft:iron_pickaxe"
+			}
+			id: "05C509A67AF655B9"
+			tasks: [
+				{
+					block_tag: "c:ores/coal"
+					icon: {
+						id: "minecraft:coal_ore"
+					}
+					id: "07F581E8FDE04518"
+					type: "break_block"
+					value: 64L
+				}
+				{
+					block_tag: "c:ores/iron"
+					icon: {
+						id: "minecraft:iron_ore"
+					}
+					id: "44F2AC73E62E4543"
+					type: "break_block"
+					value: 64L
+				}
+				{
+					block_tag: "c:ores/lapis"
+					icon: {
+						id: "minecraft:lapis_ore"
+					}
+					id: "43A1DE9875DFBE0B"
+					type: "break_block"
+					value: 16L
+				}
+				{
+					block_tag: "c:ores/redstone"
+					icon: {
+						id: "minecraft:redstone_ore"
+					}
+					id: "34D72DABEEB0BB29"
+					type: "break_block"
+					value: 16L
+				}
+				{
+					block_tag: "c:ores/gold"
+					icon: {
+						id: "minecraft:gold_ore"
+					}
+					id: "516A7E07DD453333"
+					type: "break_block"
+					value: 16L
+				}
+				{
+					block_tag: "c:ores/copper"
+					icon: {
+						id: "minecraft:copper_ore"
+					}
+					id: "5E5A027E22B4F3EA"
+					type: "break_block"
+					value: 16L
+				}
+				{
+					block_tag: "c:ores/diamond"
+					icon: {
+						id: "minecraft:diamond_ore"
+					}
+					id: "039ED116A8E7278C"
+					type: "break_block"
+					value: 8L
+				}
+			]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["68F204CE116B47ED"]
+			hide_until_deps_complete: true
+			id: "638C732682F94DFA"
+			tasks: [{
+				id: "5F7F82239CBB0384"
+				item: { count: 1, id: "naturescompass:naturescompass" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0E80BD3DCDAB7372"]
+			icon: {
+				id: "minecraft:oak_sapling"
+			}
+			id: "68F204CE116B47ED"
+			tasks: [
+				{
+					count: 16L
+					icon: {
+						id: "minecraft:oak_log"
+					}
+					id: "72B4BB8618C3483C"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:logs)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					count: 4L
+					icon: {
+						id: "minecraft:oak_sapling"
+					}
+					id: "3C4C1F558E54E033"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:saplings)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"638C732682F94DFA"
+				"05C509A67AF655B9"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "ars_nouveau:imbuement_chamber"
+			}
+			id: "3E6717E36E2A5A2F"
+			tasks: [
+				{
+					id: "0317C44D95D43536"
+					item: { count: 1, id: "ars_nouveau:imbuement_chamber" }
+					type: "item"
+				}
+				{
+					id: "2E5B0361C414F509"
+					item: { count: 1, id: "ars_nouveau:source_gem" }
+					type: "item"
+				}
+				{
+					id: "5995760A4453E1A2"
+					item: { count: 1, id: "sophisticatedstorage:advanced_hopper_upgrade" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3E6717E36E2A5A2F"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "ars_nouveau:enchanting_apparatus"
+			}
+			id: "6E5F1866FA5658B5"
+			tasks: [
+				{
+					count: 40L
+					id: "1318B46FC0F4904C"
+					item: { count: 1, id: "ars_nouveau:sourcestone" }
+					type: "item"
+				}
+				{
+					id: "52CB1F4D9CC65703"
+					item: { count: 1, id: "ars_nouveau:source_jar" }
+					type: "item"
+				}
+				{
+					id: "43E2002D5B2B1722"
+					item: { count: 1, id: "ars_nouveau:enchanting_apparatus" }
+					type: "item"
+				}
+				{
+					id: "51077871BB5599AD"
+					item: { count: 1, id: "ars_nouveau:arcane_core" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "687F7305E7A503B3"
+					item: { count: 1, id: "ars_nouveau:arcane_pedestal" }
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"638C732682F94DFA"
+				"6E5F1866FA5658B5"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "explorerscompass:explorerscompass"
+			}
+			id: "4D707A738EB0F10D"
+			tasks: [
+				{
+					count: 4L
+					id: "10E4C9F4248D87E1"
+					item: { count: 1, id: "ars_nouveau:source_gem_block" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3F061F1DACFA6EB0"
+					item: { count: 1, id: "minecraft:amethyst_block" }
+					type: "item"
+				}
+				{
+					id: "31B0A01A32A87AFA"
+					item: { count: 1, id: "explorerscompass:explorerscompass" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["638C732682F94DFA"]
+			hide_until_deps_complete: true
+			id: "76A10455B5117CBA"
+			tasks: [{
+				count: 72L
+				id: "7A64E34E2D8F55C5"
+				item: { count: 1, id: "minecraft:andesite" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3E6717E36E2A5A2F"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				id: "ars_nouveau:creative_source_jar"
+			}
+			id: "18FDF378F9BE60C2"
+			optional: true
+			tasks: [
+				{
+					id: "4209F51FCB8D347A"
+					item: { components: { "ftbfiltersystem:filter": "or(item(ars_nouveau:agronomic_sourcelink)item(ars_nouveau:volcanic_sourcelink)item(ars_nouveau:alchemical_sourcelink)item(ars_nouveau:vitalic_sourcelink)item(ars_nouveau:mycelial_sourcelink))", "minecraft:custom_name": "\"Any Sourcelink\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "46C0C73007AC05EF"
+					item: { count: 1, id: "utilitarian:snad" }
+					type: "item"
+				}
+				{
+					id: "738B4AB1D17CCA47"
+					item: { count: 1, id: "utilitarian:redstone_clock" }
+					type: "item"
+				}
+				{
+					id: "364E6195B0F7CD44"
+					item: { components: { "ftbfiltersystem:filter": "or(item(minecraft:sugar_cane)item(minecraft:cactus))", "minecraft:custom_name": "\"Cactus or Sugar Cane\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "78FD3247DD147437"
+					item: { components: { "ftbfiltersystem:filter": "or(item(functionalstorage:oak_1)item(functionalstorage:spruce_1)item(functionalstorage:birch_1)item(functionalstorage:jungle_1)item(functionalstorage:acacia_1)item(functionalstorage:dark_oak_1)item(functionalstorage:crimson_1)item(functionalstorage:warped_1)item(functionalstorage:mangrove_1)item(functionalstorage:cherry_1)item(functionalstorage:framed_1))", "minecraft:custom_name": "\"Any 1 Item Type Drawer\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0A3B1E31EA4FDFA8"
+					item: { count: 1, id: "functionalstorage:void_upgrade" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3979BC6825E0027A"
+					item: { count: 1, id: "itemcollectors:basic_collector" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["582C56657BA3A103"]
+			hide_until_deps_complete: true
+			id: "0E80BD3DCDAB7372"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: {
+					id: "minecraft:grass_block"
+				}
+				id: "5AA6123EF811513C"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D707A738EB0F10D"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "64B315EA9471F315"
+			optional: true
+			tasks: [{
+				id: "2B2B28334B677227"
+				item: { count: 1, id: "hangglider:hang_glider" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["68F204CE116B47ED"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				id: "crafting_on_a_stick:crafting_table"
+			}
+			id: "2EF1CC0CB01AF94D"
+			tasks: [{
+				id: "52389FD2B108B088"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(curios:crafting_on_a_stick)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["76A10455B5117CBA"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "create:andesite_alloy"
+			}
+			id: "1635DD7388E05DC3"
+			rewards: [
+				{
+					id: "7B902F0C02C6359E"
+					item: {
+						count: 1
+						id: "create:speedometer"
+					}
+					type: "item"
+				}
+				{
+					id: "6C01287ED9CCAC67"
+					item: {
+						count: 1
+						id: "create:stressometer"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 36L
+					id: "1B51FC4D4EACF8CF"
+					item: { count: 1, id: "create:andesite_alloy" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "2E46EF090CD111BD"
+					item: { count: 1, id: "create:shaft" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "4532E70B42115376"
+					item: { count: 1, id: "create:andesite_casing" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "25AE60ACFC31F020"
+					item: { count: 1, id: "create:cogwheel" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3A83B5CBE5EFB952"
+					item: { count: 1, id: "create:large_cogwheel" }
+					type: "item"
+				}
+				{
+					id: "06EF0A93841165BC"
+					item: { count: 1, id: "create:depot" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "63F6E962B8F47BF6"
+					item: { count: 1, id: "create:water_wheel" }
+					type: "item"
+				}
+				{
+					id: "6E41A8A4A4EEE081"
+					item: { count: 1, id: "create:mechanical_press" }
+					type: "item"
+				}
+				{
+					id: "0B50C6668DF7E92E"
+					item: { count: 1, id: "create:millstone" }
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1635DD7388E05DC3"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				id: "create:wrench"
+			}
+			id: "5DF4112EC13D86E3"
+			optional: true
+			tasks: [
+				{
+					id: "45E297C1A580909A"
+					item: { count: 1, id: "create:wrench" }
+					type: "item"
+				}
+				{
+					id: "14055FEE2C81E489"
+					item: { count: 1, id: "create:goggles" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4D707A738EB0F10D"]
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				id: "nether_remastered:seal_piece_1"
+			}
+			id: "6DB6E9074C07BE83"
+			shape: "hexagon"
+			tasks: [
+				{
+					icon: {
+						id: "explorerscompass:explorerscompass"
+					}
+					id: "22AA78347DC7FC67"
+					structure: "idas:dig_site/dig_site"
+					type: "structure"
+				}
+				{
+					id: "1E46E6BECA7A5D65"
+					item: { count: 1, id: "nether_remastered:seal_piece_1" }
+					type: "item"
+				}
+				{
+					id: "14732561A0E5448A"
+					item: { count: 1, id: "create:blaze_burner" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1635DD7388E05DC3"]
+			icon: {
+				id: "create:mechanical_mixer"
+			}
+			id: "7C74371387B1909D"
+			tasks: [
+				{
+					id: "6D42378285A2801B"
+					item: { count: 1, id: "create:mechanical_mixer" }
+					type: "item"
+				}
+				{
+					id: "40DE7B3C827601FA"
+					item: { count: 1, id: "create:basin" }
+					type: "item"
+				}
+				{
+					id: "0481F42143A6901D"
+					item: { count: 1, id: "create:filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2EB6F48A106B0026"
+					item: { count: 1, id: "create_connected:encased_chain_cogwheel" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"05C509A67AF655B9"
+				"77DC41EA361033AD"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "twilightforest:firefly"
+			}
+			id: "410455182F69C1E5"
+			tasks: [
+				{
+					id: "0840EFBFE061973C"
+					item: { count: 1, id: "minecraft:diamond" }
+					type: "item"
+				}
+				{
+					id: "53274D50F0652E72"
+					item: { count: 1, id: "minecraft:water_bucket" }
+					type: "item"
+				}
+				{
+					dimension: "twilightforest:twilight_forest"
+					id: "3C3F4CCD823D3385"
+					type: "dimension"
+				}
+			]
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["410455182F69C1E5"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "twilightforest:naga_trophy"
+			}
+			id: "7B649F6D17795B67"
+			tasks: [
+				{
+					icon: {
+						id: "twilightforest:naga_trophy"
+					}
+					id: "4CC61367A0DC1084"
+					structure: "twilightforest:naga_courtyard"
+					type: "structure"
+				}
+				{
+					id: "1259C03C94A6F413"
+					item: { count: 1, id: "twilightforest:naga_scale" }
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"7B649F6D17795B67"
+				"6E5F1866FA5658B5"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:glowstone"
+			}
+			id: "0E089FBA14DF8906"
+			tasks: [
+				{
+					count: 16L
+					id: "7408464A95C8B620"
+					item: { count: 1, id: "minecraft:glowstone" }
+					type: "item"
+				}
+				{
+					dimension: "aether:the_aether"
+					id: "0BDF3A94DE55195C"
+					type: "dimension"
+				}
+			]
+			x: -3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0E089FBA14DF8906"]
+			icon: {
+				id: "aether:bronze_dungeon_key"
+			}
+			id: "2027538C9390B70E"
+			tasks: [
+				{
+					icon: {
+						id: "aether:holystone"
+					}
+					id: "6315E10901E9C85D"
+					structure: "aether:bronze_dungeon"
+					type: "structure"
+				}
+				{
+					count: 2L
+					id: "45057039F8965943"
+					item: { count: 1, id: "aether:bronze_dungeon_key" }
+					type: "item"
+				}
+				{
+					id: "595771BE76DBD9FC"
+					item: { count: 1, id: "aether:altar" }
+					type: "item"
+				}
+				{
+					id: "75DBCF679B6F7139"
+					item: { count: 1, id: "aether:freezer" }
+					type: "item"
+				}
+				{
+					id: "6D90EA45DBF24270"
+					item: { count: 1, id: "antarchyascension:skybound_key" }
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"6E5F1866FA5658B5"
+				"2027538C9390B70E"
+			]
+			hide_until_deps_complete: true
+			id: "4743C99543F49D2F"
+			tasks: [{
+				id: "5B4A174383D60068"
+				item: { count: 1, id: "antarchyascension:skybound_sigil" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["2027538C9390B70E"]
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
+			id: "52FECFF0BDDA7E9E"
+			shape: "hexagon"
+			tasks: [{
+				id: "18D4C98917AFBD0B"
+				item: { count: 1, id: "nether_remastered:seal_piece_2" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0E80BD3DCDAB7372"]
+			icon: {
+				id: "minecraft:clay_ball"
+			}
+			id: "1DE26FBF8D6162F9"
+			tasks: [
+				{
+					count: 256L
+					id: "1554170042ADF4E0"
+					item: { count: 1, id: "minecraft:clay_ball" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "2A4A445FD94A2CF6"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:sandstone/blocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1DE26FBF8D6162F9"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "immersiveengineering:cokebrick"
+			}
+			id: "3C19F20F4ECF325C"
+			tasks: [
+				{
+					count: 27L
+					id: "4C6B3B9BC7C9EF0C"
+					item: { count: 1, id: "immersiveengineering:cokebrick" }
+					type: "item"
+				}
+				{
+					id: "2ADD5FEA64573EA2"
+					item: { count: 1, id: "immersiveengineering:hammer" }
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3C19F20F4ECF325C"]
+			icon: {
+				id: "immersiveengineering:treated_wood_horizontal"
+			}
+			id: "061098489E8FBE67"
+			tasks: [
+				{
+					id: "61BC98997070CB87"
+					item: { count: 1, id: "immersiveengineering:creosote_bucket" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "26A1323DB82723FA"
+					item: { count: 1, id: "immersiveengineering:treated_wood_horizontal" }
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["061098489E8FBE67"]
+			icon: {
+				id: "immersiveengineering:workbench"
+			}
+			id: "00FE9CBEE0FC2521"
+			tasks: [
+				{
+					id: "0CC9F49FF6CF3331"
+					item: { count: 1, id: "immersiveengineering:workbench" }
+					type: "item"
+				}
+				{
+					id: "16AC423E7214921C"
+					item: { count: 1, id: "immersiveengineering:wirecutter" }
+					type: "item"
+				}
+				{
+					id: "36FF64C8C2FE413B"
+					item: { components: { "immersiveengineering:blueprint": "components" }, count: 1, id: "immersiveengineering:blueprint" }
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["131F6D9010B8AEF4"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "immersiveengineering:blast_furnace"
+			}
+			id: "3F2740A7A9AB2EE6"
+			tasks: [
+				{
+					count: 27L
+					id: "13684CE5CA3653C7"
+					item: { count: 1, id: "immersiveengineering:blastbrick" }
+					type: "item"
+				}
+				{
+					id: "70ABE65DF13462AB"
+					item: { count: 1, id: "immersiveengineering:hammer" }
+					type: "item"
+				}
+				{
+					id: "416CF4837CAAFF13"
+					item: { count: 1, id: "alltheores:steel_ingot" }
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"3F2740A7A9AB2EE6"
+				"00FE9CBEE0FC2521"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "immersiveengineering:dynamo"
+			}
+			id: "1E7C5FC5EAF91CD2"
+			rewards: [
+				{
+					count: 4
+					id: "346A6BA2D7D34D8E"
+					item: {
+						count: 1
+						id: "immersiveengineering:wirecoil_copper_ins"
+					}
+					type: "item"
+				}
+				{
+					id: "31BCF7A3B7EAA1C1"
+					item: {
+						count: 1
+						id: "immersiveengineering:watermill"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "406F75E3DC3B0CA4"
+					item: {
+						count: 1
+						id: "immersiveengineering:connector_lv_relay"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "43337D9DFE5C0B7A"
+					item: { count: 1, id: "immersiveengineering:watermill" }
+					type: "item"
+				}
+				{
+					id: "441BF0514B48213F"
+					item: { count: 1, id: "immersiveengineering:dynamo" }
+					type: "item"
+				}
+				{
+					id: "089971BA1F68C214"
+					item: { count: 1, id: "immersiveengineering:capacitor_lv" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "372CE57801F7CD53"
+					item: { count: 1, id: "immersiveengineering:wirecoil_copper" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "09275091DD1E1967"
+					item: { count: 1, id: "immersiveengineering:connector_lv" }
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"1635DD7388E05DC3"
+				"7C74371387B1909D"
+				"0825CA29733DF21E"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "antarchyascension:silica_compound"
+			}
+			id: "131F6D9010B8AEF4"
+			tasks: [
+				{
+					count: 64L
+					id: "2285462D68BFBF92"
+					item: { count: 1, id: "antarchyascension:powdered_sand" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "62703E98788A891B"
+					item: { count: 1, id: "antarchyascension:silica_compound" }
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1E7C5FC5EAF91CD2"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				id: "create:schematicannon"
+			}
+			id: "079E519C570CF346"
+			optional: true
+			tasks: [
+				{
+					id: "25C63C5B85DA725C"
+					item: { count: 1, id: "create:schematicannon" }
+					type: "item"
+				}
+				{
+					id: "5F871B51E7FA302C"
+					item: { count: 1, id: "create:schematic_table" }
+					type: "item"
+				}
+				{
+					id: "79EC602150E79648"
+					item: { count: 1, id: "create:empty_schematic" }
+					type: "item"
+				}
+				{
+					id: "6A4E53761A3C4585"
+					item: { count: 1, id: "create:clipboard" }
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3F2740A7A9AB2EE6"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				id: "immersiveengineering:advanced_blast_furnace"
+			}
+			id: "3A4E8891C21AE08C"
+			optional: true
+			tasks: [
+				{
+					count: 27L
+					id: "11B8A48997CD11F6"
+					item: { count: 1, id: "immersiveengineering:blastbrick_reinforced" }
+					type: "item"
+				}
+				{
+					id: "571AD487767540D9"
+					item: { count: 1, id: "minecraft:hopper" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "038FF14A9A8C1957"
+					item: { count: 1, id: "immersiveengineering:blastfurnace_preheater" }
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7C74371387B1909D"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "create:deployer"
+			}
+			id: "3011E909FC1B3746"
+			tasks: [
+				{
+					count: 8L
+					id: "659C7036B4DFAC32"
+					item: { count: 1, id: "alltheores:brass_ingot" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "61D9CD8EE59947D1"
+					item: { count: 1, id: "create:electron_tube" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "383D5A9C20388A67"
+					item: { count: 1, id: "create:deployer" }
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3011E909FC1B3746"]
+			icon: {
+				components: {
+					"ftbquests:icon": "createdeco:block/palettes/decal/orange_decal"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "4EDFBF483367C110"
+			tasks: [{
+				id: "06D016B0F0A3B0D0"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"5052D842FA5BFDA0"
+				"3F2740A7A9AB2EE6"
+				"1E7C5FC5EAF91CD2"
+			]
+			id: "1CE2D64C62594686"
+			tasks: [{
+				id: "7F6818111D2F5F64"
+				item: { count: 1, id: "mekanism:metallurgic_infuser" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["29237400DEE5B1D9"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "5052D842FA5BFDA0"
+			tasks: [{
+				block_tag: "c:ores/osmium"
+				icon: {
+					id: "alltheores:osmium_ore"
+				}
+				id: "2A2E96A0E2ABDCE4"
+				type: "break_block"
+				value: 8L
+			}]
+			x: 11.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1CE2D64C62594686"]
+			id: "30C702C317C40A45"
+			tasks: [{
+				count: 2L
+				id: "0BBC190E993BE4BB"
+				item: { count: 1, id: "mekanism:basic_control_circuit" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"30C702C317C40A45"
+				"5DFD2FDAD41199CA"
+				"3137574A4EFAF2E2"
+			]
+			id: "6AEE8803174DD81B"
+			tasks: [{
+				id: "14DA5C761FDAED49"
+				item: { count: 1, id: "antarchyascension:grounded_sigil" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"4743C99543F49D2F"
+				"4D707A738EB0F10D"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "twilightforest:lich_trophy"
+			}
+			id: "69B409445F44B3AF"
+			tasks: [
+				{
+					id: "2F590C0C4342134C"
+					structure: "twilightforest:lich_tower"
+					type: "structure"
+				}
+				{
+					id: "376583EE6BDFAD8D"
+					item: { count: 1, id: "twilightforest:exanimate_essence" }
+					type: "item"
+				}
+				{
+					entity: "twilightforest:lich"
+					id: "4344E352078D0C72"
+					min_tags_required: 0
+					structure: "twilightforest:lich_tower"
+					type: "kill_advanced"
+					value: 1L
+				}
+			]
+			x: 1.5d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"69B409445F44B3AF"
+				"6B4C7A052034177C"
+				"5AA1AD71D7F996D3"
+			]
+			hide_until_deps_complete: true
+			id: "5DFD2FDAD41199CA"
+			invisible_until_tasks: 1
+			tasks: [{
+				id: "01DA931D1AEA15D7"
+				item: { count: 1, id: "antarchyascension:frozen_exanimate_essence" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["69B409445F44B3AF"]
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
+			id: "66D894EAE0521E71"
+			shape: "hexagon"
+			tasks: [{
+				id: "72D6F8D3CA6285A3"
+				item: { count: 1, id: "nether_remastered:seal_piece_3" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["6AEE8803174DD81B"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "twilightforest:alpha_yeti_trophy"
+			}
+			id: "2B0B612E5826A3DA"
+			tasks: [
+				{
+					id: "54FCA267943C6CCA"
+					structure: "twilightforest:yeti_cave"
+					type: "structure"
+				}
+				{
+					id: "2CB37BB6E0766071"
+					item: { count: 1, id: "twilightforest:alpha_yeti_fur" }
+					type: "item"
+				}
+			]
+			x: 13.5d
+			y: 8.5d
+		}
+		{
+			always_invisible: true
+			dependencies: ["5AA1AD71D7F996D3"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "6B4C7A052034177C"
+			tasks: [
+				{
+					id: "46FF63DBD599E4BC"
+					item: { count: 1, id: "aether:freezer" }
+					type: "item"
+				}
+				{
+					entity: "twilightforest:lich"
+					id: "0D0345A3AFBFFC14"
+					min_tags_required: 0
+					structure: "twilightforest:lich_tower"
+					type: "kill_advanced"
+					value: 1L
+				}
+			]
+			x: 5.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"3E6717E36E2A5A2F"
+				"5AA1AD71D7F996D3"
+				"29237400DEE5B1D9"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				id: "ars_nouveau:imbuement_chamber"
+			}
+			id: "3137574A4EFAF2E2"
+			tasks: [
+				{
+					id: "00D1450912DD571B"
+					item: { count: 1, id: "ars_nouveau:imbuement_chamber" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "785F29B46EAF232E"
+					item: { count: 1, id: "ars_nouveau:arcane_pedestal" }
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["2B0B612E5826A3DA"]
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
+			id: "730B249B3F5A4F0F"
+			shape: "hexagon"
+			tasks: [{
+				id: "6D4F877E6882AA4F"
+				item: { count: 1, id: "nether_remastered:seal_piece_4" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"2B0B612E5826A3DA"
+				"5E61BA6960339FAB"
+			]
+			hide_until_deps_complete: true
+			id: "75A6591BBD45C461"
+			tasks: [{
+				id: "09C4E021F916F5E8"
+				item: { count: 1, id: "antarchyascension:nether_crystal_seed" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"1CE2D64C62594686"
+				"2C9C9917CB9926B2"
+			]
+			icon: {
+				id: "mekanism:dust_refined_obsidian"
+			}
+			id: "337B998BA11AABD0"
+			tasks: [{
+				id: "05456D1EAD7B171F"
+				item: { count: 1, id: "mekanism:dust_refined_obsidian" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["75A6591BBD45C461"]
+			icon: {
+				id: "antarchyascension:nether_core"
+			}
+			id: "241629BCC1A18BEF"
+			tasks: [
+				{
+					id: "66FC331DAE344BB2"
+					item: { count: 1, id: "antarchyascension:nether_core" }
+					type: "item"
+				}
+				{
+					id: "752D0A56DC366503"
+					item: { count: 1, id: "create:spout" }
+					type: "item"
+				}
+				{
+					id: "11BB7741FDD3B791"
+					item: { count: 1, id: "fluid:fluid_interface" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 15.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"241629BCC1A18BEF"
+				"337B998BA11AABD0"
+			]
+			id: "1C8FFE53D06DE36F"
+			tasks: [{
+				id: "456A0D7DF3DBBA41"
+				item: { count: 1, id: "nether_remastered:seal_crystal" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"1C8FFE53D06DE36F"
+				"66D894EAE0521E71"
+				"6DB6E9074C07BE83"
+				"730B249B3F5A4F0F"
+				"52FECFF0BDDA7E9E"
+			]
+			id: "2500D96A429C8278"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "1901A01F18EB8662"
+				item: { count: 1, id: "nether_remastered:seal_of_the_underworld_item" }
+				type: "item"
+			}]
+			x: 17.75d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"337B998BA11AABD0"
+				"1CE2D64C62594686"
+			]
+			id: "5E61BA6960339FAB"
+			tasks: [
+				{
+					count: 6L
+					id: "56BE31839B1A69E0"
+					item: { count: 1, id: "nether_remastered:obsidian_infused_bottle" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "37D5C0AD6CA06F41"
+					item: { count: 1, id: "nether_remastered:bottled_nether_essence" }
+					type: "item"
+				}
+			]
+			x: 12.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4D707A738EB0F10D"]
+			hide_until_deps_complete: true
+			id: "0825CA29733DF21E"
+			tasks: [{
+				id: "66DF724F768A81FB"
+				item: { count: 1, id: "create:blaze_burner" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1CE2D64C62594686"]
+			hide_until_deps_complete: true
+			id: "65E52CD92BA90C66"
+			tasks: [{
+				id: "69B207D3F77BBDE4"
+				item: { count: 1, id: "mekanism:crusher" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["65E52CD92BA90C66"]
+			id: "2C9C9917CB9926B2"
+			tasks: [{
+				count: 8L
+				id: "52376A93F3F84040"
+				item: { count: 1, id: "create:powdered_obsidian" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 2.5d
+		}
+		{
+			always_invisible: true
+			id: "29237400DEE5B1D9"
+			tasks: [
+				{
+					id: "653E6AF777457934"
+					item: { count: 1, id: "alltheores:steel_ingot" }
+					type: "item"
+				}
+				{
+					advancement: "antarchyascension:progression/first_power"
+					criterion: ""
+					id: "72C2BD4F7DDD3219"
+					type: "advancement"
+				}
+			]
+			x: 11.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0E80BD3DCDAB7372"]
+			id: "77DC41EA361033AD"
+			tasks: [{
+				count: 8L
+				id: "556891C49E5C7022"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:flowers)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			always_invisible: true
+			id: "5AA1AD71D7F996D3"
+			tasks: [{
+				id: "51939D26F314F1EA"
+				item: { count: 1, id: "alltheores:steel_ingot" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["4D707A738EB0F10D"]
+			hide_until_deps_complete: true
+			id: "55B9FC2FDBCA17D5"
+			tasks: [{
+				id: "03304625DC0DD563"
+				item: { components: { "sophisticatedcore:number_of_inventory_slots": 27, "sophisticatedcore:number_of_upgrade_slots": 1 }, count: 1, id: "sophisticatedbackpacks:backpack" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 7.5d
+		}
+	]
+}

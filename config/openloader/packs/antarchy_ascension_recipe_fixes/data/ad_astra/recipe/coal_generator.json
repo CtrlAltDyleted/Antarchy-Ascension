@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "minecraft:coal_block"
+    },
+    "F": {
+      "item": "minecraft:furnace"
+    },
+    "Z": {
+      "tag": "c:ingots/steel"
+    }
+  },
+  "pattern": [
+    "#Z#",
+    "CFC",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ad_astra:coal_generator"
+  }
+}

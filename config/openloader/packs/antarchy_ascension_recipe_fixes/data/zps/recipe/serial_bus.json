@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "B": {
+      "item": "zps:data_cable"
+    },
+    "D": {
+      "tag": "c:ingots/space_metal"
+    },
+    "E": {
+      "tag": "c:ingots/space_metal"
+    },
+    "F": {
+      "tag": "c:ingots/space_metal"
+    },
+    "G": {
+      "item": "minecraft:quartz"
+    },
+    "H": {
+      "item": "minecraft:quartz"
+    },
+    "I": {
+      "item": "minecraft:quartz"
+    }
+  },
+  "pattern": [
+    " B ",
+    "DEF",
+    "GHI"
+  ],
+  "result": {
+    "id": "zps:serial_bus",
+    "count": 2
+  },
+  "show_notification": true
+}

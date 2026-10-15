@@ -10,4 +10,23 @@
 # 	}
 # }
 
-{ }
+{
+    teleportation: {
+        home: {
+            max: 5
+            cooldown: 5
+        }
+        back: {
+            max: 10
+            cooldown: 5
+        }
+        rtp: {
+            cooldown: 60
+            min_distance: 1500
+            max_distance: 5000
+            dimension_whitelist: [ ]
+
+            dimension_blacklist: ["minecraft:the_end", "ad_astra:*_orbit", "javd:void", "compactmachines:compact_world", "irons_spellbooks:pocket_dimension", "ae2:spatial_storage"]
+        }
+    }
+}

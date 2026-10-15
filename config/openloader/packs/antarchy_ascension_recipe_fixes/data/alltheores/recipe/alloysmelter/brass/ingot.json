@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
+    }
+  ],
+  "type": "immersiveengineering:alloy",
+  "input0": {
+    "basePredicate": {
+      "tag": "c:ingots/copper"
+    },
+    "count": 3
+  },
+  "input1": {
+    "tag": "c:ingots/zinc"
+  },
+  "result": {
+    "basePredicate": {
+      "item": "alltheores:brass_ingot"
+    },
+    "count": 8
+  }
+}

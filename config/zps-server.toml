@@ -1,0 +1,85 @@
+#What happens when a Redstone Converter is connected to an energized Step-Up Transformer.
+#EXPLODE: destroys the converter with an explosion
+#DESTROY: removes the converter and emits smoke particles (default)
+#Allowed Values: EXPLODE, DESTROY
+ConverterOverpowerBehavior = "DESTROY"
+#What happens when a script terminal command fails.
+#FAIL_SILENTLY: suppresses failure logs and ignores failed commands (default)
+#LOG: logs a concise command failure message and ignores the failed command
+#Allowed Values: FAIL_SILENTLY, LOG
+ScriptCommandFailureBehavior = "FAIL_SILENTLY"
+#Blocks from other mods that create their own Kelvin gas connections.
+#ZPS will not create a gas edge to any block in this list, leaving that
+#mod free to manage the connection on its own terms. Blocks not listed
+#get a plain pipe edge from our side.
+GasEdgeForeignBlocklist = ["vs_clockwork:duct"]
+#Whether players can climb into a Vent and travel between every other
+#Vent on the same connected duct run.
+DuctTravel = true
+#How many blocks the search for reachable Vents walks before it gives up.
+#Raise it for very large duct networks; lower it if entering a vent stutters.
+# Default: 4096
+# Range: 64 ~ 65536
+DuctTravelMaxNodes = 4096
+#How fast a player crawls between two Vents, in blocks per tick.
+#The screen is held black for the length of the journey, so lower values
+#make distant Vents a slower way to travel and nearby ones barely a pause.
+# Default: 0.4
+# Range: 0.05 ~ 64.0
+DuctTravelBlocksPerTick = 0.4
+#Gas at or above this temperature, in kelvin, passing the Vent a player is
+#sitting in sets them on fire. The ducts are not a safe place to be when
+#something hot is being vented through them.
+# Default: 850.0
+# Range: 1.0 ~ 1.0E9
+EntityBurnGasTemperature = 850.0
+#Gas at or below this temperature, in kelvin, passing the Vent a player is
+#sitting in freezes them, as powder snow would.
+# Default: 250.0
+# Range: 0.0 ~ 1.0E9
+EntityFreezeGasTemperature = 250.0
+
+#Fusion reactor.
+[Reactor]
+	#Chamber temperature, in kelvin, at which Flux fuses. Must match the
+	#kelvin:min_temperature of the zps:flux_fusion reaction.
+	# Default: 50000.0
+	# Range: 1.0 ~ 1.0E9
+	IgnitionTemperatureK = 50000.0
+	#Chamber temperature, in kelvin, at which a wall block gives way.
+	# Default: 200000.0
+	# Range: 1.0 ~ 1.0E9
+	MeltTemperatureK = 200000.0
+	#Chamber temperature, in kelvin, that Heat Exchangers hold: they stop pushing
+	#FE in once the chamber is this hot and stop drawing heat out once it is this
+	#cold. Keep it above the ignition temperature or cold fuel will quench the reactor.
+	# Default: 55000.0
+	# Range: 1.0 ~ 1.0E9
+	ExchangerTemperatureK = 55000.0
+	#Pressure at which a reactor chamber bursts, in pascals. The same for every shape and size.
+	# Default: 2.4E7
+	# Range: 1.0 ~ 1.0E12
+	BurstPressurePa = 2.4E7
+	#Largest interior size along any axis, in blocks.
+	# Default: 14
+	# Range: 1 ~ 64
+	MaxInteriorExtent = 14
+
+#Energy.
+[Energy]
+	#FE a burning Combustion Generator makes each tick.
+	# Default: 32
+	# Range: 1 ~ 1000000
+	CombustionGeneratorFePerTick = 32
+	#Joules of chamber heat one FE is worth to a Heat Exchanger, both when it
+	#heats the chamber and when it generates from it.
+	# Default: 1000.0
+	# Range: 0.001 ~ 1.0E12
+	ExchangerJoulesPerFe = 1000.0
+	#FE per tick a single energy link carries: a Heat Exchanger's draw and
+	#generation cap, a Step-Up Transformer's throughput, and the rate a
+	#Creative Power Cell charges items. Transformers already placed keep their
+	#buffer size until they are reloaded.
+	# Default: 4096
+	# Range: 1 ~ 1000000000
+	StandardTransferFePerTick = 4096

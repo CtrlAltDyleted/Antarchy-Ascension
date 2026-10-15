@@ -1,0 +1,16 @@
+{
+  "type": "mekanism:metallurgic_infusing",
+  "chemical_input": {
+    "amount": 10,
+    "tag": "mekanism:refined_obsidian"
+  },
+  "item_input": {
+    "count": 1,
+    "item": "minecraft:glass_bottle"
+  },
+  "output": {
+    "count": 1,
+    "id": "nether_remastered:obsidian_infused_bottle"
+  },
+  "per_tick_usage": false
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "ingredient": {
+    "tag": "c:storage_blocks/raw_lead"
+  },
+  "result": {
+    "id": "alltheores:lead_block",
+    "count": 1
+  },
+  "experience": 6.3,
+  "cookingtime": 900
+}

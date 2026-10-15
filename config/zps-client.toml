@@ -1,0 +1,5 @@
+TerminalKeyboardSounds = true
+#Draw the glowing plasma inside fusion reactors.
+ReactorGlow = true
+#Play a hum from hot fusion reactors.
+ReactorHum = true

@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
+    }
+  ],
+  "type": "immersiveengineering:arc_furnace",
+  "additives": [
+    {
+      "basePredicate": {
+        "tag": "c:ingots/zinc"
+      },
+      "count": 2
+    }
+  ],
+  "energy": 51200,
+  "input": {
+    "basePredicate": {
+      "tag": "c:ingots/copper"
+    },
+    "count": 6
+  },
+  "results": [
+    {
+      "basePredicate": {
+        "item": "alltheores:brass_ingot"
+      },
+      "count": 10
+    }
+  ],
+  "time": 100
+}

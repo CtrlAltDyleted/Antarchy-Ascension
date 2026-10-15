@@ -150,3 +150,9 @@ net.minecraft.client.gui.screens.worldselection.EditWorldScreen {
 dev.aika.smsn.client.gui.screen.VersionCheckWarningScreen {
 }
 
+net.minecraft.client.gui.screens.CreditsAndAttributionScreen {
+}
+
+net.irisshaders.iris.gui.screen.ShaderPackScreen {
+}
+

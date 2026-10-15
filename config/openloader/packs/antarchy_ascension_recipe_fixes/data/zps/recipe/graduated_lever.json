@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "A": {
+      "tag": "c:ingots/space_metal"
+    },
+    "B": {
+      "tag": "c:ingots/space_metal"
+    },
+    "D": {
+      "item": "zps:cable"
+    },
+    "E": {
+      "item": "minecraft:lever"
+    },
+    "G": {
+      "tag": "c:ingots/space_metal"
+    },
+    "H": {
+      "tag": "c:ingots/space_metal"
+    }
+  },
+  "pattern": [
+    "AB ",
+    "DE ",
+    "GH "
+  ],
+  "result": {
+    "id": "zps:graduated_lever",
+    "count": 2
+  },
+  "show_notification": true
+}

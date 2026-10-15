@@ -1,7 +1,5 @@
 [
   {"version":2},
-  {"hide_mode":"SINGLE","ingredient":{"ingredient":"alltheores:dirty_platinum","type":"mekanism.api.chemical.ChemicalStack"}},
-  {"hide_mode":"SINGLE","ingredient":{"ingredient":"alltheores:clean_platinum","type":"mekanism.api.chemical.ChemicalStack"}},
   {"hide_mode":"SINGLE","ingredient":{"ingredient":"alltheores:dirty_iridium","type":"mekanism.api.chemical.ChemicalStack"}},
   {"hide_mode":"SINGLE","ingredient":{"ingredient":"alltheores:clean_iridium","type":"mekanism.api.chemical.ChemicalStack"}},
   {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"ftbquests:barrier"},"type":"item_stack"}},
@@ -42,7 +40,6 @@
   {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"productivebees:expansion_box_quark_blossom"},"type":"item_stack"}},
   {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"productivebees:advanced_quark_azalea_beehive"},"type":"item_stack"}},
   {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"productivebees:expansion_box_quark_azalea"},"type":"item_stack"}},
-  {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"alltheores:dirty_platinum_dust"},"type":"item_stack"}},
   {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"alltheores:dirty_iridium_dust"},"type":"item_stack"}},
   {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"mekanism:silver_ore"},"type":"item_stack"}},
   {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"mekanism:deepslate_silver_ore"},"type":"item_stack"}},
@@ -69,5 +66,8 @@
   {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"appliedpneumatics:amadron_pattern"},"type":"item_stack"}},
   {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"ae2cs:resonating_pattern"},"type":"item_stack"}},
   {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"ars_additions:ender_source_jar"},"type":"item_stack"}},
-  {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"ae2cs:charged_overload_crystal_block"},"type":"item_stack"}}
+  {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"sophisticatedstorage:stack_upgrade_omega_tier"},"type":"item_stack"}},
+  {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"inventorypets:sand_block"},"type":"item_stack"}},
+  {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"inventorypets:sand_spawn"},"type":"item_stack"}},
+  {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"ae2cs:nether_quartz_dust"},"type":"item_stack"}}
 ]

@@ -4,11 +4,13 @@
     {
       "texShaderLocation": {
         "namespace": "darkmodeeverywhere",
-        "path": "dark_position_tex"
+        "path": "dark_position_tex",
+        "lightspeed$hash": 1093128533
       },
       "texColorShaderLocation": {
         "namespace": "darkmodeeverywhere",
-        "path": "dark_position_tex_color"
+        "path": "dark_position_tex_color",
+        "lightspeed$hash": -187936711
       },
       "displayName": {
         "translate": "gui.darkmodeeverywhere.perfect_dark"
@@ -19,11 +21,13 @@
     {
       "texShaderLocation": {
         "namespace": "darkmodeeverywhere",
-        "path": "dark_position_tex"
+        "path": "dark_position_tex",
+        "lightspeed$hash": 1093128533
       },
       "texColorShaderLocation": {
         "namespace": "darkmodeeverywhere",
-        "path": "dark_position_tex_color"
+        "path": "dark_position_tex_color",
+        "lightspeed$hash": -187936711
       },
       "displayName": {
         "translate": "gui.darkmodeeverywhere.less_perfect_dark"
@@ -34,11 +38,13 @@
     {
       "texShaderLocation": {
         "namespace": "darkmodeeverywhere",
-        "path": "dark_position_tex"
+        "path": "dark_position_tex",
+        "lightspeed$hash": 1093128533
       },
       "texColorShaderLocation": {
         "namespace": "darkmodeeverywhere",
-        "path": "dark_position_tex_color"
+        "path": "dark_position_tex_color",
+        "lightspeed$hash": -187936711
       },
       "displayName": {
         "translate": "gui.darkmodeeverywhere.toasted_light"
@@ -48,5 +54,5 @@
     }
   ],
   "version": 2,
-  "selectedShaderIndex": 3
+  "selectedShaderIndex": 0
 }

@@ -1,6 +1,7 @@
 {
   "unlockAllArchiveEntries": false,
   "unlockAllGameEntries": false,
+  "inventoryComputerButton": false,
   "desktopApps": {
     "archive": true,
     "files": true,
@@ -16,5 +17,6 @@
   },
   "lastAnternetUsername": "",
   "initialBootSeen": false,
-  "completedComputerTours": []
+  "completedComputerTours": [],
+  "taskGroupCollapsed": {}
 }

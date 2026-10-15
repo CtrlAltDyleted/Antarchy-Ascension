@@ -2,6 +2,7 @@
 	#Master switch for all built-in default groups.
 	#Set to false to start with a completely clean slate (no default groups).
 	enabled = true
+	disabledCategories = []
 
 [ui]
 	#Whether to show the group manager button in the JEI ingredient list overlay.
@@ -29,6 +30,7 @@
 	#ARGB color for the connected border around expanded groups.
 	#Accepted formats: #AARRGGBB, 0xAARRGGBB, AARRGGBB, or RGB variants that keep the default alpha.
 	expandedGroupBorderColor = "#66FFFFFF"
+	showCategorySidebar = true
 
 [debug]
 	#Show Collapsible Groups timing logs in the game log.

@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "justdirethings",
+  "key": {
+    "c": {
+      "item": "minecraft:coal"
+    },
+    "f": {
+      "item": "minecraft:furnace"
+    },
+    "i": {
+      "item": "justdirethings:ferricore_ingot"
+    },
+    "r": {
+      "item": "minecraft:redstone_block"
+    },
+    "Z": {
+      "tag": "c:ingots/steel"
+    }
+  },
+  "pattern": [
+    "Zri",
+    "cfc",
+    "iri"
+  ],
+  "result": {
+    "count": 1,
+    "id": "justdirethings:pocket_generator"
+  }
+}

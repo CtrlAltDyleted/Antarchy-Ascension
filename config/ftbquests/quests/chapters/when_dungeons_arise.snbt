@@ -1,9 +1,10 @@
 {
+	always_invisible: true
 	autofocus_id: "2B70445E6CD99EDB"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "when_dungeons_arise"
-	group: "0DB2701AC66EF66D"
+	group: ""
 	icon: {
 		id: "minecraft:golden_sword"
 	}
@@ -17,37 +18,16 @@
 		x: -1.5d
 		y: -5.5d
 	}]
-	order_index: 0
+	order_index: 1
 	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
 		{
 			id: "2B70445E6CD99EDB"
-			rewards: [
-				{
-					id: "7FD99A708C86052D"
-					type: "xp"
-					xp: 5
-				}
-				{
-					id: "087CC88DE747A5FC"
-					item: {
-						count: 1
-						id: "minecraft:stone_sword"
-					}
-					type: "item"
-				}
-			]
 			shape: "diamond"
 			size: 3.0d
-			tasks: [{
-				advancement: "dungeons_arise:wda_root"
-				criterion: ""
-				id: "370B39E72DBEF94E"
-				type: "advancement"
-			}]
 			x: -1.5d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			hide_dependency_lines: true

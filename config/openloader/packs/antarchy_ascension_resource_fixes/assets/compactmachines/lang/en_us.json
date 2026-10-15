@@ -4,5 +4,7 @@
   "machine.compactmachines.large": "Compact Machine (Large)",
   "machine.compactmachines.normal": "Compact Machine (Normal)",
   "machine.compactmachines.small": "Compact Machine (Small)",
-  "machine.compactmachines.tiny": "Compact Machine (Tiny)"
+  "machine.compactmachines.tiny": "Compact Machine (Tiny)",
+  "machine.compactmachines.farming": "Compact Machine (Farming)",
+  "machine.compactmachines.soaryn": "Compact Machine (Soaryn)"
 }
