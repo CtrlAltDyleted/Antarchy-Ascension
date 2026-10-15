@@ -1015,6 +1015,7 @@
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "5052D842FA5BFDA0"
+			progression_mode: "flexible"
 			tasks: [{
 				block_tag: "c:ores/osmium"
 				icon: {
@@ -1169,6 +1170,7 @@
 				"3E6717E36E2A5A2F"
 				"5AA1AD71D7F996D3"
 				"29237400DEE5B1D9"
+				"6B4C7A052034177C"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
