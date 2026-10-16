@@ -21,4 +21,4 @@
 	#The (approximate) maximum part count for a tendril. Also partially dictates the length (in ticks) of the animation. Higher = More parts, slower animation, Lower = Less parts, faster animation.
 	acquisitionTendrilMaxChild = 10
 	#This disables rendering players that is riding the camera entity when in First Person.
-	morphDisableRidingPlayerRenderInFirstPerson = true
+	morphDisableRidingPlayerRenderInFirstPerson = false

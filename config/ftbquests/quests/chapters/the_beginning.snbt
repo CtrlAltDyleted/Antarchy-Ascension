@@ -598,6 +598,7 @@
 		}
 		{
 			dependencies: ["0E089FBA14DF8906"]
+			hide_until_deps_complete: true
 			icon: {
 				id: "aether:bronze_dungeon_key"
 			}

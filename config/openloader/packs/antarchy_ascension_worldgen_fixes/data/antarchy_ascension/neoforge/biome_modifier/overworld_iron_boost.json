@@ -1,0 +1,9 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": [
+    "antarchy_ascension:iron_boost_middle",
+    "antarchy_ascension:iron_boost_small"
+  ],
+  "step": "underground_ores"
+}

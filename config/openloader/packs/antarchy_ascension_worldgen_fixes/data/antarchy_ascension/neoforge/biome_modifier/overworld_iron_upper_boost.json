@@ -1,0 +1,28 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:and",
+    "values": [
+      "#minecraft:is_overworld",
+      {
+        "type": "neoforge:not",
+        "value": [
+          "terralith:desert_oasis",
+          "terralith:desert_spires",
+          "terralith:emerald_peaks",
+          "terralith:glacial_chasm",
+          "terralith:jungle_mountains",
+          "terralith:red_oasis",
+          "terralith:rocky_jungle",
+          "terralith:sandstone_valley",
+          "terralith:scarlet_mountains",
+          "terralith:volcanic_peaks"
+        ]
+      }
+    ]
+  },
+  "features": [
+    "antarchy_ascension:iron_boost_upper"
+  ],
+  "step": "underground_ores"
+}

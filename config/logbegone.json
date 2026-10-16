@@ -30,8 +30,6 @@
       "ars_nouveau:blockstates/particle_block.json",
       "bigreactors:blockstates/energizerstatus.json",
       "compactmachines:blockstates/machine_void_air.json",
-      "expanded_combat:blockstates/gas.json",
-      "expanded_combat:blockstates/purified_gas.json",
       "forbidden_arcanus:blockstates/black_hole.json",
       "forbidden_arcanus:blockstates/clibano_main_part.json",
       "forbidden_arcanus:blockstates/upwind.json",

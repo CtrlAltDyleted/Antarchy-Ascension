@@ -217,8 +217,6 @@ key_key.irons_spellbooks.spell_quick_cast_12:key.keyboard.unknown:
 key_key.irons_spellbooks.spell_quick_cast_13:key.keyboard.unknown:
 key_key.irons_spellbooks.spell_quick_cast_14:key.keyboard.unknown:
 key_key.irons_spellbooks.spell_quick_cast_15:key.keyboard.unknown:
-key_key.expanded_combat.cycle_quiver_left:key.keyboard.minus:
-key_key.expanded_combat.cycle_quiver_right:key.keyboard.equal:
 key_key.freecam.toggle:key.keyboard.f4:
 key_key.freecam.playerControl:key.keyboard.unknown:
 key_key.freecam.tripodReset:key.keyboard.unknown:
@@ -420,7 +418,6 @@ key_crashutils.openscreen:key.keyboard.u:CONTROL
 key_crashutils.copycontainer:key.keyboard.unknown:
 key_crashutils.slottooltips:key.keyboard.unknown:
 key_key.actualladditions.crafting_stick_open.desc:key.keyboard.unknown:
-key_key.extraspecialhub.open:key.keyboard.unknown:
 key_key.observable.profile:key.keyboard.f10:
 key_key.ftbultimine:key.keyboard.grave.accent:
 key_ftbultimine.change_shape.next:key.keyboard.up:
