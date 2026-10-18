@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "ZR#",
+    "#R#",
     "PXP",
     "#R#"
   ],
@@ -16,10 +16,7 @@
       "tag": "c:dusts/redstone"
     },
     "X": {
-      "item": "minecraft:repeater"
-    },
-    "Z": {
-      "tag": "c:ingots/steel"
+      "item": "mekanism:basic_control_circuit"
     }
   },
   "result": {

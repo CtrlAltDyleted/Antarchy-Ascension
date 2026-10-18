@@ -37,6 +37,28 @@
 	healthScale = true
 	#Which attributes are supported by more, and how are values better. Format: <Resource Name of Attribute>;<more/less>;[cap]. EG: "minecraft:generic.attack_damage;more" or "minecraft:generic.max_health;more;20".
 	supportedAttributes = ["minecraft:generic.max_health;more", "minecraft:generic.knockback_resistance;more", "minecraft:generic.movement_speed;more;0.1", "minecraft:generic.attack_damage;more", "minecraft:generic.attack_knockback;more", "minecraft:generic.attack_speed;more", "minecraft:generic.armor;more", "minecraft:generic.luck;more", "minecraft:horse.jump_strength;more", "neoforge:swim_speed;more", "neoforge:reach_distance;more"]
+	#How much of a morph's extra health you get (above your normal max health). 1.0 = full mob health, 0.25 = a quarter of the bonus. Morphs with less health than you still lower your health in full.
+	healthMultiplier = 0.25
+	#The highest max health a morph can give you (20 = 10 hearts). Set to 0 for no cap.
+	maxMorphHealth = 60.0
+	#How much of a morph's extra attack damage you get. Weaker morphs still lower your damage in full.
+	attackDamageMultiplier = 0.5
+	#The highest attack damage a morph can give you. Set to 0 for no cap.
+	maxMorphAttackDamage = 10.0
+	#How much of a morph's armor you get. Weaker morphs still lower your armor in full.
+	armorMultiplier = 0.5
+	#The highest armor a morph can give you. Set to 0 for no cap.
+	maxMorphArmor = 10.0
+	#Lets mob data set exact attribute values (attributeOverrides) while morphed, e.g. boss morphs. These ignore the multipliers and caps above.
+	enableAttributeOverrides = true
+	#Scales how far attribute overrides move your stats from your normal values. 1.0 = the exact override value, 0.5 = halfway, 0 = no change.
+	attributeOverrideMultiplier = 1.0
+	#Default number of body segments for segmented morphs (like the Devourer of Gods) when their mob data doesn't set a count.
+	morphSegmentCount = 102
+	#Minimum seconds between morph idle sounds. Longer natural mob intervals are preserved. Default: 30 seconds.
+	morphAmbientSoundInterval = 30
+	#Volume multiplier for morph idle sounds, capped before scaling so loud mobs cannot overwhelm you. Set to 0 to mute idle sounds. Default: 0.2.
+	morphAmbientSoundVolume = 0.2
 
 [gameplay]
 	#The Biomass Skin is meant to show during invisibility. Turning this off disables that.
@@ -50,3 +72,11 @@
 	morphMode = "CLASSIC"
 	#Resource Location name for Mob types you cannot acquire biomass or morphs from. Uses Regex matching.
 	disabledMobs = ["minecraft:armor_stand"]
+	#If you die while morphed, you go back to player form and lose the morph you were in. The rest of your collection is kept.
+	loseMorphOnDeath = false
+	#Lets a Snatcher morph pickpocket a random hotbar item from other players.
+	snatcherStealFromPlayers = true
+	#Lets an Eater morph's Terror Roar give Fear to other players, not just mobs.
+	eaterRoarAffectsPlayers = true
+	#If Witchery is installed, a player morphed as a Werewolf infects other players with lycanthropy when their Bite ability hits.
+	werewolfMorphBiteInfects = false

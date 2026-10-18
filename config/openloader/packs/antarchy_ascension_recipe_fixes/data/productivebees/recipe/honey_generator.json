@@ -2,8 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "IHI",
-    "IFI",
-    "IZI"
+    "IBI",
+    "IFI"
   ],
   "key": {
     "H": {
@@ -15,8 +15,8 @@
     "F": {
       "item": "minecraft:furnace"
     },
-    "Z": {
-      "tag": "c:ingots/steel"
+    "B": {
+      "item": "mekanism:basic_control_circuit"
     }
   },
   "result": {

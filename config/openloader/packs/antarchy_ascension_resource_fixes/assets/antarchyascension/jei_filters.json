@@ -125,7 +125,12 @@
     "mysticalagriculture:signalum_seeds",
     "mysticalagriculture:yellorium_essence",
     "mysticalagriculture:yellorium_seeds",
-    "nep:import_card"
+    "nep:import_card",
+    "actuallyadditions:coal_generator",
+    "integrateddynamics:coal_generator",
+    "industrialforegoing:pitiful_generator",
+    "zps:coal_burner",
+    "oritech:bio_generator_block"
   ],
   "fluids": [
     "alltheores:molten_enderium",

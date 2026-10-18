@@ -7,20 +7,17 @@
       "item": "minecraft:coal"
     },
     "f": {
-      "item": "minecraft:blast_furnace"
+      "item": "ad_astra:coal_generator"
     },
     "i": {
       "item": "justdirethings:ferricore_ingot"
     },
     "r": {
       "item": "minecraft:redstone"
-    },
-    "Z": {
-      "tag": "c:ingots/steel"
     }
   },
   "pattern": [
-    "Zri",
+    "iri",
     "cfc",
     "iri"
   ],

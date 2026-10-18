@@ -1,0 +1,25 @@
+{
+  "type": "immersiveengineering:turn_and_copy",
+  "category": "misc",
+  "eight_turn": true,
+  "key": {
+    "a": {
+      "item": "mekanism:alloy_infused"
+    },
+    "i": {
+      "tag": "c:sheetmetals/iron"
+    },
+    "r": {
+      "tag": "c:dusts/redstone"
+    }
+  },
+  "pattern": [
+    "iri",
+    "rar",
+    "iri"
+  ],
+  "result": {
+    "count": 4,
+    "id": "immersiveengineering:rs_engineering"
+  }
+}

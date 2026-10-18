@@ -5,20 +5,20 @@
     "#": {
       "item": "minecraft:furnace"
     },
+    "I": {
+      "tag": "c:ingots/steel"
+    },
     "O": {
       "tag": "c:ingots/osmium"
     },
     "R": {
       "tag": "c:dusts/redstone"
-    },
-    "Z": {
-      "tag": "c:ingots/steel"
     }
   },
   "pattern": [
-    "Z#Z",
+    "I#I",
     "ROR",
-    "Z#Z"
+    "I#I"
   ],
   "result": {
     "count": 1,

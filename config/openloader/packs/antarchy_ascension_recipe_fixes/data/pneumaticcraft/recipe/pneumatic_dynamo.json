@@ -14,13 +14,13 @@
     "T": {
       "item": "pneumaticcraft:advanced_pressure_tube"
     },
-    "Z": {
-      "tag": "c:ingots/steel"
+    "B": {
+      "item": "mekanism:basic_control_circuit"
     }
   },
   "pattern": [
     " T ",
-    "GZG",
+    "GBG",
     "IPI"
   ],
   "result": {

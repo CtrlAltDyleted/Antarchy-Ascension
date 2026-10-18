@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "bigreactors:reinforced_reactorcasing"
+    },
+    "D": {
+      "tag": "c:storage_blocks/diamond"
+    },
+    "R": {
+      "tag": "c:dusts/redstone"
+    },
+    "X": {
+      "item": "mekanism:elite_control_circuit"
+    },
+    "Y": {
+      "tag": "c:ingots/uranium"
+    }
+  },
+  "pattern": [
+    "CXC",
+    "YDY",
+    "CRC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "bigreactors:reinforced_reactorcontroller"
+  }
+}

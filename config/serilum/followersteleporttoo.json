@@ -1,0 +1,35 @@
+{
+	"//": "These settings are easier to change in-game! Mod List -> Followers Teleport Too -> Config",
+	"Enable Followers Teleport Too": {
+		"//": "Whether Followers Teleport Too is enabled. When disabled, none of its features run and its other settings are hidden. Takes effect after a restart.",
+		"value": true
+	},
+	"disableFollowerDamageAfterTeleport": {
+		"//": "When enabled, disables damage for followers shortly after a teleport. This can prevent fall damage or suffocation from an estimate target position.",
+		"value": true
+	},
+	"durationInSecondsDamageShouldBeDisabled": {
+		"//": "How long in seconds damage should be disabled for after a teleport when disableFollowerDamageAfterTeleport is enabled. min: 0, max: 86,400",
+		"value": 20
+	},
+	"followerSearchRadiusInBlocks": {
+		"//": "How far around the player in blocks followers are taken along on a teleport. min: 1, max: 256",
+		"value": 50
+	},
+	"followerTypesThatStayBehind": {
+		"//": "A comma separated list of entity ids that never teleport with their owner, for example 'minecraft:nautilus,cobblemon:pokemon'.",
+		"value": "minecraft:nautilus"
+	},
+	"followersFollowIntoOtherDimensions": {
+		"//": "Whether followers also come along when a teleport takes the player into another dimension.",
+		"value": true
+	},
+	"allaysTeleportToo": {
+		"//": "Whether allays that like the player (after being given an item) teleport along as well.",
+		"value": true
+	},
+	"mountTeleportsToo": {
+		"//": "Whether the mount the player is riding teleports along, with the player put back on it.",
+		"value": true
+	}
+}

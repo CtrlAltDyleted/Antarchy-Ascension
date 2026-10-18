@@ -11,14 +11,14 @@
     "F": {
       "item": "minecraft:furnace"
     },
-    "Z": {
-      "tag": "c:ingots/steel"
+    "B": {
+      "item": "mekanism:basic_control_circuit"
     }
   },
   "pattern": [
-    "#Z#",
-    "CFC",
-    "###"
+    "###",
+    "CBC",
+    "#F#"
   ],
   "result": {
     "count": 1,

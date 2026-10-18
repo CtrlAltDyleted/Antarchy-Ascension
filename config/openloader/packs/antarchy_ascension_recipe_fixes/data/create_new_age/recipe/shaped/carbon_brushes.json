@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "create:andesite_alloy"
+    },
+    "C": {
+      "item": "minecraft:coal"
+    },
+    "S": {
+      "item": "create:shaft"
+    },
+    "O": {
+      "item": "create_new_age:overcharged_iron_sheet"
+    }
+  },
+  "pattern": [
+    "AOA",
+    "CSC",
+    "AOA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "create_new_age:carbon_brushes"
+  }
+}

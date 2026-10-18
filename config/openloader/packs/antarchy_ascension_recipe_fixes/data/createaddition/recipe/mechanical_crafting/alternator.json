@@ -6,21 +6,21 @@
     "A": {
       "item": "create:andesite_alloy"
     },
-    "I": {
-      "tag": "c:plates/iron"
-    },
     "R": {
-      "tag": "c:rods/steel"
+      "tag": "c:rods/iron"
     },
     "S": {
       "item": "createaddition:copper_spool"
+    },
+    "P": {
+      "item": "create_new_age:overcharged_iron_sheet"
     }
   },
   "pattern": [
     "  A  ",
-    " ISI ",
-    "ISRSI",
-    " ISI ",
+    " PSP ",
+    "PSRSP",
+    " PSP ",
     "  A  "
   ],
   "result": {

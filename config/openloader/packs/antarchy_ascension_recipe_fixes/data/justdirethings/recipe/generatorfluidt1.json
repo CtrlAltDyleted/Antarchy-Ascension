@@ -7,20 +7,17 @@
       "item": "minecraft:bucket"
     },
     "f": {
-      "item": "minecraft:blast_furnace"
+      "item": "ad_astra:coal_generator"
     },
     "g": {
       "item": "justdirethings:blazegold_ingot"
     },
     "r": {
       "item": "minecraft:redstone"
-    },
-    "Z": {
-      "tag": "c:ingots/steel"
     }
   },
   "pattern": [
-    "Zrg",
+    "grg",
     "bfb",
     "grg"
   ],

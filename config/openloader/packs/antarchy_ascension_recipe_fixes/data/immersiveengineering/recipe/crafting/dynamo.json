@@ -5,22 +5,19 @@
     "c": {
       "item": "immersiveengineering:component_iron"
     },
-    "i": {
-      "tag": "c:ingots/iron"
+    "s": {
+      "tag": "c:ingots/steel"
     },
     "l": {
       "item": "immersiveengineering:coil_lv"
     },
     "r": {
       "tag": "c:dusts/redstone"
-    },
-    "Z": {
-      "tag": "c:ingots/steel"
     }
   },
   "pattern": [
     "rcr",
-    "Zli"
+    "sls"
   ],
   "result": {
     "count": 1,

@@ -14,14 +14,14 @@
     "D": {
       "item": "draconicevolution:draconium_core"
     },
-    "Z": {
-      "tag": "c:ingots/steel"
+    "X": {
+      "item": "mekanism:basic_control_circuit"
     }
   },
   "pattern": [
-    "AZA",
-    "BCB",
-    "ADA"
+    "AXA",
+    "BDB",
+    "ACA"
   ],
   "result": {
     "count": 1,

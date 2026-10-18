@@ -1,6 +1,22 @@
 {
   "unlockAllArchiveEntries": false,
   "unlockAllGameEntries": false,
+  "showIntroductionEntry": true,
+  "blockleDailyAntcoinReward": 10,
+  "builtInGames": {
+    "chess": true,
+    "minesweeper": true
+  },
+  "gameRewards": {
+    "chessEasy": 5,
+    "chessNormal": 10,
+    "chessHard": 20,
+    "chessExpert": 40,
+    "minesweeperSmall": 5,
+    "minesweeperLarge": 15
+  },
+  "sendAntazonUnlockEmail": true,
+  "antazonUnlockEmailsSent": [],
   "inventoryComputerButton": false,
   "desktopApps": {
     "archive": true,
@@ -12,11 +28,29 @@
     "antmail": true,
     "antazon": false,
     "games": true,
-    "trash": true,
+    "disks": true,
     "tasks": true
   },
   "lastAnternetUsername": "",
   "initialBootSeen": false,
   "completedComputerTours": [],
-  "taskGroupCollapsed": {}
+  "taskGroupCollapsed": {},
+  "preferences": {
+    "theme": "green",
+    "displayBrightness": "standard",
+    "reduceEffects": false,
+    "uiSize": "standard",
+    "mailAlerts": "toast",
+    "mailSound": true,
+    "taskAlerts": "actionbar",
+    "taskSound": true,
+    "taskMapZoom": "75",
+    "editorLineNumbers": "auto",
+    "paintGrid": true,
+    "paintBrush": 1,
+    "terminalKeepHistory": true,
+    "explorerPlaces": true,
+    "explorerSortBySize": false
+  },
+  "terminalHistory": {}
 }
