@@ -2,19 +2,10 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "item": "minecraft:amethyst_shard"
+      "item": "antarchyascension:powdered_sand"
     },
     {
-      "item": "minecraft:redstone"
-    },
-    {
-      "item": "minecraft:redstone"
-    },
-    {
-      "item": "minecraft:redstone"
-    },
-    {
-      "item": "minecraft:redstone"
+      "item": "minecraft:calcite"
     },
     {
       "item": "minecraft:redstone"
