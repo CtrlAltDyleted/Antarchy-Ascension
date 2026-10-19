@@ -1,4 +1,5 @@
 {
+  "configVersion": 2,
   "unlockAllArchiveEntries": false,
   "unlockAllGameEntries": false,
   "showIntroductionEntry": true,
@@ -16,8 +17,8 @@
     "minesweeperLarge": 15
   },
   "sendAntazonUnlockEmail": true,
+  "passwordHintAfterFailures": 3,
   "antazonUnlockEmailsSent": [],
-  "inventoryComputerButton": false,
   "desktopApps": {
     "archive": true,
     "files": true,
@@ -31,26 +32,8 @@
     "disks": true,
     "tasks": true
   },
-  "lastAnternetUsername": "",
-  "initialBootSeen": false,
-  "completedComputerTours": [],
-  "taskGroupCollapsed": {},
-  "preferences": {
-    "theme": "green",
-    "displayBrightness": "standard",
-    "reduceEffects": false,
-    "uiSize": "standard",
-    "mailAlerts": "toast",
-    "mailSound": true,
-    "taskAlerts": "actionbar",
-    "taskSound": true,
-    "taskMapZoom": "75",
-    "editorLineNumbers": "auto",
-    "paintGrid": true,
-    "paintBrush": 1,
-    "terminalKeepHistory": true,
-    "explorerPlaces": true,
-    "explorerSortBySize": false
-  },
-  "terminalHistory": {}
+  "client": {
+    "inventoryComputerButton": false,
+    "defaultPreferences": {}
+  }
 }

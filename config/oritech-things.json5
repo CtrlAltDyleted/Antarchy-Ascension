@@ -95,7 +95,8 @@
   },
   "dimensionalDroneSettings": {
     "enabled": true,
-    "energyToCross": 10000
+    "energyToCross": 10000,
+    "cooldownTicks": 200
   },
   "magneticFieldSettings": {
     "enabled": true,

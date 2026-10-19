@@ -101,3 +101,5 @@
 /config/openloader/packs/*.zip
 /config/extraspecialhub/windows/_example_window.json
 configureddefaults/README.md
+/config/openloader/packs/Default Enabled Resource Packs
+/config/collapsiblegroups/ui_state.json

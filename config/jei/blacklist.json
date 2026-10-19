@@ -69,5 +69,6 @@
   {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"sophisticatedstorage:stack_upgrade_omega_tier"},"type":"item_stack"}},
   {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"inventorypets:sand_block"},"type":"item_stack"}},
   {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"inventorypets:sand_spawn"},"type":"item_stack"}},
-  {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"ae2cs:nether_quartz_dust"},"type":"item_stack"}}
+  {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"ae2cs:nether_quartz_dust"},"type":"item_stack"}},
+  {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"apotheosis:boss_summoner"},"type":"item_stack"}}
 ]

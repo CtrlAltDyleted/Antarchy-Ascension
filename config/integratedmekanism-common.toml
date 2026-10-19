@@ -17,6 +17,8 @@
 		chemicalReaderBaseConsumption = 1
 		#The base energy usage for the chemical interface.
 		interfaceChemicalBaseConsumption = 0
+		#The base energy usage for the QIO interface.
+		interfaceQIOBaseConsumption = 32
 
 	[core.general]
 		#The maximum network chemical transfer rate.
