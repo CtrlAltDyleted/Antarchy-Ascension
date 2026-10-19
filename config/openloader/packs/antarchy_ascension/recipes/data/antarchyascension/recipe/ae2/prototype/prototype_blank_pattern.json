@@ -1,0 +1,95 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "antarchyascension:pressed_silicon_substrate"
+  },
+  "transitional_item": {
+    "id": "antarchyascension:incomplete_blank_pattern"
+  },
+  "loops": 1,
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "antarchyascension:incomplete_blank_pattern"
+        },
+        {
+          "item": "antarchyascension:reinforced_silica_glass"
+        }
+      ],
+      "results": [
+        {
+          "id": "antarchyascension:incomplete_blank_pattern"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "antarchyascension:incomplete_blank_pattern"
+        },
+        {
+          "item": "minecraft:quartz"
+        }
+      ],
+      "results": [
+        {
+          "id": "antarchyascension:incomplete_blank_pattern"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "antarchyascension:incomplete_blank_pattern"
+        },
+        {
+          "item": "minecraft:glowstone_dust"
+        }
+      ],
+      "results": [
+        {
+          "id": "antarchyascension:incomplete_blank_pattern"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "antarchyascension:incomplete_blank_pattern"
+        },
+        {
+          "item": "create:electron_tube"
+        }
+      ],
+      "results": [
+        {
+          "id": "antarchyascension:incomplete_blank_pattern"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "antarchyascension:incomplete_blank_pattern"
+        }
+      ],
+      "results": [
+        {
+          "id": "antarchyascension:incomplete_blank_pattern"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "ae2:blank_pattern",
+      "count": 2
+    }
+  ]
+}

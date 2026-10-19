@@ -518,6 +518,11 @@ const removedMaterialIntegrationRecipes = [
 ServerEvents.recipes(event => {
     // Antarchy - Ascension early AE2 boundary: conventional silicon and lunar resources.
     event.remove({ id: 'mekanism:compat/ae2/sand_to_silicon' })
+    // StoneWork Factory: keep cobblestone -> gravel -> sand, but stop sand -> silicon.
+    event.remove({ id: 'industrialforegoing:crusher/sand' })
+    // Remove silicon block decompression routes.
+    event.remove({ id: 'extendedae:silicon_decompress' })
+    event.remove({ id: 'oritech:silicon_blockblockinv' })
     event.remove({ id: 'extendedae:quartz_blend' })
     event.remove({ id: 'extendedae:quartz_blend_alt' })
     event.custom({

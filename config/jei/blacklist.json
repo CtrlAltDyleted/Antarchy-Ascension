@@ -70,5 +70,7 @@
   {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"inventorypets:sand_block"},"type":"item_stack"}},
   {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"inventorypets:sand_spawn"},"type":"item_stack"}},
   {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"ae2cs:nether_quartz_dust"},"type":"item_stack"}},
-  {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"apotheosis:boss_summoner"},"type":"item_stack"}}
+  {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"apotheosis:boss_summoner"},"type":"item_stack"}},
+  {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"sophisticatedstorage:debug_tool"},"type":"item_stack"}},
+  {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"oritech:silicon_block"},"type":"item_stack"}}
 ]

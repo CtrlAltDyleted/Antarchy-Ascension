@@ -1,0 +1,16 @@
+{
+  "type": "ae2:inscriber",
+  "ingredients": {
+    "top": {
+      "item": "antarchyascension:basic_circuit_press"
+    },
+    "middle": {
+      "tag": "c:gems/quartz"
+    }
+  },
+  "mode": "inscribe",
+  "result": {
+    "id": "ae2cs:simple_circuit_print",
+    "count": 1
+  }
+}

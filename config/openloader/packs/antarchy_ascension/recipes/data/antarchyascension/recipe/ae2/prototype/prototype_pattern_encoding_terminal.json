@@ -1,0 +1,24 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "pattern": [
+    "DHD",
+    "HTH",
+    "DHD"
+  ],
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "H": {
+      "item": "immersiveengineering:heavy_engineering"
+    },
+    "T": {
+      "item": "ae2:terminal"
+    }
+  },
+  "result": {
+    "id": "ae2:pattern_encoding_terminal",
+    "count": 1
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "ae2:inscriber",
+  "ingredients": {
+    "top": {
+      "item": "ae2cs:simple_circuit_print"
+    },
+    "middle": {
+      "tag": "c:dusts/redstone"
+    },
+    "bottom": {
+      "item": "antarchyascension:pressed_silicon_substrate"
+    }
+  },
+  "mode": "press",
+  "result": {
+    "id": "ae2cs:simple_processor",
+    "count": 1
+  }
+}

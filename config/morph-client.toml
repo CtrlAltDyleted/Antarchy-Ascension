@@ -22,3 +22,5 @@
 	acquisitionTendrilMaxChild = 10
 	#This disables rendering players that is riding the camera entity when in First Person.
 	morphDisableRidingPlayerRenderInFirstPerson = false
+	#Show a small panel listing your current form's abilities, their keys and cooldowns while morphed.
+	abilityHudEnabled = true

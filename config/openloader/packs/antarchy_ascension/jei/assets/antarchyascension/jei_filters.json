@@ -130,7 +130,8 @@
     "integrateddynamics:coal_generator",
     "industrialforegoing:pitiful_generator",
     "zps:coal_burner",
-    "oritech:bio_generator_block"
+    "oritech:bio_generator_block",
+    "extendedae:silicon_block"
   ],
   "fluids": [
     "alltheores:molten_enderium",
@@ -150,5 +151,11 @@
     "mekanism:elite_chemical_tank",
     "mekanism:ultimate_chemical_tank",
     "mekanism:creative_chemical_tank"
+  ],
+  "recipes": [
+    {
+      "category": "create:automatic_shapeless",
+      "id": "integrateddynamics:special/facade"
+    }
   ]
 }

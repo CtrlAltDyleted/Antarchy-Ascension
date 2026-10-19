@@ -1,9 +1,9 @@
 {
-  "stairs_to_blocks_enable": true,
+  "stairs_to_blocks_enable": false,
   "stairs_to_blocks_amount": 1,
   "alternative_stairs_to_blocks_enable": false,
   "alternative_stairs_to_blocks_amount": 4,
-  "better_stairs_crafting_enable": true,
+  "better_stairs_crafting_enable": false,
   "better_stairs_crafting_amount": 3,
   "slabs_to_blocks_enable": true,
   "slabs_to_blocks_amount": 1,

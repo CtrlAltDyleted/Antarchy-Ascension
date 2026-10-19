@@ -1,0 +1,38 @@
+{
+  "type": "ars_nouveau:enchanting_apparatus",
+  "keepNbtOfReagent": false,
+  "pedestalItems": [
+    {
+      "item": "ae2lt:pigmee_fumo"
+    },
+    {
+      "item": "ars_nouveau:bookwyrm_charm"
+    },
+    {
+      "item": "ars_nouveau:dominion_wand"
+    },
+    {
+      "item": "minecraft:anvil"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "reagent": {
+    "item": "ars_nouveau:storage_lectern"
+  },
+  "result": {
+    "id": "ae2lt:pigmee_synthesis_station",
+    "count": 1
+  },
+  "sourceCost": 1000
+}
