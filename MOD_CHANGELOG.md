@@ -2,6 +2,35 @@
 
 Permanent history of direct mod-set changes for Antarchy - Ascension.
 
+## 0.3.0 alpha checkpoint - 2026-10-19
+
+Active mod JARs: **608**
+
+### Added (0)
+
+- None
+
+### Removed (1)
+
+- `tiab-entity-fix-1.0.3.jar` | Version: 1.0.3 [tiabfix]
+
+### Updated (14)
+
+- `antarchyascension-0.3.0-alpha.jar` | Version: 0.3.0-alpha (File contents changed at same version) [antarchyascension]
+- `antos-neoforge-1.21.1-1.4.5.jar` | Version: 1.4.2 -> 1.4.5 [antos]
+- `apothic_compats-0.2.6.jar` | Version: 0.2.5.5 -> 0.2.6 [apothic_compats]
+- `collapsible_groups-neoforge-1.21.1-2.0.0-beta4.jar` | Version: 2.0.0-beta3 -> 2.0.0-beta4 [collapsible_groups]
+- `integratedmekanism-1.21.1-neoforge-1.2.0.jar` | Version: 1.1.3 -> 1.2.0 [integratedmekanism]
+- `jei-1.21.1-neoforge-19.64.0.455.jar` | Version: 19.57.0.451 -> 19.64.0.455 [jei]
+- `jeioptimizer-1.21.1-1.2.1-19.64.jar` | Version: 1.2.0-19.56 -> 1.2.1-19.64 [jeioptimizer]
+- `morph-neoforge-1.21.1-1.2.3.jar` | Version: 1.2.2 -> 1.2.3 [morph]
+- `oritechthings-0.0.47.jar` | Version: 0.0.46 -> 0.0.47 [oritechthings]
+- `regions-unexplored-0.6.3-neoforge-21.1.jar` | Version: 0.6.2-21.1 -> 0.6.3-21.1 [regions_unexplored]
+- `relics-1.21.1-0.12.9.jar` | Version: 0.12.8 -> 0.12.9 [relics]
+- `reliquified_ars_nouveau-1.21.1-0.8.2.jar` | Version: 0.8.1 -> 0.8.2 [reliquified_ars_nouveau]
+- `reliquified_irons_spells_and_spellbooks-1.21.1-0.2.8.jar` | Version: 0.2.7 -> 0.2.8 [reliquified_irons_spells_and_spellbooks]
+- `the_bumblezone-7.17.0+1.21.1-neoforge.jar` | Version: 7.16.1 -> 7.17.0 [the_bumblezone]
+
 ## 0.3.0-alpha - 2026-10-15
 
 Active mod JARs: **643**
