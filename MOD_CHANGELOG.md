@@ -2,6 +2,32 @@
 
 Permanent history of direct mod-set changes for Antarchy - Ascension.
 
+## 0.3.0 alpha checkpoint 2 - 2026-10-19
+
+Active mod JARs: **609**
+
+### Added (1)
+
+- `Ixeris-4.6.10+1.21.1-neoforge.jar` | Version: 4.6.10 [ixeris_dummy]
+
+### Removed (0)
+
+- None
+
+### Updated (11)
+
+- `AmbientSounds_NEOFORGE_v6.3.11_mc1.21.1.jar` | Version: v6.3.10 -> v6.3.11 [ambientsounds]
+- `antarchyascension-0.3.0-alpha.jar` | Version: 0.3.0-alpha (File contents changed at same version) [antarchyascension]
+- `createornithopterglider-1.2.1-1.21.1.jar` | Version: 1.2.0 -> 1.2.1 [createornithopterglider]
+- `leaky-1.21-3.6.jar` | Version: 3.4 -> 3.6 [leaky]
+- `morph-neoforge-1.21.1-1.3.0.jar` | Version: 1.2.3 -> 1.3.0 [morph]
+- `nep-1.21.1-0.8.1.jar` | Version: 0.8.0 -> 0.8.1 [nep]
+- `oritechthings-0.0.48.jar` | Version: 0.0.47 -> 0.0.48 [oritechthings]
+- `routers-1.21.1-1.2.0.jar` | Version: 1.1.9 -> 1.2.0 [routers]
+- `smoothchunk-1.21-4.4.jar` | Version: 4.1 -> 4.4 [smoothchunk]
+- `sophisticatedbackpacks-1.21.1-3.26.13.2214.jar` | Version: 3.26.12.2208 -> 3.26.13.2214 [sophisticatedbackpacks]
+- `sophisticatedcore-1.21.1-1.5.15.2417.jar` | Version: 1.5.14.2413 -> 1.5.15.2417 [sophisticatedcore]
+
 ## 0.3.0 alpha checkpoint - 2026-10-19
 
 Active mod JARs: **608**
