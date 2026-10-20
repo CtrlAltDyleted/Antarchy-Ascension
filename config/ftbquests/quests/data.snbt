@@ -20,7 +20,7 @@
 	}
 	pause_game: false
 	presets: { }
-	progression_mode: "linear"
+	progression_mode: "flexible"
 	show_lock_icons: false
 	verify_on_load: false
 	version: 13

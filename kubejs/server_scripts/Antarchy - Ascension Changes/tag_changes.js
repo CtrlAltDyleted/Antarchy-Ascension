@@ -20,6 +20,17 @@ const removedAllTheOresOtherOres = [
 ]
 
 ServerEvents.tags('item', event => {
+    const engineeringGoggles = [
+        'create:goggles',
+        'actuallyadditions:engineers_goggles',
+        'actuallyadditions:engineers_goggles_advanced',
+        'occultengineering:combined_goggles'
+    ]
+    engineeringGoggles.forEach(id => {
+        event.remove('curios:head', id)
+        event.add('curios:engineers_goggles', id)
+    })
+
     removedAllTheOresOtherOres.forEach(id => {
         event.removeAllTagsFrom(id)
     })

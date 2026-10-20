@@ -107,13 +107,10 @@
 			id: "68F204CE116B47ED"
 			tasks: [
 				{
-					count: 16L
-					icon: {
-						id: "minecraft:oak_log"
-					}
-					id: "72B4BB8618C3483C"
-					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:logs)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-					type: "item"
+					block_tag: "minecraft:logs"
+					id: "762F30B2E5DCC301"
+					type: "break_block"
+					value: 16L
 				}
 				{
 					count: 4L
@@ -337,6 +334,7 @@
 				id: "crafting_on_a_stick:crafting_table"
 			}
 			id: "2EF1CC0CB01AF94D"
+			progression_mode: "flexible"
 			tasks: [{
 				id: "52389FD2B108B088"
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(curios:crafting_on_a_stick)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
@@ -798,6 +796,7 @@
 				id: "immersiveengineering:dynamo"
 			}
 			id: "1E7C5FC5EAF91CD2"
+			progression_mode: "linear"
 			rewards: [
 				{
 					count: 4
