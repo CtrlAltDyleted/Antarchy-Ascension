@@ -1,0 +1,80 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "antarchyascension:pressed_silicon_substrate"
+  },
+  "transitional_item": {
+    "id": "antarchyascension:incomplete_4k_component"
+  },
+  "loops": 3,
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "antarchyascension:incomplete_4k_component"
+        },
+        {
+          "item": "ae2:cell_component_1k"
+        }
+      ],
+      "results": [
+        {
+          "id": "antarchyascension:incomplete_4k_component"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "antarchyascension:incomplete_4k_component"
+        },
+        {
+          "item": "antarchyascension:calculation_microchip"
+        }
+      ],
+      "results": [
+        {
+          "id": "antarchyascension:incomplete_4k_component"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "antarchyascension:incomplete_4k_component"
+        },
+        {
+          "item": "create:polished_rose_quartz"
+        }
+      ],
+      "results": [
+        {
+          "id": "antarchyascension:incomplete_4k_component"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "antarchyascension:incomplete_4k_component"
+        }
+      ],
+      "results": [
+        {
+          "id": "antarchyascension:incomplete_4k_component"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "ae2:cell_component_4k",
+      "count": 1,
+      "chance": 1.0
+    }
+  ]
+}

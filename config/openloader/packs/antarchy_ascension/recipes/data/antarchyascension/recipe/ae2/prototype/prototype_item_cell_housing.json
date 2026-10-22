@@ -3,13 +3,13 @@
   "accept_mirrored": true,
   "category": "misc",
   "pattern": [
-    "SGS",
+    "GRG",
     "R R",
     "SCS"
   ],
   "key": {
     "S": {
-      "item": "alltheores:steel_plate"
+      "item": "alltheores:steel_ingot"
     },
     "G": {
       "item": "antarchyascension:silica_glass"
