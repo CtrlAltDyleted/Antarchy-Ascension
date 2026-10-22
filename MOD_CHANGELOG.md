@@ -2,6 +2,39 @@
 
 Permanent history of direct mod-set changes for Antarchy - Ascension.
 
+## alpha 0.3.0 checkpoint 3 - 2026-10-22
+
+Active mod JARs: **610**
+
+### Added (1)
+
+- `chat_heads-0.15.7-neoforge-1.21.jar` | Version: 0.15.7 [chat_heads]
+
+### Removed (0)
+
+- None
+
+### Updated (18)
+
+- `ae2driveterminal-1.21.1-neoforge-1.1.3.jar` | Version: 1.1.1 -> 1.1.3 [ae2driveterminal]
+- `amendments-1.21-2.2.0-neoforge.jar` | Version: 2.1.11 -> 2.2.0 [amendments]
+- `antarchy-2.2.7+1.21.1-neoforge.jar` | Version: 2.2.5 -> 2.2.7 [antarchy]
+- `antarchyascension-0.3.0-alpha.jar` | Version: 0.3.0-alpha (File contents changed at same version) [antarchyascension]
+- `antos-neoforge-1.21.1-1.5.0.jar` | Version: 1.4.5 -> 1.5.0 [antos]
+- `better_modlist-21.1.5.jar` | Version: 21.1.4 -> 21.1.5 [mod_menu]
+- `collective-1.21.1-8.62.jar` | Version: 8.58 -> 8.62 [collective]
+- `Create Encased-1.21.1-1.10.0.jar` | Version: 1.9.0-ht3 -> 1.10.0 [createcasing]
+- `easy-villagers-neoforge-1.21.1-1.1.48.jar` | Version: 1.1.47 -> 1.1.48 [easy_villagers]
+- `ftb-xmod-compat-neoforge-21.1.13.jar` | Version: 21.1.12 -> 21.1.13 [ftbxmodcompat]
+- `morph-neoforge-1.21.1-1.3.3.jar` | Version: 1.3.0 -> 1.3.3 [morph]
+- `puzzleslib-v21.1.65-mc1.21.1+neoforge.jar` | Version: v21.1.64 -> v21.1.65 [puzzleslib]
+- `sophisticatedbackpacks-1.21.1-3.26.14.2222.jar` | Version: 3.26.13.2214 -> 3.26.14.2222 [sophisticatedbackpacks]
+- `sophisticatedcore-1.21.1-1.5.17.2426.jar` | Version: 1.5.15.2417 -> 1.5.17.2426 [sophisticatedcore]
+- `sophisticateditemactions-1.21.1-0.5.18.441.jar` | Version: 0.5.17.435 -> 0.5.18.441 [sophisticateditemactions]
+- `sophisticatedstorage-1.21.1-1.6.8.2196.jar` | Version: 1.6.7.2184 -> 1.6.8.2196 [sophisticatedstorage]
+- `sound-physics-remastered-neoforge-1.21.1-1.5.2.jar` | Version: 1.5.1 -> 1.5.2 [sound_physics_remastered]
+- `structureessentials-1.21.1-5.1.jar` | Version: 5.0 -> 5.1 [structureessentials]
+
 ## 0.3.0 alpha checkpoint 2 - 2026-10-19
 
 Active mod JARs: **609**

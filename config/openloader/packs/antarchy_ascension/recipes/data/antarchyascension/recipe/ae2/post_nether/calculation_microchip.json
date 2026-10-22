@@ -1,0 +1,63 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "mekanism:hdpe_sheet"
+  },
+  "transitional_item": {
+    "id": "antarchyascension:incomplete_calculation_microchip"
+  },
+  "loops": 2,
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "antarchyascension:incomplete_calculation_microchip"
+        },
+        {
+          "item": "immersiveengineering:dust_hop_graphite"
+        }
+      ],
+      "results": [
+        {
+          "id": "antarchyascension:incomplete_calculation_microchip"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "antarchyascension:incomplete_calculation_microchip"
+        },
+        {
+          "item": "ae2cs:simple_processor"
+        }
+      ],
+      "results": [
+        {
+          "id": "antarchyascension:incomplete_calculation_microchip"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "antarchyascension:incomplete_calculation_microchip"
+        }
+      ],
+      "results": [
+        {
+          "id": "antarchyascension:incomplete_calculation_microchip"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "antarchyascension:calculation_microchip",
+      "chance": 1.0
+    }
+  ]
+}

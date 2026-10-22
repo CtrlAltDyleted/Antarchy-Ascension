@@ -1,30 +1,27 @@
 {
   "type": "create:mechanical_crafting",
-  "accept_mirrored": true,
   "category": "misc",
+  "accept_mirrored": true,
   "pattern": [
-    "QEQ",
-    "SXS",
-    "RTR"
+    "HMH",
+    "PTP",
+    "HCH"
   ],
   "key": {
-    "X": {
+    "H": {
+      "item": "mekanism:hdpe_sheet"
+    },
+    "P": {
+      "item": "ae2cs:simple_processor"
+    },
+    "M": {
       "item": "antarchyascension:calculation_microchip"
-    },
-    "Q": {
-      "item": "minecraft:quartz"
-    },
-    "E": {
-      "item": "create:electron_tube"
-    },
-    "S": {
-      "tag": "c:plates/steel"
     },
     "T": {
       "item": "ae2:terminal"
     },
-    "R": {
-      "item": "minecraft:redstone"
+    "C": {
+      "item": "minecraft:crafting_table"
     }
   },
   "result": {

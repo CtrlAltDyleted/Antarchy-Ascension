@@ -9,6 +9,8 @@
 	commandAllowSelector = false
 	#Upgrades traits to the highest upgrade available for the morph. This, for example, will convert the bat's flapping flight ability to creative-mode flight ability.
 	classicUpgradeTraits = false
+	#Advancement ID that unlocks trait upgrades for a player (for example creative flight replacing flapping flight). Leave empty to only use the setting above.
+	classicUpgradeTraitsAdvancement = ""
 
 [playerFilter]
 	#Name of players in the filter list.
@@ -49,7 +51,7 @@
 	armorMultiplier = 0.5
 	#The highest armor a morph can give you. Set to 0 for no cap.
 	maxMorphArmor = 10.0
-	#Lets mob data set exact attribute values (attributeOverrides) while morphed, e.g. boss morphs. These ignore the multipliers and caps above.
+	#Lets mob data set exact attribute values (attributeOverrides) while morphed, e.g. boss morphs. These ignore the multipliers and caps above, except armor, which still uses the armor multiplier and cap.
 	enableAttributeOverrides = true
 	#Scales how far attribute overrides move your stats from your normal values. 1.0 = the exact override value, 0.5 = halfway, 0 = no change.
 	attributeOverrideMultiplier = 1.0
@@ -80,3 +82,5 @@
 	eaterRoarAffectsPlayers = true
 	#If Witchery is installed, a player morphed as a Werewolf infects other players with lycanthropy when their Bite ability hits.
 	werewolfMorphBiteInfects = false
+	#Disable Better Combat attacks and animations while morphed. When disabled, Better Combat remains active and Morph replaces the visible player hands with the morph's hands.
+	disableBetterCombatForMorphs = false

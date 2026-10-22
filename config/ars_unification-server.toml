@@ -1,5 +1,5 @@
 #List of Regular Expressions to deny recipe unification of
-exceptions = []
+exceptions = ["immersiveengineering:crusher/coke", "immersiveengineering:crusher/coke_block"]
 
 		[compat.ars_technica.transmutation_focus]
 			#Whether to double amount of items processed by Cut when a Focus of Transmutation from Ars Technica is equipped.

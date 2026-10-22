@@ -1,0 +1,38 @@
+{
+  "type": "ars_nouveau:enchanting_apparatus",
+  "keepNbtOfReagent": false,
+  "pedestalItems": [
+    {
+      "item": "create:iron_sheet"
+    },
+    {
+      "item": "create:iron_sheet"
+    },
+    {
+      "item": "create:iron_sheet"
+    },
+    {
+      "item": "create:iron_sheet"
+    },
+    {
+      "item": "mekanism:hdpe_sheet"
+    },
+    {
+      "item": "mekanism:hdpe_sheet"
+    },
+    {
+      "item": "mekanism:hdpe_sheet"
+    },
+    {
+      "item": "mekanism:hdpe_sheet"
+    }
+  ],
+  "reagent": {
+    "item": "cataclysm:dying_ember"
+  },
+  "result": {
+    "id": "antarchyascension:basic_circuit_press",
+    "count": 1
+  },
+  "sourceCost": 1000
+}

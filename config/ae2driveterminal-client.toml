@@ -15,3 +15,9 @@
 	# Default: 16719904
 	# Range: 0 ~ 16777215
 	highlight_rgb = 16719904
+	#Show compatible extended ME Drives in the Drive Terminal.
+	show_extended_drives = true
+	#Show drives in dimensions other than the player's current dimension.
+	show_other_dimensions = true
+	#Show a fill-level-colored border around occupied drive cell slots.
+	show_fill_level_border = true
