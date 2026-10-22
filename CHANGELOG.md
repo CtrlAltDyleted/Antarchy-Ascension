@@ -35,7 +35,7 @@ Individual mod additions, removals, and version updates are tracked separately i
 
 - Engineer's Goggles appearing in the generic Head Curios slot and dedicated slot instead of just their dedicated slot.
 - Integrated Strongholds portal-room compatibility with End Remastered.
-- Certus Quartz Block solidifying costs, silicon processing bypasses, and duplicate silicon decompression recipes.
+- Pre-Moon Certus and Fluix acquisition bypasses, Certus Quartz Block solidifying costs, silicon processing bypasses, and duplicate silicon decompression recipes.
 - AE2 and ID facade recipe visibility and Pigmee crafting-screen labels.
 
 ## 0.2.0 Alpha - 2026-09-23
