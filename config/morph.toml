@@ -11,6 +11,8 @@
 	classicUpgradeTraits = false
 	#Advancement ID that unlocks trait upgrades for a player (for example creative flight replacing flapping flight). Leave empty to only use the setting above.
 	classicUpgradeTraitsAdvancement = ""
+	#Traits that stay inactive until the player has an advancement. Format: <trait type>=<advancement ID>, e.g. "traitHostile=dog:slayer_of_god". A single trait in mob data can also set "requiresAdvancement".
+	traitUnlockAdvancements = []
 
 [playerFilter]
 	#Name of players in the filter list.
@@ -61,6 +63,10 @@
 	morphAmbientSoundInterval = 30
 	#Volume multiplier for morph idle sounds, capped before scaling so loud mobs cannot overwhelm you. Set to 0 to mute idle sounds. Default: 0.2.
 	morphAmbientSoundVolume = 0.2
+	#Where a morph's stats are read from when it's acquired. LIVE: the killed mob as it was (includes buffs and spawn scaling). FRESH: a new, unspawned copy of the mob. TYPE_DEFAULT: the entity type's registered default attributes.
+	attributeSource = "LIVE"
+	#If off, a morph never changes your attack damage. Abilities that scale with attack damage still use the morph's own value.
+	morphsAffectAttackDamage = true
 
 [gameplay]
 	#The Biomass Skin is meant to show during invisibility. Turning this off disables that.

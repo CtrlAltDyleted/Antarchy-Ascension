@@ -1,4 +1,5 @@
 // Overlapping generator removals
+// Removes recipes for the listed generators
 ServerEvents.recipes(event => {
     event.remove({ output: 'actuallyadditions:coal_generator' });
     event.remove({ output: 'integrateddynamics:coal_generator' });

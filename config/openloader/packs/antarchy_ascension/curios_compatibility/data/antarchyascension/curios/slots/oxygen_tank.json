@@ -1,0 +1,10 @@
+{
+  "operation": "SET",
+  "size": 1,
+  "order": 46,
+  "render_toggle": true,
+  "icon": "antarchyascension:slot/slot_oxygen_tank",
+  "validators": [
+    "curios:tag"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "createornithopterglider:ornithopterglider",
+    "createornithopterglider:ornithopterglider_black",
+    "createornithopterglider:ornithopterglider_blue",
+    "createornithopterglider:ornithopterglider_brown",
+    "createornithopterglider:ornithopterglider_cyan",
+    "createornithopterglider:ornithopterglider_gray",
+    "createornithopterglider:ornithopterglider_green",
+    "createornithopterglider:ornithopterglider_light_blue",
+    "createornithopterglider:ornithopterglider_light_gray",
+    "createornithopterglider:ornithopterglider_lime",
+    "createornithopterglider:ornithopterglider_magenta",
+    "createornithopterglider:ornithopterglider_orange",
+    "createornithopterglider:ornithopterglider_pink",
+    "createornithopterglider:ornithopterglider_purple",
+    "createornithopterglider:ornithopterglider_red",
+    "createornithopterglider:ornithopterglider_yellow",
+    "minecraft:elytra",
+    "antarchy:brutalfly_elytra",
+    "antarchy:manticore_wings"
+  ]
+}

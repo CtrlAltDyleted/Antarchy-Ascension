@@ -285,3 +285,98 @@
 		# Default: 3
 		# Range: > 0
 		refined_redstoneHelmetArmor = 3
+
+	#Material Settings for Noctis Rozuli
+	[materials.noctis_rozuli]
+		#Maximum durability of Noctis Rozuli tools.
+		# Default: 128
+		# Range: > 1
+		noctis_rozuliToolDurability = 128
+		#Efficiency of Noctis Rozuli tools.
+		noctis_rozuliEfficiency = 9.0
+		#Base attack damage of Noctis Rozuli items.
+		# Default: 1.0
+		# Range: 0.0 ~ 3.4028234663852886E38
+		noctis_rozuliAttackDamage = 1.0
+		#Natural enchantability factor of Noctis Rozuli items.
+		# Default: 32
+		# Range: > 0
+		noctis_rozuliEnchantability = 32
+		#Maximum durability of Noctis Rozuli shields.
+		# Default: 224
+		# Range: > 0
+		noctis_rozuliShieldDurability = 224
+		#Attack damage modifier of Noctis Rozuli swords. Must be less than or equal to Base Damage.
+		noctis_rozuliSwordDamage = 3.0
+		#Attack speed of Noctis Rozuli swords.
+		noctis_rozuliSwordAtkSpeed = -2.4000000953674316
+		#Attack damage modifier of Noctis Rozuli shovels. Must be greater than or equal to negative Base Damage.
+		noctis_rozuliShovelDamage = 1.5
+		#Attack speed of Noctis Rozuli shovels.
+		noctis_rozuliShovelAtkSpeed = -3.0
+		#Attack damage modifier of Noctis Rozuli axes.
+		noctis_rozuliAxeDamage = 4.0
+		#Attack speed of Noctis Rozuli axes.
+		noctis_rozuliAxeAtkSpeed = -2.9000000953674316
+		#Attack damage modifier of Noctis Rozuli pickaxes. Must be greater than or equal to negative Base Damage.
+		noctis_rozuliPickaxeDamage = 1.0
+		#Attack speed of Noctis Rozuli pickaxes.
+		noctis_rozuliPickaxeAtkSpeed = -2.799999952316284
+		#Attack damage modifier of Noctis Rozuli hoes. Must be greater than or equal to negative Base Damage.
+		noctis_rozuliHoeDamage = -1.0
+		#Attack speed of Noctis Rozuli hoes.
+		noctis_rozuliHoeAtkSpeed = -2.0
+		#Attack damage modifier of Noctis Rozuli paxels. Must be greater than or equal to negative Base Damage.
+		noctis_rozuliPaxelDamage = 5.0
+		#Attack speed of Noctis Rozuli paxels.
+		noctis_rozuliPaxelAtkSpeed = -2.4000000953674316
+		#Efficiency of Noctis Rozuli paxels.
+		noctis_rozuliPaxelEfficiency = 9.0
+		#Natural enchantability factor of Noctis Rozuli paxels.
+		# Default: 32
+		# Range: > 0
+		noctis_rozuliPaxelEnchantability = 32
+		#Maximum durability of Noctis Rozuli paxels.
+		# Default: 256
+		# Range: > 1
+		noctis_rozuliPaxelDurability = 256
+		#Base armor toughness value of Noctis Rozuli armor.
+		# Default: 0.0
+		# Range: 0.0 ~ 3.4028234663852886E38
+		noctis_rozuliToughness = 0.0
+		#Base armor knockback resistance value of Noctis Rozuli armor.
+		# Default: 0.0
+		# Range: 0.0 ~ 3.4028234663852886E38
+		noctis_rozuliKnockbackResistance = 0.0
+		#Maximum durability of Noctis Rozuli boots.
+		# Default: 130
+		# Range: > 1
+		noctis_rozuliBootDurability = 130
+		#Protection value of Noctis Rozuli boots.
+		# Default: 1
+		# Range: > 0
+		noctis_rozuliBootArmor = 1
+		#Maximum durability of Noctis Rozuli leggings.
+		# Default: 150
+		# Range: > 1
+		noctis_rozuliLeggingDurability = 150
+		#Protection value of Noctis Rozuli leggings.
+		# Default: 3
+		# Range: > 0
+		noctis_rozuliLeggingArmor = 3
+		#Maximum durability of Noctis Rozuli chestplates.
+		# Default: 160
+		# Range: > 1
+		noctis_rozuliChestplateDurability = 160
+		#Protection value of Noctis Rozuli chestplates.
+		# Default: 4
+		# Range: > 0
+		noctis_rozuliChestplateArmor = 4
+		#Maximum durability of Noctis Rozuli helmets.
+		# Default: 110
+		# Range: > 1
+		noctis_rozuliHelmetDurability = 110
+		#Protection value of Noctis Rozuli helmets.
+		# Default: 1
+		# Range: > 0
+		noctis_rozuliHelmetArmor = 1

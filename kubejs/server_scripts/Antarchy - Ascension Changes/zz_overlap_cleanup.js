@@ -282,6 +282,7 @@ ServerEvents.recipes(event => {
         ['alltheores:tin_ingot', 'mekanism:ingot_tin'],
         ['alltheores:uranium_ingot', 'mekanism:ingot_uranium', 'immersiveengineering:ingot_uranium']
     ];
+    // Compares the output item, count, and components
     function outputKey(data) {
         const out = data.result || data.output;
         if (!out || typeof out !== 'object' || Array.isArray(out)) return null;
@@ -296,8 +297,10 @@ ServerEvents.recipes(event => {
             present.push({ id: id, data: JSON.parse(recipe.json.toString()) });
         }));
         if (present.length < 2) return;
+        // Keeps the first recipe that exists
         const winner = present[0];
         const winnerKey = outputKey(winner.data);
+        // Skips unfamiliar output formats
         if (winnerKey === null) return;
         const duplicates = present.slice(1).filter(entry => outputKey(entry.data) === winnerKey);
         if (duplicates.length === 0) return;

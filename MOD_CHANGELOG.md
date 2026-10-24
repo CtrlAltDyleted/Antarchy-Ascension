@@ -2,6 +2,46 @@
 
 Permanent history of direct mod-set changes for Antarchy - Ascension.
 
+## alpha 0.3.0 another checkpoint - 2026-10-24
+
+Active mod JARs: **613**
+
+### Added (3)
+
+- `Create Quality of Life-1.21.1-1.6.3-fix1.jar` | Version: 1.6.3-fix1 [createqol]
+- `mixinhelper-neoforge-1.21.1-1.1.2.jar` | Version: 1.1.2 [mixinhelper]
+- `mob_grinding_utils-1.1.10+mc1.21.1.jar` | Version: 1.1.10 [mob_grinding_utils]
+
+### Removed (0)
+
+- None
+
+### Updated (23)
+
+- `ae2driveterminal-1.21.1-neoforge-1.1.6.jar` | Version: 1.1.3 -> 1.1.6 [ae2driveterminal]
+- `aeinfinitybooster-neoforge-2.1.0+mc1.21.1.jar` | Version: 1.0.0.58 -> 2.1.0 [aeinfinitybooster]
+- `antarchy-2.2.8+1.21.1-neoforge.jar` | Version: 2.2.7 -> 2.2.8 [antarchy]
+- `antarchyascension-0.3.0-alpha.jar` | Version: 0.3.0-alpha (File contents changed at same version) [antarchyascension]
+- `appliedcreate-1.21.1-1.1.8.jar` | Version: 1.1.7 -> 1.1.8 [appliedcreate]
+- `AppliedFlux-1.21-2.1.7-neoforge.jar` | Version: 2.1.6 -> 2.1.7 [appflux]
+- `ars_ocultas-1.21.1-2.6.2.jar` | Version: 2.6.1 -> 2.6.2 [ars_ocultas]
+- `collective-1.21.1-8.65.jar` | Version: 8.62 -> 8.65 [collective]
+- `corpse-neoforge-1.21.1-1.1.22.jar` | Version: 1.1.21 -> 1.1.22 [corpse]
+- `easy-villagers-neoforge-1.21.1-1.1.49.jar` | Version: 1.1.48 -> 1.1.49 [easy_villagers]
+- `Evolved Mekanism-1.21.1-1.3.0-fix1.jar` | Version: 1.2.1-fix3 -> 1.3.0-fix1 [evolvedmekanism]
+- `ExtendedAE-1.21-2.2.42-neoforge.jar` | Version: 2.2.41 -> 2.2.42 [extendedae]
+- `ftb-quests-neoforge-2101.1.37.jar` | Version: 2101.1.36 -> 2101.1.37 [ftbquests]
+- `guideme-21.1.20.jar` | Version: 21.1.19 -> 21.1.20 [guideme]
+- `more_quest_types-neoforge-1.4.1.jar` | Version: 1.4.0 -> 1.4.1 [more_quest_types]
+- `morph-neoforge-1.21.1-1.3.4.jar` | Version: 1.3.3 -> 1.3.4 [morph]
+- `MysticalAgriculture-1.21.1-8.0.29.jar` | Version: 8.0.28 -> 8.0.29 [mysticalagriculture]
+- `relics-1.21.1-0.12.10.jar` | Version: 0.12.9 -> 0.12.10 [relics]
+- `sophisticatedstorage-1.21.1-1.6.9.2199.jar` | Version: 1.6.8.2196 -> 1.6.9.2199 [sophisticatedstorage]
+- `tesseract-api-neoforge-1.12.19-1.21.1.jar` | Version: 1.12.18 -> 1.12.19 [tesseract_api]
+- `tf_dnv-neoforge-2.0.3.jar` | Version: 2.0.3 (JAR changed at same version) [tf_dnv]
+- `the_bumblezone-7.17.1+1.21.1-neoforge.jar` | Version: 7.17.0 -> 7.17.1 [the_bumblezone]
+- `trashcans-1.1.2-neoforge-mc1.21.jar` | Version: 1.1.1 -> 1.1.2 [trashcans]
+
 ## alpha 0.3.0 checkpoint 3 - 2026-10-22
 
 Active mod JARs: **610**

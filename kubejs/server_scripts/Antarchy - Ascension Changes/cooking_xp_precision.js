@@ -5,6 +5,7 @@ ServerEvents.recipes(event => {
         event.forEachRecipe({ type: type }, recipe => {
             const data = JSON.parse(recipe.json.toString());
             if (typeof data.experience !== 'number') return;
+            // Rounds small XP serialization errors
             const clean = Math.round(data.experience * 10) / 10;
             const delta = Math.abs(data.experience - clean);
             if (delta > 0 && delta < 0.00001) {
@@ -13,6 +14,7 @@ ServerEvents.recipes(event => {
             }
         });
     });
+    // Replaces recipes after collecting the changes
     fixes.forEach(fix => {
         event.remove({ id: fix.id });
         event.custom(fix.data).id(fix.id);

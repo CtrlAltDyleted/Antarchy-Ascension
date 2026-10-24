@@ -1,3 +1,4 @@
+// Adds the essence collection hint
 ItemEvents.modifyTooltips(event => {
     const items = [
         'nether_remastered:bottled_nether_essence'

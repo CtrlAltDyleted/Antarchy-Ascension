@@ -1,0 +1,8 @@
+{
+  "blacklist": {
+    "mixins": [
+      "fr.iglee42.evolvedmekanism.mixins.curios.LivingEntityElytraMixin",
+      "fr.iglee42.evolvedmekanism.mixins.curios.LocalPlayerFallFlyingMixin"
+    ]
+  }
+}

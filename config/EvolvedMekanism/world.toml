@@ -1,0 +1,95 @@
+#Allow Evolved Mekanism ore features to generate during regeneration.
+enableRegeneration = false
+
+#Generation Settings for Noctis Rozuli ore.
+[noctis_rozuli]
+	#Determines if Noctis Rozuli ore should be added to world generation.
+	shouldGenerate = true
+
+	#Normal Noctis Rozuli Vein Generation Settings.
+	[noctis_rozuli.normal]
+		#Determines if Normal Noctis Rozuli Veins should be added to world generation. Note: Requires generating noctis_rozuli ore to be enabled.
+		shouldGenerate = true
+		#Chance that Normal Noctis Rozuli Veins generates in a chunk.
+		# Default: 2
+		# Range: 1 ~ 256
+		perChunk = 2
+		#Maximum number of blocks in a Normal Noctis Rozuli Vein.
+		# Default: 7
+		# Range: 1 ~ 64
+		maxVeinSize = 7
+		#Chance that blocks that are directly exposed to air in a Normal Noctis Rozuli Vein are not placed.
+		# Default: 0.0
+		# Range: 0.0 ~ 1.0
+		discardChanceOnAirExposure = 0.0
+		#Distribution shape for placing Normal Noctis Rozuli Veins.
+		#Allowed Values: TRAPEZOID, UNIFORM
+		shape = "TRAPEZOID"
+		#Half length of short side of trapezoid, only used if the shape is Trapezoid. A value of zero means the shape is a triangle.
+		plateau = 0
+
+		#Minimum (inclusive) height anchor for Normal Noctis Rozuli Veins. This defines the minimum y-level that Normal Noctis Rozuli Veins can spawn at.
+		[noctis_rozuli.normal.minInclusive]
+			#The type of anchor. This is used to define how the value is used in calculating the y-level.
+			#Absolute (y = value)
+			#Above Bottom (y = minY + value)
+			#Below Top (y = depth - 1 + minY - value)
+			#Allowed Values: ABSOLUTE, ABOVE_BOTTOM, BELOW_TOP
+			type = "ABSOLUTE"
+			#Value used for calculating the y-level for the anchor based on the type.
+			value = -32
+
+		#Maximum (inclusive) height anchor for Normal Noctis Rozuli Veins. This defines the maximum y-level that Normal Noctis Rozuli Veins can spawn at.
+		[noctis_rozuli.normal.maxInclusive]
+			#The type of anchor. This is used to define how the value is used in calculating the y-level.
+			#Absolute (y = value)
+			#Above Bottom (y = minY + value)
+			#Below Top (y = depth - 1 + minY - value)
+			#Allowed Values: ABSOLUTE, ABOVE_BOTTOM, BELOW_TOP
+			type = "ABSOLUTE"
+			#Value used for calculating the y-level for the anchor based on the type.
+			value = 32
+
+	#Buried Noctis Rozuli Vein Generation Settings.
+	[noctis_rozuli.buried]
+		#Determines if Buried Noctis Rozuli Veins should be added to world generation. Note: Requires generating noctis_rozuli ore to be enabled.
+		shouldGenerate = true
+		#Chance that Buried Noctis Rozuli Veins generates in a chunk.
+		# Default: 4
+		# Range: 1 ~ 256
+		perChunk = 4
+		#Maximum number of blocks in a Buried Noctis Rozuli Vein.
+		# Default: 7
+		# Range: 1 ~ 64
+		maxVeinSize = 7
+		#Chance that blocks that are directly exposed to air in a Buried Noctis Rozuli Vein are not placed.
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		discardChanceOnAirExposure = 0.5
+		#Distribution shape for placing Buried Noctis Rozuli Veins.
+		#Allowed Values: TRAPEZOID, UNIFORM
+		shape = "TRAPEZOID"
+		#Half length of short side of trapezoid, only used if the shape is Trapezoid. A value of zero means the shape is a triangle.
+		plateau = 0
+
+		#Minimum (inclusive) height anchor for Buried Noctis Rozuli Veins. This defines the minimum y-level that Buried Noctis Rozuli Veins can spawn at.
+		[noctis_rozuli.buried.minInclusive]
+			#The type of anchor. This is used to define how the value is used in calculating the y-level.
+			#Absolute (y = value)
+			#Above Bottom (y = minY + value)
+			#Below Top (y = depth - 1 + minY - value)
+			#Allowed Values: ABSOLUTE, ABOVE_BOTTOM, BELOW_TOP
+			type = "ABOVE_BOTTOM"
+			#Value used for calculating the y-level for the anchor based on the type.
+			value = 0
+
+		#Maximum (inclusive) height anchor for Buried Noctis Rozuli Veins. This defines the maximum y-level that Buried Noctis Rozuli Veins can spawn at.
+		[noctis_rozuli.buried.maxInclusive]
+			#The type of anchor. This is used to define how the value is used in calculating the y-level.
+			#Absolute (y = value)
+			#Above Bottom (y = minY + value)
+			#Below Top (y = depth - 1 + minY - value)
+			#Allowed Values: ABSOLUTE, ABOVE_BOTTOM, BELOW_TOP
+			type = "ABSOLUTE"
+			#Value used for calculating the y-level for the anchor based on the type.
+			value = 64

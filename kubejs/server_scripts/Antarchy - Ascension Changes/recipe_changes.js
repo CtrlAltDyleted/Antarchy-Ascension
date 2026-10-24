@@ -1,6 +1,7 @@
 // Removed materials and obsolete integrations
 
 // Remove unused AllTheOres materials
+// Removes only the listed recipe IDs
 const removedAllTheOresRecipes = [
     // ae2 / matter_cannon
     'ae2:matter_cannon/nuggets/iridium',
@@ -354,6 +355,7 @@ function cleanUpUraniumAndYellorium(event) {
         'bigreactors:fluidizer/solidinjector'
     ]
 
+    // Replaces Yellorium with uranium
     fluidizerMachineRecipes.forEach(id => {
         event.replaceInput(
             { id: id },
@@ -420,6 +422,7 @@ function cleanUpUraniumAndYellorium(event) {
         'mysticalagriculture:yellorium_essence'
     ]
 
+    // Removes recipes producing retired solid items
     removedSolidOutputs.forEach(output => {
         event.remove({ output: output })
     })
@@ -567,7 +570,7 @@ const removedMaterialIntegrationRecipes = [
     'productivebees:centrifuge/gems/honeycomb_green_sapphire'
 ]
 
-// Competing Coke Dust manufacturing; retain both Immersive Engineering Crusher recipes.
+// Removes extra Coke Dust recipes, forcing the use of the IE Crusher
 const removedCokeDustRecipes = [
     'create:crushing/compat/immersiveengineering/coal_coke',
     'create:crushing/compat/immersiveengineering/coke_block',
@@ -580,10 +583,12 @@ ServerEvents.recipes(event => {
     // StoneWork Factory: keep cobblestone -> gravel -> sand, but stop sand -> silicon
     event.remove({ id: 'industrialforegoing:crusher/sand' })
     // Remove unnecessary silicon block stuff
+    // Removes silicon block shortcuts
     event.remove({ id: 'extendedae:silicon_decompress' })
     event.remove({ id: 'oritech:silicon_blockblockinv' })
     event.remove({ id: 'extendedae:quartz_blend' })
     event.remove({ id: 'extendedae:quartz_blend_alt' })
+    // Adds the Certus-based Quartz Blend recipe
     event.custom({
         type: 'minecraft:crafting_shapeless',
         category: 'misc',
@@ -602,6 +607,7 @@ ServerEvents.recipes(event => {
     }).id('extendedae:quartz_blend')
     event.remove({ id: 'appliedpneumatics:amadron/emerald_to_certus_quartz_crystal' })
     event.remove({ id: 'appliedpneumatics:amadron/emerald_to_sky_stone_block' })
+    // Requires Certus for the Charger
     event.remove({ id: 'ae2:network/blocks/crystal_processing_charger' })
     event.custom({
         type: 'minecraft:crafting_shaped',
@@ -615,6 +621,7 @@ ServerEvents.recipes(event => {
         result: { id: 'ae2:charger', count: 1 }
     }).id('ae2:network/blocks/crystal_processing_charger')
 
+    // Uses Mekanism Nether Quartz Dust
     event.remove({ id: 'ae2cs:pulverizer/nether_quartz_dust' })
     event.custom({
         type: 'ae2cs:crystal_pulverizer_recipe_serializer',
@@ -624,6 +631,7 @@ ServerEvents.recipes(event => {
     }).id('ae2cs:pulverizer/nether_quartz_dust')
 
     // Other progression recipe modifications
+    // Replaces breeding with quartz-block conversion
     event.remove({ id: 'productivebees:bee_breeding/appliedenergistics2/spacial_bee' })
     event.custom({
         type: 'productivebees:bee_conversion',
@@ -644,6 +652,7 @@ ServerEvents.recipes(event => {
 
     cleanUpUraniumAndYellorium(event)
 
+    // Removes the recipe without hiding the item
     event.remove({ id: 'antarchy:rainbow_sugar' })
 
     removedMarvelTitaniumRecipes.forEach(id => {
@@ -666,6 +675,7 @@ ServerEvents.recipes(event => {
         event.remove({ id: id })
     })
 
+    // Keeps IE Crusher recipes and Coke Dust uses
     removedCokeDustRecipes.forEach(id => {
         event.remove({ id: id })
     })

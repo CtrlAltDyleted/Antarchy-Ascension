@@ -4,8 +4,10 @@
 	#Items Settings
 	[general.items]
 		#Defines the machine tier up to which the maximum tier installer should go
-		#Allowed Values: BASIC, ADVANCED, ELITE, ULTIMATE, CREATIVE, OVERCLOCKED, QUANTUM, DENSE, MULTIVERSAL
+		#Allowed Values: BASIC, ADVANCED, ELITE, ULTIMATE, OVERCLOCKED, QUANTUM, DENSE, MULTIVERSAL, CREATIVE
 		maxInstallerTier = "MULTIVERSAL"
+		#Allow alloy blocks to be changed in the oredictionificator
+		allowAlloyBlocksInOredictionificator = false
 
 	#APT Settings
 	[general.apt]
@@ -21,3 +23,79 @@
 		energyStorage = 10000000
 		#Energy needed (in Joules) per tick to process the recipe.
 		energyPerInput = 100000
+
+	#Machine Settings
+	[general.machines]
+		#Alloyer energy use per tick.
+		# Default: 50
+		# Range: 1 ~ 9223372036854775807
+		alloyerEnergyUsage = 50
+		#Alloyer energy capacity.
+		# Default: 40000
+		# Range: 1 ~ 9223372036854775807
+		alloyerEnergyStorage = 40000
+		#Fluid combiner energy use per tick.
+		# Default: 50
+		# Range: 1 ~ 9223372036854775807
+		fluidCombinerEnergyUsage = 50
+		#Fluid combiner energy capacity.
+		# Default: 40000
+		# Range: 1 ~ 9223372036854775807
+		fluidCombinerEnergyStorage = 40000
+		#Fluid alloyer energy use per tick.
+		# Default: 50
+		# Range: 1 ~ 9223372036854775807
+		fluidAlloyerEnergyUsage = 50
+		#Fluid alloyer energy capacity.
+		# Default: 40000
+		# Range: 1 ~ 9223372036854775807
+		fluidAlloyerEnergyStorage = 40000
+		#Chemixer energy use per tick.
+		# Default: 50
+		# Range: 1 ~ 9223372036854775807
+		chemixerEnergyUsage = 50
+		#Chemixer energy capacity.
+		# Default: 40000
+		# Range: 1 ~ 9223372036854775807
+		chemixerEnergyStorage = 40000
+		#Melter energy use per tick.
+		# Default: 200
+		# Range: 1 ~ 9223372036854775807
+		melterEnergyUsage = 200
+		#Melter energy capacity.
+		# Default: 80000
+		# Range: 1 ~ 9223372036854775807
+		melterEnergyStorage = 80000
+		#Solidifier energy use per tick.
+		# Default: 5
+		# Range: 1 ~ 9223372036854775807
+		solidifierEnergyUsage = 5
+		#Solidifier energy capacity.
+		# Default: 2000
+		# Range: 1 ~ 9223372036854775807
+		solidifierEnergyStorage = 2000
+		#Laser disenchanter energy capacity.
+		# Default: 5000000000
+		# Range: 1 ~ 9223372036854775807
+		laserDisenchanterEnergyStorage = 5000000000
+		#Enchanting station energy use per tick.
+		# Default: 400
+		# Range: 1 ~ 9223372036854775807
+		enchantingStationEnergyUsage = 400
+		#Enchanting station energy capacity.
+		# Default: 40000
+		# Range: 1 ~ 9223372036854775807
+		enchantingStationEnergyStorage = 40000
+		#Lunar neutron activator peak production rate.
+		# Default: 64.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		lunarNeutronActivatorProduction = 64.0
+		#Melter heat dissipation per tick.
+		# Default: 0.02
+		# Range: 0.0 ~ 1.7976931348623157E308
+		melterHeatDissipation = 0.02
+
+	#Integration Settings
+	[general.integrations]
+		#Enable radiation decay timer integration with curios.
+		enableDecayTimers = true

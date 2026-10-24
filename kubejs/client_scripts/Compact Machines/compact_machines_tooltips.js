@@ -1,3 +1,4 @@
+// Lists each room's interior size
 const compactMachineRooms = [
     ['tiny',     '3x3x3'],
     ['small',    '5x5x5'],
@@ -22,6 +23,7 @@ ItemEvents.modifyTooltips(event => {
 
         // Remove the tooltip when holding shift, since the tooltip is already displayed.
 
+        // Removes old lines as they shift into place
         event.modify(machine, { shift: true }, tooltip => {
             tooltip.removeLine(1) // New Machine
             tooltip.removeLine(1) // Size

@@ -6,13 +6,14 @@ ServerEvents.recipes(event => {
     var cuttable = {};
     var existing = {};
     var candidates = {};
+    // Caches the ingredient item lists
     var cachedInputs = {};
 
     function itemIds(input) {
         var key = JSON.stringify(input);
         if (cachedInputs[key] !== undefined) return cachedInputs[key];
         var ids = [];
-        // Use KubeJS's exposed bridge methods; vanilla getItems/getItem are hidden.
+        // Gets ingredient stacks through KubeJS
         var stacks = Ingredient.of(input).getStackArray();
         for (var i = 0; i < stacks.length; i++) {
             var id = String(stacks[i].getId());
@@ -31,6 +32,7 @@ ServerEvents.recipes(event => {
     }
 
     function recipeKey(data) {
+        // Keeps custom ingredient restrictions in the recipe key
         var predicate = data.ingredient.type ? JSON.stringify(data.ingredient) : '';
         return JSON.stringify(itemIds(data.ingredient)) + '|' + predicate + '|' + resultKey(data);
     }
@@ -74,6 +76,7 @@ ServerEvents.recipes(event => {
         if (existing[key]) return;
         data.type = 'minecraft:blasting';
         data.category = 'misc';
+        // Sets the cooking time to five seconds
         data.cookingtime = 100;
         var previous = candidates[key];
         if (!previous) {
@@ -82,6 +85,7 @@ ServerEvents.recipes(event => {
             previous.data.experience = data.experience;
         }
     });
+    // Adds the generated recipes in a stable order
     Object.keys(candidates).sort().forEach(key => {
         var candidate = candidates[key];
         var source = candidate.id.replace(':', '/');
